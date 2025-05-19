@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cybernovr-black: 0 0% 0%;
+    --cybernovr-red: 358 91% 53%; /* #EB2027 */
+    --cybernovr-blue: 232 42% 45%; /* #4451A2 */
+    --cybernovr-purple: 277 50% 37%; /* #662F8E */
+    --cybernovr-darkgray: 0 0% 10%;
+    --light-gray: 220 20% 97%;
+    --charcoal: 0 0% 17%;
+
+    --background: 0 0% 100%;
+    --foreground: 0 0% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 17%;
+
+    --primary: 277 50% 37%; /* Purple as primary */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 358 91% 53%; /* Red as secondary */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 97%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 232 42% 45%; /* Blue as accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 277 50% 37% / 0.1; /* Purple for border */
+    --input: 277 50% 37% / 0.2; /* Purple for input */
+    --ring: 232 42% 45%; /* Blue for ring */
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-cybernovr-purple text-white rounded-lg px-6 py-3 font-medium transition-all duration-200 hover:shadow-md hover:border hover:border-cybernovr-blue;
+  }
+
+  .btn-secondary {
+    @apply bg-cybernovr-red text-white rounded-lg px-6 py-3 font-medium transition-all duration-200 hover:shadow-md hover:bg-cybernovr-red/90;
+  }
+
+  .btn-outline {
+    @apply border-2 border-cybernovr-purple text-cybernovr-purple rounded-lg px-6 py-3 font-medium transition-all duration-200 hover:bg-cybernovr-purple hover:text-white;
+  }
+
+  .card-shadow {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 p-6 border border-cybernovr-blue/10;
+  }
+}

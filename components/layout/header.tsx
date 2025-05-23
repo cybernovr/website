@@ -26,7 +26,7 @@ const mainNavItems = [
   },
   {
     title: "Products",
-    href: "/products",
+    href: "",
     submenu: [
       { title: "Darktrace", href: "/products/darktrace" },
       { title: "Proofpoint", href: "/products/proofpoint" },

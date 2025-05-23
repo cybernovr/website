@@ -57,7 +57,7 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: "500+", label: "Clients Protected" },
+    { value: "50+", label: "Clients Protected" },
     { value: "99.9%", label: "Uptime Guarantee" },
     { value: "24/7", label: "Support Available" },
     { value: "10+", label: "Security Experts" },

@@ -27,7 +27,7 @@ import Initiative3 from "@/components/images/Professionalcourse.jpeg";
 export default function Home() {
   const services = [
     {
-      title: "Professional Services",
+      title: "Critical infrastructure protection",
       description:
         "Expert cybersecurity consulting tailored to your business needs.",
       icon: <Shield className="h-10 w-10 text-cybernovr-red" />,

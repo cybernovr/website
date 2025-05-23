@@ -53,7 +53,7 @@ export default function Footer() {
                   href="/services/professional-services"
                   className="text-charcoal/70 hover:text-cybernovr-purple transition-colors"
                 >
-                  Professional Services
+                  Critical infrastructure protection
                 </Link>
               </li>
               <li>

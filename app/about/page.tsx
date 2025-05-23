@@ -10,6 +10,7 @@ import Tunde from "@/components/images/tundeali.jpg"
 import Olisa from "@/components/images/olisaemeka.jpg"
 import Ibrahim from "@/components/images/ibrahimnew.jpg"
 import About1 from "@/components/images/abouttech1.jpeg";
+import Akin from "@/components/images/drakin.jpg"
 
 export default function AboutPage() {
   const boardMembers = [
@@ -34,6 +35,14 @@ export default function AboutPage() {
       image: Tunde,
       fullBio:
         "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing.",
+    },
+    {
+      name: "Akinwale Mayomi Aisida",
+      title: "Non-Executive Director",
+      bio: "Akinwale Mayomi Aisida,  is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity, ",
+      image: Akin,
+      fullBio:
+        "Akinwale Mayomi Aisida,  is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity, University of New Brunswick, Canada. He  specializes in developing intelligent and adaptive solutions to emerging threats in networked systems. With a strong academic and practical foundation in machine learning, artificial intelligence (AI), and deep learning, Akinwale brings extensive research and professional background to CYBERNOVR focusing on applying data-driven techniques to intrusion detection, zero-day attack identification, and threat intelligence modeling.As Head of Threat Intelligence team, he possess robust hands-on expertise in building and deploying models using frameworks such as PyTorch, Keras, and TensorFlow, alongside proficiency in Python, NumPy, Pandas, scikit-learn, and Matplotlib. He is highly skilled in high-performance modeling, feature engineering, and real-time anomaly detection using both traditional ML classifiers (e.g., Random Forest, SVM, XGBoost) and advanced deep learning architectures (e.g., CNNs, RNNs, LSTMs, Autoencoders).",
     },
     // {
     //   name: "Eng. Gbolahan Oshonubi",

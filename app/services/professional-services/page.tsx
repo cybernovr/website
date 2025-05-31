@@ -12,10 +12,10 @@ export default function ProfessionalServicesPage() {
         <div className="container-custom">
           <div className="max-w-3xl text-black mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Critical Infrastructure Protection
+              Cybersecurity Strategy and Transformation
             </h1>
             <p className="text-xl mb-8">
-              Securing and enhancing the resilience of your critical information infrastructure.
+              Proactively defend against evolving cyber threats while enabling secure digital growth.
             </p>
           </div>
         </div>
@@ -28,13 +28,13 @@ export default function ProfessionalServicesPage() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-3xl font-bold mb-6">
-                  Critical Information Infrastructure Protection
+                  Cybersecurity Resilience Strategy
                 </h2>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  Critical Information Infrastructure (CII) refers to the computer information systems, telecommunication networks, and the underlying flow of data within these systems, which if destroyed or disrupted could have a significant effect on the economic and social well-being of a company or country as well as the safety of staff and citizens respectively.
+                  Digital transformation continues to expand the attack surface. In addition, Artificial Intelligence (AI) is turbo charging cyber attacks. We help to ensure your digital transformation aligns with your cybersecurity goals. 
                 </p>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  More and more attention are shifting from the protection of CIIs to making CIIs more resilient. We have worked with government and private organisations in developing a Business Impact Analysis (BIA) and developing sector-specific CII risk management and resiliency plans.
+                  Through transforming and strengthening your cybersecurity programmes, we work with governments and private organisations stay ahead of evolving threats and build confidence among stakeholders during their digital transformation journeys. 
                 </p>
                 <p className="text-lg text-charcoal/80 mb-6">
                   Contact us today to get more insight into how we help organisations to maintain the Confidentiality, Integrity, and Availability (CIA) of their critical information infrastructure.
@@ -54,7 +54,7 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">
-                        Cybersecurity Framework for CII
+                        Cybersecurity Resilience Strategy Development & Implementation
                       </h4>
                     </div>
                   </li>
@@ -66,7 +66,7 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">
-                        Cybersecurity Strategy for CII
+                        Cybersecurity & Digital Transformation Management
                       </h4>
                     </div>
                   </li>
@@ -78,7 +78,7 @@ export default function ProfessionalServicesPage() {
                     </div>
                     <div className="ml-4">
                       <h4 className="text-lg font-semibold">
-                        Risk Management of CII
+                        Cybersecurity Governance & Compliance Management
                       </h4>
                     </div>
                   </li>

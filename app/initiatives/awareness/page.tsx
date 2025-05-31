@@ -34,8 +34,7 @@ export default function AwarenessPage() {
                   child protection, election interference, pandemic-induced cyberthreats, online gender exploitation, cyber terrorism, etc.
                 </p>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  Working in partnership with sponsoring private sector organisations, the goal is to raise awareness and 
-                  consciousness toward a safe and secure cyberspace.
+                  Working in partnership with government and development institutions, our goal is to raise awareness and consciousness toward a safe and secure cyberspace.
                 </p>
               </div>
 

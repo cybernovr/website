@@ -3,20 +3,31 @@
 import { useRef, useEffect } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import Darktrace from "@/components/images/darktracelogo.png"
+import Darktrace from "@/components/images/darktrace.png"
 import Proofpoint from "@/components/images/Proofpoint.jpg"
+import Whalebone from "@/components/images/whalebonelogo.png"
+import Centraleyes from "@/components/images/centraleyes-logo.jpeg"
+import Tenable from "@/components/images/tenable-logo.jpeg"
 import Cisco from "@/components/images/cisco.jpg"
 import PaloAltoNetworks from "@/components/images/PaloAltoNetworks.png"
 import Fortinet from "@/components/images/Fortinet.png"
 import CrowdStrike from "@/components/images/crowdstrike.png"
+import Sectigo from "@/components/images/Sectigo.png"
 
 const partners = [
   { name: "Darktrace", logo: Darktrace },
+  { name: "Sectigo", logo: Sectigo },
+  { name: "Centraleyes", logo: Centraleyes },
   { name: "Proofpoint", logo: Proofpoint },
-  { name: "Cisco", logo: Cisco },
-  { name: "Palo Alto Networks", logo: PaloAltoNetworks },
-  { name: "Fortinet", logo: Fortinet },
-  { name: "CrowdStrike", logo: CrowdStrike },
+  // { name: "Cisco", logo: Cisco },
+  // { name: "Palo Alto Networks", logo: PaloAltoNetworks },
+  // { name: "Fortinet", logo: Fortinet },
+  // { name: "CrowdStrike", logo: CrowdStrike },
+  { name: "Whalebone", logo: Whalebone },
+  { name: "Tenable", logo: Tenable },
+  
+  
+
 ]
 
 export default function PartnerLogos() {
@@ -28,7 +39,7 @@ export default function PartnerLogos() {
 
     let animationId: number
     let scrollPosition = 0
-    const scrollSpeed = 0.5
+    const scrollSpeed = 0.7
     const containerWidth = scrollContainer.scrollWidth
 
     const scroll = () => {

@@ -279,13 +279,13 @@ export default function EducationPage() {
                   Enroll Your School
                 </Button>
               </Link>
-              <Link href="mailto:kazeem@cybernovr.com">
+              <Link href="mailto:info@cybernovr.com">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-black hover:bg-white/10"
+                  // className="border-white text-black hover:bg-white/10"
                 >
-                  Contact Dr. Kazeem
+                  Contact Us
                 </Button>
               </Link>
             </div>

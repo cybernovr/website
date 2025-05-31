@@ -1,21 +1,18 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { BookOpen, Users, Calendar, Globe, Shield } from "lucide-react"
-import Partner1 from "@/components/images/Proofpoint.jpg"
-import Partner2 from "@/components/images/darktracelogo.png"
-import Partner3 from "@/components/images/whalebonelogo.png"
+import { BookOpen, Award, Users, Mail, Briefcase } from "lucide-react"
 
-export default function AwarenessPage() {
+export default function EducationPage() {
   return (
     <>
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-black">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Cybersecurity Awareness Campaign</h1>
-            <p className="text-xl mb-8">
-              Educating and engaging the public on key cybersecurity practices for a safer digital world.
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Cybersecurity Youth League</h1>
+            <p className="text-xl  mb-8">
+              Empowering tomorrow's cyber defenders through hands-on training, mentorship, and real-world challenges.
             </p>
           </div>
         </div>
@@ -26,83 +23,70 @@ export default function AwarenessPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold mb-6">Cybersecurity Awareness Campaign (CAC)</h2>
+              {/* <div>
+                <h2 className="text-3xl font-bold mb-6">Cybersecurity Education & Training (CET)</h2>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  We plan to hold public events, cybersecurity education symposia, Cybersecurity Boot Camps (GenerationCyber Camps), 
-                  Cybersecurity Awareness week, etc., to educate and engage the public on key cybersecurity practices like online 
-                  child protection, election interference, pandemic-induced cyberthreats, online gender exploitation, cyber terrorism, etc.
+                  Our partnership covers curriculum development, coaching, and mentoring cybersecurity professionals. The 
+                  Cybersecurity Education & Training (CET) also offers internships and apprenticeships through a network of 
+                  partner government and private organisations to provide a platform for young cybersecurity professionals.
                 </p>
                 <p className="text-lg text-charcoal/80 mb-6">
-                  Working in partnership with sponsoring private sector organisations, the goal is to raise awareness and 
-                  consciousness toward a safe and secure cyberspace.
+                  We use this platform for generating and developing a pipeline of trained and qualified cybersecurity 
+                  professionals across Africa. Interested in partnering with us, contact Dr. Kazeem Durodoye at 
+                  <a href="mailto:kazeem@cybernovr.com" className="text-electric-blue hover:underline"> kazeem@cybernovr.com</a>
                 </p>
+              </div> */}
+
+              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
+                <div className="mb-6">
+                  <Users className="h-12 w-12 text-electric-blue" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Cybersecurity Youth League (CYL)</h3>
+                <p className="text-charcoal/80 mb-6">
+                  We partner with Government and private Primary and Secondary schools nationwide to form Cybersecurity Youth 
+                  League (CYL) in their school. This Club is a group of interested students under our supervision and guidance 
+                  to inculcate basic cyber hygiene in these youths. An instructor in the school is identified as a League Leader 
+                  who is the primary point of contact for all our engagements with the school.
+                </p>
+                <p className="text-charcoal/80 mb-6">
+                  To enrol your school in CYL, please email 
+                  <a href="mailto:kazeem@cybernovr.com" className="text-electric-blue hover:underline"> kazeem@cybernovr.com</a>
+                </p>
+                
               </div>
 
               <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
                 <div className="mb-6">
-                  <BookOpen className="h-12 w-12 text-electric-blue" />
+                  <Award className="h-12 w-12 text-electric-blue" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Key Focus Areas</h3>
-                <div className="space-y-4 mt-6">
-                  {[
-                    "Online child protection and safety",
-                    "Protection against election interference",
-                    "Pandemic-induced cyberthreats awareness",
-                    "Prevention of online gender exploitation",
-                    "Understanding and countering cyber terrorism",
-                    "Safe social media practices",
-                    "Secure online banking and financial transactions",
-                    "Protection against phishing and social engineering",
-                    "Mobile device security best practices",
-                    "Data privacy and protection"
-                  ].map((area, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="flex-shrink-0 mt-1">
-                        <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
-                          <span className="text-white text-xs">✓</span>
-                        </div>
-                      </div>
-                      <div className="ml-4">
-                        <p className="text-charcoal/80">{area}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
-                <div className="mb-6">
-                  <Calendar className="h-12 w-12 text-electric-blue" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Our Awareness Programs</h3>
+                <h3 className="text-2xl font-bold mb-4">Our Training Programs</h3>
                 <div className="space-y-6 mt-6">
                   <div className="border-b border-gray-200 pb-6">
-                    <h4 className="font-bold text-xl mb-2">Public Events</h4>
+                    <h4 className="font-bold text-xl mb-2">Curriculum Development</h4>
                     <p className="text-charcoal/80">
-                      We organize public events in communities, schools, and organizations to raise awareness about 
-                      cybersecurity threats and best practices for staying safe online.
+                      We work with educational institutions to develop comprehensive cybersecurity curricula that align with 
+                      industry standards and prepare students for real-world challenges.
                     </p>
                   </div>
                   <div className="border-b border-gray-200 pb-6">
-                    <h4 className="font-bold text-xl mb-2">Cybersecurity Education Symposia</h4>
+                    <h4 className="font-bold text-xl mb-2">Coaching and Mentoring</h4>
                     <p className="text-charcoal/80">
-                      Our symposia bring together experts from various fields to discuss emerging cybersecurity threats 
-                      and strategies for protection, providing valuable insights for individuals and organizations.
+                      Our experienced professionals provide coaching and mentoring to aspiring cybersecurity professionals, 
+                      helping them develop the skills and knowledge needed to succeed in the field.
                     </p>
                   </div>
                   <div className="border-b border-gray-200 pb-6">
-                    <h4 className="font-bold text-xl mb-2">GenerationCyber Camps</h4>
+                    <h4 className="font-bold text-xl mb-2">Internships and Apprenticeships</h4>
                     <p className="text-charcoal/80">
-                      These boot camps provide hands-on training for students and young professionals interested in 
-                      cybersecurity, helping to build the next generation of cybersecurity experts.
+                      We offer internships and apprenticeships through our network of partner organizations, providing 
+                      hands-on experience and practical training for young cybersecurity professionals.
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-bold text-xl mb-2">Cybersecurity Awareness Week</h4>
+                    <h4 className="font-bold text-xl mb-2">Professional Development</h4>
                     <p className="text-charcoal/80">
-                      An annual event featuring workshops, seminars, and activities designed to promote cybersecurity 
-                      awareness and education across different sectors and communities.
+                      We provide ongoing professional development opportunities for cybersecurity professionals, helping 
+                      them stay current with the latest trends, technologies, and best practices.
                     </p>
                   </div>
                 </div>
@@ -112,10 +96,10 @@ export default function AwarenessPage() {
             <div className="relative">
               <div className="sticky top-32">
                 <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100 mb-8">
-                  <h3 className="text-2xl font-bold mb-6 text-deep-blue">Get Involved</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-deep-blue">Enroll Your School</h3>
                   <form className="space-y-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1">Name *</label>
+                      <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1">Your Name *</label>
                       <input
                         type="text"
                         id="name"
@@ -137,29 +121,25 @@ export default function AwarenessPage() {
                       />
                     </div>
                     <div>
-                      <label htmlFor="organization" className="block text-sm font-medium text-charcoal mb-1">Organization</label>
+                      <label htmlFor="school" className="block text-sm font-medium text-charcoal mb-1">School Name *</label>
                       <input
                         type="text"
-                        id="organization"
-                        name="organization"
+                        id="school"
+                        name="school"
+                        required
                         className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                        placeholder="Your Organization"
+                        placeholder="School Name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="interest" className="block text-sm font-medium text-charcoal mb-1">Area of Interest</label>
-                      <select
-                        id="interest"
-                        name="interest"
+                      <label htmlFor="position" className="block text-sm font-medium text-charcoal mb-1">Your Position</label>
+                      <input
+                        type="text"
+                        id="position"
+                        name="position"
                         className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                      >
-                        <option value="">Select an area</option>
-                        <option value="sponsor">Sponsor an Event</option>
-                        <option value="speaker">Become a Speaker</option>
-                        <option value="volunteer">Volunteer</option>
-                        <option value="attend">Attend an Event</option>
-                        <option value="other">Other</option>
-                      </select>
+                        placeholder="e.g., Principal, Teacher, IT Coordinator"
+                      />
                     </div>
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-1">Message</label>
@@ -168,46 +148,66 @@ export default function AwarenessPage() {
                         name="message"
                         rows={4}
                         className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                        placeholder="How would you like to get involved?"
+                        placeholder="Tell us about your school and interest in the Cybersecurity Youth League"
                       ></textarea>
                     </div>
                     <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
-                      Submit
+                      Submit Enrollment Request
                     </Button>
                   </form>
                 </div>
                 <div className="bg-light-gray rounded-lg p-6 shadow-md">
-                  <h3 className="text-xl font-bold mb-4">Upcoming Events</h3>
-                  <div className="space-y-4">
-                    <div className="bg-white p-4 rounded-md shadow-sm">
-                      <div className="flex items-center mb-2">
-                        <Calendar className="h-5 w-5 text-electric-blue mr-2" />
-                        <span className="text-sm text-charcoal/70">June 15, 2025</span>
+                  <h3 className="text-xl font-bold mb-4">Partner With Us</h3>
+                  <p className="text-charcoal/80 mb-4">
+                    We're always looking for organizations to partner with us in our mission to develop the next generation 
+                    of cybersecurity professionals.
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
                       </div>
-                      <h4 className="font-bold mb-1">Cybersecurity Awareness Workshop</h4>
-                      <p className="text-sm text-charcoal/80">Virtual Event</p>
+                      <div className="ml-3">
+                        <p className="text-charcoal/80">Sponsor a school's Cybersecurity Youth League</p>
+                      </div>
                     </div>
-                    <div className="bg-white p-4 rounded-md shadow-sm">
-                      <div className="flex items-center mb-2">
-                        <Calendar className="h-5 w-5 text-electric-blue mr-2" />
-                        <span className="text-sm text-charcoal/70">July 10-14, 2025</span>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
                       </div>
-                      <h4 className="font-bold mb-1">GenerationCyber Summer Camp</h4>
-                      <p className="text-sm text-charcoal/80">Cyber City Campus</p>
+                      <div className="ml-3">
+                        <p className="text-charcoal/80">Provide internship opportunities for students</p>
+                      </div>
                     </div>
-                    <div className="bg-white p-4 rounded-md shadow-sm">
-                      <div className="flex items-center mb-2">
-                        <Calendar className="h-5 w-5 text-electric-blue mr-2" />
-                        <span className="text-sm text-charcoal/70">October 1-7, 2025</span>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
                       </div>
-                      <h4 className="font-bold mb-1">Cybersecurity Awareness Week</h4>
-                      <p className="text-sm text-charcoal/80">Multiple Locations</p>
+                      <div className="ml-3">
+                        <p className="text-charcoal/80">Contribute to curriculum development</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="text-charcoal/80">Volunteer as a mentor or guest speaker</p>
+                      </div>
                     </div>
                   </div>
-                  <div className="mt-4">
+                  <div className="mt-6">
                     <Link href="/contact">
-                      <Button variant="outline" className="w-full bg-cybernovr-red hover:bg-cybernovr-red/90 text-white">
-                        View All Events
+                      <Button variant="outline" className="w-full">
+                        Contact Us to Partner
                       </Button>
                     </Link>
                   </div>
@@ -218,28 +218,46 @@ export default function AwarenessPage() {
         </div>
       </section>
 
-      {/* Partners Section */}
+      {/* Successful Partnerships */}
       <section className="py-16 bg-light-gray">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Partners</h2>
+            <h2 className="text-3xl font-bold mb-4">Successful Partnerships</h2>
             <p className="text-lg text-charcoal/80 max-w-3xl mx-auto">
-              We work with leading organizations to deliver impactful cybersecurity awareness programs.
+              Learn about our collaborative efforts with government, organizations, and educational institutions.
             </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center">
-            <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-32">
-              <Image src={Partner1} alt="Partner 1" width={150} height={80} className="max-h-full w-auto" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
+              <p className="text-charcoal/80 italic mb-6">
+                We have a no objection from Ministry of Education, Osun state to train all secondary Students in the State.
+              </p>
+              <div>
+                <h4 className="font-bold">Osun State Government</h4>
+                <p className="text-charcoal/70">Permanent Secretary, Ministry of Education</p>
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-32">
-              <Image src={Partner2} alt="Partner 2" width={150} height={80} className="max-h-full w-auto" />
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
+              <p className="text-charcoal/80 italic mb-6">
+                We are partnering with Rotary Club of Lagos to train secondary School students in selected schools in the Rotary Intervention Programme.
+              </p>
+              <div>
+                <h4 className="font-bold">Rotary Club of Lagos</h4>
+                <p className="text-charcoal/70">Community Education Initiative</p>
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-32">
-              <Image src={Partner3} alt="Partner 3" width={150} height={80} className="max-h-full w-auto" />
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="text-electric-blue text-4xl font-serif mb-4">"</div>
+              <p className="text-charcoal/80 italic mb-6">
+                We partnered with AFSI to provide cybersecurity lectures to university students in Nigeria and Cameroon.
+              </p>
+              <div>
+                <h4 className="font-bold">African Foundation for Systems Integration (AF4SI)</h4>
+                <p className="text-charcoal/70">Aligned with Capitol Technology University, USA</p>
+              </div>
             </div>
-            {/* <div className="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center h-32">
-              <Image src="/placeholder.svg?height=80&width=150" alt="Partner 4" width={150} height={80} className="max-h-full w-auto" />
-            </div> */}
           </div>
         </div>
       </section>
@@ -248,18 +266,29 @@ export default function AwarenessPage() {
       <section className="py-16 bg-deep-blue text-black">
         <div className="container-custom">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Cybersecurity Awareness Mission</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Invest in the Future of Cybersecurity</h2>
             <p className="text-xl mb-8">
-              Together, we can create a safer digital world through education and awareness.
+              Join us in developing the next generation of cybersecurity professionals through education and training.
             </p>
-            <Link href="/contact">
-              <Button
-                size="lg"
-                className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
-              >
-                Get Involved Today
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link href="/courses">
+                <Button
+                  size="lg"
+                  className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"
+                >
+                  Enroll Your School
+                </Button>
+              </Link>
+              <Link href="mailto:info@cybernovr.com">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  // className="border-white text-black hover:bg-white/10"
+                >
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

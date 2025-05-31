@@ -10,26 +10,26 @@ import logo from "@/components/images/Cybernovrlogosmall.png"
 
 const mainNavItems = [
   {
-    title: "Our services",
+    title: "Services",
     href: "",
     submenu: [
-      { title: "Critical Infrastructure Protection", href: "/services/professional-services" },
+      { title: "Cybersecurity Resilience Program", href: "/services/professional-services" },
       { title: "GRC", href: "/services/grc" },
       { title: "Risk Management", href: "/services/risk-management" },
-      { title: "Due Diligence", href: "/services/due-diligence" },
-      { title: "Compliance", href: "/services/compliance" },
+      // { title: "Due Diligence", href: "/services/due-diligence" },
+      { title: "Data Privacy Protection", href: "/services/compliance" },
       { title: "Penetration Testing", href: "/services/penetration-testing" },
-      { title: "Incident Response", href: "/services/incident-response" },
-      { title: "CISO/vCISO", href: "/services/ciso" },
+      { title: "Managed Security", href: "/services/incident-response" },
+      // { title: "CISO/vCISO", href: "/services/ciso" },
       { title: "DNS Security", href: "/services/dns-security" },
     ],
   },
   {
-    title: "Products",
+    title: "Solutions",
     href: "",
     submenu: [
-      { title: "Darktrace", href: "/products/darktrace" },
-      { title: "Proofpoint", href: "/products/proofpoint" },
+      { title: "NovrGRC", href: "/products/darktrace" },
+      { title: "NovrPRISM", href: "/products/proofpoint" },
   
     ],
   },
@@ -37,12 +37,13 @@ const mainNavItems = [
     title: "Initiatives",
     href: "/initiatives",
     submenu: [
-      // { title: "Cybersecurity Youth League", href: "/initiatives/youth-league" },
-      { title: "Awareness Campaigns", href: "/initiatives/awareness" },
+      { title: "Cybersecurity Youth League", href: "/initiatives/youth-league" },
+      { title: "Cybersecurity Training", href: "/courses" },
+      { title: "Awareness & Campaigns", href: "/initiatives/awareness" },
       { title: "Education & Training", href: "/initiatives/education" },
     ],
   },
-  { title: "About Us", href: "/about" },
+  { title: "Company", href: "/about" },
   { title: "Contact", href: "/contact" },
 ]
 

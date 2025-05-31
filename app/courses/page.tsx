@@ -8,7 +8,7 @@ import Link from "next/link"
 import course1 from "@/components/images/TechWorkspace.jpeg"
 import course2 from "@/components/images/pentest.jpg"
 import course3 from "@/components/images/cyberfund.jpeg"
-import course4 from "@/components/images/cheerful.jpeg"
+import course4 from "@/components/images/cheerful2.jpeg"
 
 
 export default function CoursesPage() {
@@ -92,7 +92,7 @@ export default function CoursesPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <FadeIn direction="right">
-              <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-[600px] rounded-lg overflow-hidden shadow-lg">
                 <Image src={course4} alt="ZIASS Training" fill className="object-cover" />
               </div>
             </FadeIn>

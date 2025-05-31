@@ -7,6 +7,7 @@ import {
   Shield,
   Lock,
   Server,
+  Globe,
   Users,
   CheckCircle,
 } from "lucide-react";
@@ -22,14 +23,14 @@ import AnimatedBackground from "@/components/animations/animated-background";
 import Aboutimg from "@/components/images/FuturisticCode.jpeg";
 import Initiative1 from "@/components/images/Focusedcourse.jpeg";
 import Initiative2 from "@/components/images/FocusedProgrammer.jpeg";
-import Initiative3 from "@/components/images/Professionalcourse.jpeg";
+import Initiative3 from "@/components/images/youth-league.jpeg";
 
 export default function Home() {
   const services = [
     {
-      title: "Critical infrastructure protection",
+      title: "Cybersecurity Resilience strategy",
       description:
-        "Expert cybersecurity consulting tailored to your business needs.",
+        "Future-proofing your organization with agile, risk-informed cybersecurity strategies.",
       icon: <Shield className="h-10 w-10 text-cybernovr-red" />,
       href: "/services/professional-services",
     },
@@ -48,11 +49,11 @@ export default function Home() {
       href: "/services/penetration-testing",
     },
     {
-      title: "CISO/vCISO",
+      title: "DNS Security",
       description:
         "Strategic security leadership without the full-time executive cost.",
-      icon: <Users className="h-10 w-10 text-cybernovr-red" />,
-      href: "/services/ciso",
+      icon: <Globe className="h-10 w-10 text-cybernovr-red" />,
+      href: "/services/dns-security",
     },
   ];
 

@@ -25,7 +25,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-10">
+      {/* <section className="py-10">
         <div className="container-custom">
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="h-[500px] w-full">
@@ -43,7 +43,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-light-gray">

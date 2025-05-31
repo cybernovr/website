@@ -10,6 +10,7 @@ import Tunde from "@/components/images/tundeali.jpg"
 import Olisa from "@/components/images/olisaemeka.jpg"
 import Ibrahim from "@/components/images/ibrahimnew.jpg"
 import About1 from "@/components/images/abouttech1.jpeg";
+import Aboutimg from "@/components/images/FuturisticCode.jpeg";
 import Akin from "@/components/images/drakin.jpg"
 
 export default function AboutPage() {
@@ -101,12 +102,28 @@ export default function AboutPage() {
       {/* Company Overview */}
       <section className="py-12 bg-white">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg p-8 shadow-sm border border-gray-100">
-              <p className="text-lg text-charcoal/90 leading-relaxed">
-                Since 2008, CYBERNOVR has been a Cybersecurity organisation providing cybersecurity services in Governance, Risk and Compliance management. We have strong expertise in Critical Infrastructure (CI) protection, Digital Transformation and cybersecurity training. We have worked with Ministries, Departments, and Agencies of the Government of Nigeria in developing and implementing the National Cybersecurity Policy and Strategy as well developing cybersecurity frameworks for critical sectors. We also work with numerous private organisations in different verticals to secure and protect their information assets and thereby safeguarding their future.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <FadeIn direction="left">
+                <div className="">
+                  <p className="text-lg text-charcoal/90 leading-relaxed">
+                    Since 2008, CYBERNOVR has emerged as a leading cybersecurity organization dedicated to delivering comprehensive services in Governance, Risk, and Compliance (GRC) management. With a strong focus on Critical Infrastructure (CI) protection, Digital Transformation, and cybersecurity training, the company has built a reputation for excellence and innovation in the field.
+                    <br /> <br />
+                    We have worked with Ministries, Departments, and Agencies of the Government of Nigeria in developing and implementing the National Cybersecurity Policy and Strategy as well developing cybersecurity frameworks for critical sectors.  We also work with numerous private organisations in different verticals to secure and protect their information assets and thereby safeguarding their future.
+                  </p>
+                </div>
+              </FadeIn>
             </div>
+            <FadeIn direction="right">
+              <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src={Aboutimg}
+                  alt="About Cybernovr"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -129,32 +146,19 @@ export default function AboutPage() {
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
                 <p className="text-lg text-charcoal/80">
-                  To protect your critical information assets and services today
-                  and always.
+                  To protect and achieve resilience for your critical information infrastructure.
                 </p>
               </div>
               <div>
                 <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
                 <p className="text-lg text-charcoal/80">
-                  To work with you to protect and safeguard your critical
-                  information assets and services. We will achieve this through
-                  our groundbreaking research in the theory and practice of
-                  information assurance and security. We will share ideas with
-                  you on your most important cybersecurity priorities. These, we
-                  will deliver to the delight of our customers and other
-                  stakeholders.
+                  To work with you to strengthen the resilience of your information assets. We will pinpoint your unique risks, prioritise your defences and help you achieve cybersecurity resilience of your critical services. These, we will deliver to your delight.
                 </p>
               </div>
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">What drives us</h2>
                 <p className="text-lg text-charcoal/80">
-                  Our business philosophy is deeply rooted in our unflinching
-                  belief that “Nothing's impossible”. We only need to “Keep
-                  Thinking”! This has been the drive behind the innovations we
-                  come up with at cybernovr Limited. Our employees have passed
-                  through the special training module designed to engrain the
-                  Philosophy of “nothing is impossible”. Come, and have a taste
-                  of the possibility by challenging us.
+                  Our business is driven towards attaining a 360-degree cybersecurity resilience for your business. We only need to “<strong><b>Keep Thinking</b></strong>” to achieve it! This has been the drive behind our work at <strong><b>CYBERNOVR Limited</b></strong>. Each of our employees has passed through the special training module designed to engrain in them in the Philosophy of “<strong><b>It is Possible</b></strong>”. Come, and have a taste of the possibility by challenging us.
                 </p>
               </div>
               <div className="mt-10">
@@ -171,25 +175,42 @@ export default function AboutPage() {
                       icon: <Users className="h-8 w-8 text-electric-blue" />,
                       title: "Customer Delight",
                       description:
-                        "We will not stop until you are delighted. We pride ourselves in unparalleled customer delight principles for conducting our business. Our internal and external customers will have this to say about us: \"We are delighted.\"",
+                        "We are committed to customer satisfaction and won’t stop until our clients are delighted. We take the time to understand their unique cybersecurity needs, deliver outstanding services, and prioritise the protection of their information infrastructure.",
+                    },
+                    {
+                      icon: <Users className="h-8 w-8 text-electric-blue" />,
+                      title: "Integrity",
+                      description:
+                        "We are committed to unwavering honesty, transparency, and a strong moral compass to maintain trust both internally and with our clients. We acknowledge our mistakes, learn from them, and continuously strive to do what is right for our clients and society.",
                     },
                     {
                       icon: <Award className="h-8 w-8 text-electric-blue" />,
                       title: "Innovation",
-                      description:
-                        "Innovation is at the heart of what we do. We keep striving for new ways of getting things done with dramatic improvements in cost, quality, time, and risk.",
+                      description: (
+                        <>
+                          We are committed to relentless innovation, creating cutting-edge solutions while swiftly adapting to new challenges. 
+                          We foster a culture of continuous learning and challenge the norm to achieve our philosophy of{" "}
+                          <strong>“It is Possible”</strong>.
+                        </>
+                      ),
                     },
                     {
                       icon: <Users className="h-8 w-8 text-electric-blue" />,
                       title: "People",
                       description:
-                        "Our people are the brains behind our success. We have equipped our people with what it takes to provoke their intellectual curiosity.",
+                        "We are committed to guiding our team to uphold the highest standards of quality in solutions, services, and incident response. Our people are the driving force behind our success, and we deeply appreciate their contributions.",
                     },
+                    // {
+                    //   icon: <Shield className="h-8 w-8 text-electric-blue" />,
+                    //   title: "Faith in God",
+                    //   description:
+                    //     "We believe in God to inspire us and bless the works of our hands",
+                    // },
                     {
                       icon: <Shield className="h-8 w-8 text-electric-blue" />,
-                      title: "Faith in God",
+                      title: "Resilience",
                       description:
-                        "We believe in God to inspire us and bless the works of our hands",
+                        "We are committed to achieving cybersecurity resilience on ourselves the same way we are to our clients. This commitment drives us to build robust, reliable, and adaptable systems and processes.",
                     },
                   ].map((value, index) => (
                     <div key={index} className="flex">
@@ -335,73 +356,80 @@ export default function AboutPage() {
               {[
                 {
                   year: "2008",
-                  title: "First Cybersecurity Workshop",
+                  title: "First Cybersecurity Conference",
                   description:
-                    "Co-Organised the first Cybersecurity Workshop in Nigeria.",
+                    "Co-organised the first Cybersecurity conference in Nigeria.",
+                  isLeft: false,
+                },
+                {
+                  year: "2009-2012",
+                  title: "Global Inclusivity",
+                  description:
+                    "Several Business Processes re-engineering to incorporate cybersecurity for financial sector players in Africa and Asia.",
                   isLeft: true,
                 },
                 {
                   year: "2013",
                   title: "National Cybersecurity Policy",
                   description:
-                    "Developed the National Cybersecurity Policy and Strategy for the Office of National Security Adviser (ONSA).",
+                    "Participated in the development of the National Cybersecurity Policy and Strategy for Nigeria.",
                   isLeft: false,
                 },
+                // {
+                //   year: "2014",
+                //   title: "Presidential Approval",
+                //   description:
+                //     "The National Cybersecurity Policy and Strategy approved and signed by the President of Nigeria.",
+                //   isLeft: true,
+                // },
                 {
-                  year: "2014",
-                  title: "Presidential Approval",
-                  description:
-                    "The National Cybersecurity Policy and Strategy approved and signed by the President of Nigeria.",
-                  isLeft: true,
-                },
-                {
-                  year: "2018-2025",
+                  year: "2018 to Date",
                   title: "Corporate Cybersecurity",
                   description:
-                    "Developed Cybersecurity Governance and Strategy for Payment Systems companies, Banks and other corporate organisations.",
-                  isLeft: false,
+                    "Developed cybersecurity GRC Strategy for Payment Systems companies, Bank and other corporate organisations.",
+                  isLeft: true,
                 },
                 {
                   year: "2020",
                   title: "Sectoral CSIRT",
                   description:
-                    "Setup and operationalisation of the Sectoral CSIRT for the Communication Sector.",
-                  isLeft: true,
+                    "Participated in the setup and operationalisation of the Sectoral CSIRT for the Nigerian Communication Sector.",
+                  isLeft: false,
                 },
                 {
                   year: "2021",
                   title: "eNaira Programme Management",
                   description:
-                    "Developed the Programme Management framework for eNaira (incorporating Cybersecurity).",
-                  isLeft: false,
+                    "Programme Management framework for eNaira (incorporating Cybersecurity).",
+                  isLeft: true,
                 },
                 {
                   year: "2022",
                   title: "ZIASS Limited Founded",
                   description:
                     "Incorporated ZIASS Limited. Rebranded as CYBERNOVR in May 2025.",
-                  isLeft: true,
+                  isLeft: false,
                 },
                 {
                   year: "2023",
                   title: "National CERT Collaboration",
                   description:
                     "Further cybersecurity works with the National CERT (ngCERT).",
-                  isLeft: false,
+                  isLeft: true,
                 },
                 {
                   year: "2024",
                   title: "Digital Public Infrastructure",
                   description:
                     "Developed Digital Public Infrastructure (incorporating Cybersecurity Requirements) for all Nigerian States (a project of Nigerian Governors Forum).",
-                  isLeft: true,
+                  isLeft: false,
                 },
                 {
                   year: "2025",
                   title: "Communication Sector Framework",
                   description:
-                    "Developing Cybersecurity Framework for the Nigerian Communication Sector.",
-                  isLeft: false,
+                    "Further Cybersecurity works for the Nigerian Communication Sector and the National Cybersecurity Coordination Centre (NCCC).",
+                  isLeft: true,
                 },
               ].map((event, index) => (
                 <FadeIn

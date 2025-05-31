@@ -402,7 +402,7 @@ export default function RiskManagementPage() {
               Contact us today to learn how our risk management services can
               help protect your organization from evolving threats.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"

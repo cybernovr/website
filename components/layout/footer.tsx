@@ -25,19 +25,19 @@ export default function Footer() {
               business from evolving cyber threats.
             </p>
             <div className="flex space-x-4">
-              <Link href="https://web.facebook.com/profile.php?id=61575904361487" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link target="_blank" href="https://web.facebook.com/profile.php?id=61575904361487" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="https://x.com/CYBERNOVR" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link target="_blank" href="https://x.com/CYBERNOVR" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="https://linkedin.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link target="_blank" href="https://linkedin.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://www.instagram.com/cybernovr/" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link target="_blank" href="https://www.instagram.com/cybernovr/" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -53,12 +53,7 @@ export default function Footer() {
                   href="/services/professional-services"
                   className="text-charcoal/70 hover:text-cybernovr-purple transition-colors"
                 >
-                  Critical infrastructure protection
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/grc" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  GRC
+                  Cybersecurity Resilience Strategy
                 </Link>
               </li>
               <li>
@@ -67,6 +62,11 @@ export default function Footer() {
                   className="text-charcoal/70 hover:text-cybernovr-purple transition-colors"
                 >
                   Risk Management
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/grc" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+                  GRC
                 </Link>
               </li>
               <li>
@@ -79,10 +79,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services/incident-response"
+                  href="/services/dns-security"
                   className="text-charcoal/70 hover:text-cybernovr-purple transition-colors"
                 >
-                  Incident Response
+                  DNS Security
                 </Link>
               </li>
               {/* <li>
@@ -99,7 +99,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/about" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  About Us
+                  Company
                 </Link>
               </li>
              
@@ -137,7 +137,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-cybernovr-purple mr-3 mt-1 flex-shrink-0" />
-                <span className="text-charcoal/70">454 Evanston Dr NW, Calgary AB T3P 0H1, Ontario, Canada & <br/>	6A Fatai Anjorin Street, Gbagada Phase 2, Lagos, Nigeria.</span>
+                <span className="text-charcoal/70">454 Evanston Dr NW, Calgary AB T3P 0H1, Alberta, Canada & <br/>	7 Ayinde Sanni Street, Magodo GRA, Lagos, Nigeria.</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-cybernovr-purple mr-3 flex-shrink-0" />
@@ -172,11 +172,11 @@ export default function Footer() {
                   Privacy
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/terms-of-service" className="text-charcoal/60 hover:text-cybernovr-purple transition-colors">
                   Terms
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/cookies" className="text-charcoal/60 hover:text-cybernovr-purple transition-colors">
                   Cookies

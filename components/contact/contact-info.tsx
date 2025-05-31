@@ -18,13 +18,13 @@ export default function ContactInfo() {
           <div>
             <h3 className="text-lg font-bold">Our Location</h3>
             <p className="text-charcoal/80">
-            454 Evanston Dr NW,
+              454 Evanston Dr NW,
               
-              Calgary AB T3P 0H1, Ontario, Canada & 6A 
+              Calgary AB T3P 0H1, Alberta, Canada & 6A 
             </p>
             <br />
             <p className="text-charcoal/80">
-            Fatai Anjorin Street, Gbagada Phase 2, Lagos. 
+              7 Ayinde Sanni Street, Magodo GRA, Lagos. 
             </p>
           </div>
         </div>

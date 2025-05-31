@@ -12,7 +12,7 @@ import Cisco from "@/components/images/cisco.jpg"
 import PaloAltoNetworks from "@/components/images/PaloAltoNetworks.png"
 import Fortinet from "@/components/images/Fortinet.png"
 import CrowdStrike from "@/components/images/crowdstrike.png"
-import Sectigo from "@/components/images/Sectigo.png"
+import Sectigo from "@/components/images/sectigo.png"
 
 const partners = [
   { name: "Darktrace", logo: Darktrace },

@@ -83,7 +83,7 @@ export default function ProductsPage() {
         "AI-powered GRC platform to eliminate manual work, adapt to your environment, and gain instant clarity, putting you in control of risk and compliance, not buried in it.",
       image: Centraleyes,
       href: "https://www.centraleyes.com/",
-      category: "Security Analytics",
+      category: "Risk and Compliance",
     },
   ]
 

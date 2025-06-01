@@ -37,7 +37,7 @@ export default function ContactInfo() {
             <h3 className="text-lg font-bold">Phone</h3>
             <p className="text-charcoal/80">
               <a href="tel:+1234567890" className="hover:text-electric-blue transition-colors">
-                +14439853735, +234 806-120-0000, +234 813 300 0419
+                +14439853735, +234 806-120-0000, +234 814-378-8857
               </a>
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function ContactInfo() {
             <h3 className="text-lg font-bold">Email</h3>
             <p className="text-charcoal/80">
               <a href="mailto:kazeem@cybernovr.com" className="hover:text-electric-blue transition-colors">
-                kazeem@cybernovr.com
+                info@cybernovr.com
               </a>
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function ContactInfo() {
           For urgent security incidents requiring immediate assistance, please call our 24/7 emergency response line:
         </p>
         <a href="tel:+234 813 300 0419" className="block mt-2 text-xl font-bold text-electric-blue hover:underline">
-        +234 813 300 0419
+          +234 814-378-8857
         </a>
       </div>
     </div>

@@ -14,8 +14,8 @@ export default function ProductCard({ name, description, image, href, category }
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md, hover:shadow-lg transition-all duration-300">
       <div className="relative h-48">
-        <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover py-14 border-red-400 b-2" />
-        <div className="absolute top-4 left-4 bg-electric-blue text-white text-sm font-medium py-1 px-3 rounded-full">
+        <Image src={image || "/placeholder.svg"} alt={name} fill className="object-cover py-14" />
+        <div className="absolute top-4 left-4 text-sm font-medium py-1 px-3 rounded-full bg-primary text-white">
           {category}
         </div>
       </div>

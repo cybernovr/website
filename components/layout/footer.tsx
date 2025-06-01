@@ -148,7 +148,7 @@ export default function Footer() {
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-cybernovr-purple mr-3 flex-shrink-0" />
                 <a href="mailto:kazeem@cybernovr.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  kazeem@cybernovr.com
+                  info@cybernovr.com
                 </a>
               </li>
             </ul>

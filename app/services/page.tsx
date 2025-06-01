@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, Users, FileCheck, AlertTriangle, Database, Globe, Zap } from "lucide-react"
+import { Shield, Lock, Users, FileCheck, VenetianMask, AlertTriangle, Database, Globe, Zap } from "lucide-react"
 import ServiceDetailCard from "@/components/services/service-detail-card"
 
 export default function ServicesPage() {
@@ -33,11 +33,17 @@ export default function ServicesPage() {
       icon: <Database className="h-12 w-12 text-electric-blue" />,
       href: "/services/due-diligence",
     },
+    // {
+    //   title: "Compliance",
+    //   description: "Ensure your organization meets industry regulations and standards with our compliance services.",
+    //   icon: <FileCheck className="h-12 w-12 text-electric-blue" />,
+    //   href: "/services/compliance",
+    // },
     {
-      title: "Compliance",
-      description: "Ensure your organization meets industry regulations and standards with our compliance services.",
-      icon: <FileCheck className="h-12 w-12 text-electric-blue" />,
-      href: "/services/compliance",
+      title: "Data Privacy Protection",
+      description: "Ensure your organization is secure with our data privacy services.",
+      icon: <VenetianMask className="h-12 w-12 text-electric-blue" />,
+      href: "/services/data-privacy-protection",
     },
     {
       title: "Penetration Testing",
@@ -71,7 +77,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-black">
+      <section className="pt-32 bg-gradient-to-r from-deep-blue to-electric-blue text-black">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>

@@ -137,7 +137,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-cybernovr-purple mr-3 mt-1 flex-shrink-0" />
-                <span className="text-charcoal/70">454 Evanston Dr NW, Calgary AB T3P 0H1, Alberta, Canada & <br/>	7 Ayinde Sanni Street, Magodo GRA, Lagos, Nigeria.</span>
+                <span className="text-charcoal/70">454 Evanston Dr NW, Calgary AB T3P 0H1, Alberta, Canada <br />& <br />	7 Ayinde Sanni Street, Magodo GRA, Lagos, Nigeria.</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-cybernovr-purple mr-3 flex-shrink-0" />

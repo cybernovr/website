@@ -131,36 +131,40 @@ export default function AboutPage() {
       {/* Mission & Vision */}
       <section className="py-20">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 w-full">
-              <div className="mb-4 w-full">
-                <div className="relative w-full h-65 rounded-lg overflow-hidden shadow-lg mb-4">
-                  <Image src={About1} alt="cybernovr Mission" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
-                </div>
-                <div className="relative w-full h-50 rounded-lg overflow-hidden shadow-lg">
-                  {/* <Image src={About2} alt="cybernovr Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" /> */}
-                </div>
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center align-middle">
+            <div className="mt-10 bg-white rounded-lg shadow-lg p-8 border border-gray-100">
+              <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
+              <p className="text-lg text-charcoal/80">
+                To protect and achieve resilience for your critical information infrastructure.
+              </p>
             </div>
+            <div className="mt-10 bg-white rounded-lg shadow-lg p-8 border border-gray-100">
+              <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
+              <p className="text-lg text-charcoal/80">
+                To work with you to strengthen the resilience of your information assets. We will pinpoint your unique risks, prioritise your defences and help you achieve cybersecurity resilience of your critical services. These, we will deliver to your delight.
+              </p>
+            </div>
+
+            <div className="mt-10 bg-white rounded-lg shadow-lg p-8 border border-gray-100 col-span-1 lg:col-span-2">
+              <h2 className="text-3xl font-bold mb-4">What drives us</h2>
+              <p className="text-lg text-charcoal/80">
+                Our business is driven towards attaining a 360-degree cybersecurity resilience for your business. We only need to "<strong><b>Keep Thinking</b></strong>" to achieve it! This has been the drive behind our work at <strong><b>CYBERNOVR Limited</b></strong>. Each of our employees has passed through the special training module designed to engrain in them the Philosophy of "<strong><b>It is Possible</b></strong>". Come, and have a taste of the possibility by challenging us.
+              </p>
+            </div>
+          </div>
+            <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6 w-full">
+                <div className="mb-4 w-full">
+                  <div className="relative w-full h-65 rounded-lg overflow-hidden shadow-lg mb-4">
+                    <Image src={About1} alt="cybernovr Mission" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" />
+                  </div>
+                  <div className="relative w-full h-50 rounded-lg overflow-hidden shadow-lg">
+                    {/* <Image src={About2} alt="cybernovr Vision" layout="responsive" width={600} height={256} className="object-cover w-full h-full rounded-lg" /> */}
+                  </div>
+                </div>
+            </div>
+            
             <div className="space-y-6">
-              <div className="mt-10">
-                <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
-                <p className="text-lg text-charcoal/80">
-                  To protect and achieve resilience for your critical information infrastructure.
-                </p>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
-                <p className="text-lg text-charcoal/80">
-                  To work with you to strengthen the resilience of your information assets. We will pinpoint your unique risks, prioritise your defences and help you achieve cybersecurity resilience of your critical services. These, we will deliver to your delight.
-                </p>
-              </div>
-              <div className="mt-10">
-                <h2 className="text-3xl font-bold mb-4">What drives us</h2>
-                <p className="text-lg text-charcoal/80">
-                  Our business is driven towards attaining a 360-degree cybersecurity resilience for your business. We only need to “<strong><b>Keep Thinking</b></strong>” to achieve it! This has been the drive behind our work at <strong><b>CYBERNOVR Limited</b></strong>. Each of our employees has passed through the special training module designed to engrain in them in the Philosophy of “<strong><b>It is Possible</b></strong>”. Come, and have a taste of the possibility by challenging us.
-                </p>
-              </div>
               <div className="mt-10">
                 <h2 className="text-3xl font-bold mb-4">Our Values</h2>
                 <div className="grid grid-cols-1 gap-6 mt-6">

@@ -1,18 +1,18 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | ZIASS",
-  description: "Cookie Policy for ZIASS website",
+  title: "Cookie Policy | CYBERNOVR",
+  description: "Cookie Policy for CYBERNOVR website",
 };
 
 export default function CookiePolicy() {
   return (
     <div className="container mx-auto py-12 px-4 md:px-6">
-      <h1 className="text-3xl font-bold mb-8">Cookie Policy</h1>
+      <h1 className="text-3xl font-bold mb-8 mt-14">Cookie Policy</h1>
       
       <div className="prose max-w-none">
         <p>
-          This Cookie Policy explains how ZIASS ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
+          This Cookie Policy explains how CYBERNOVR ("we", "us", and "our") uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.
         </p>
 
         <h2 className="text-2xl font-bold mt-6 mb-4">What Are Cookies?</h2>
@@ -20,7 +20,7 @@ export default function CookiePolicy() {
           Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
         </p>
         <p>
-          Cookies set by the website owner (in this case, ZIASS) are called "first-party cookies". Cookies set by parties other than the website owner are called "third-party cookies". Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
+          Cookies set by the website owner (in this case, CYBERNOVR) are called "first-party cookies". Cookies set by parties other than the website owner are called "third-party cookies". Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
         </p>
 
         <h2 className="text-2xl font-bold mt-6 mb-4">Why Do We Use Cookies?</h2>
@@ -69,7 +69,7 @@ export default function CookiePolicy() {
 
         <h2 className="text-2xl font-bold mt-6 mb-4">Do We Use Web Beacons?</h2>
         <p>
-          Like any other website, ZIASS uses 'cookies' and web beacons. These web beacons are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+          Like any other website, CYBERNOVR uses 'cookies' and web beacons. These web beacons are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
         </p>
         <p>
           Certain sections of our website and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit us, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).
@@ -85,7 +85,7 @@ export default function CookiePolicy() {
 
         <h2 className="text-2xl font-bold mt-6 mb-4">Where Can You Get Further Information?</h2>
         <p>
-          If you have any questions about our use of cookies or other technologies, please email us at privacy@ziass.com or use the contact details provided in our Privacy Policy.
+          If you have any questions about our use of cookies or other technologies, please email us at info@cybernovr.com or use the contact details provided in our Privacy Policy.
         </p>
         
         <p className="mt-8 text-sm text-gray-500">

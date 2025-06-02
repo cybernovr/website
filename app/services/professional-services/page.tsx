@@ -196,7 +196,7 @@ export default function ProfessionalServicesPage() {
               Contact us today to learn how our professional services can help
               protect your organization.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"

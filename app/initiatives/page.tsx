@@ -45,17 +45,17 @@ export default function InitiativesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Cybersecurity and Data Privacy",
+                title: "Protection against Election Interference",
                 date: "May 21, 2025",
+                location: "Cybernovr Training Center",
+                description: "Discover how to identify and counter digital election interference tactics.",
+              },
+              {
+                title: "Cybersecurity and Data Privacy",
+                date: "June 18, 2025",
                 location: "Virtual Event",
                 description:
                   "Learn about the latest trends in cybersecurity and data privacy protection strategies.",
-              },
-              {
-                title: "Protection against Election Interference",
-                date: "June 18, 2025",
-                location: "Cybernovr Training Center",
-                description: "Discover how to identify and counter digital election interference tactics.",
               },
               {
                 title: "Pandemic-induced Cyberthreats Awareness",

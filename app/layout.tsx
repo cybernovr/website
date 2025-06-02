@@ -5,6 +5,8 @@ import "./globals.css"
 import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import CookiesConsent from "@/components/cookies/page"
+
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,9 +21,26 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Cybernovr - Cybersecurity Solutions",
+  title: "Cybernovr- Cybersecurity Solutions",
   description: "Professional cybersecurity services and solutions for businesses of all sizes.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: "https://anpimagehosting.s3.eu-west-1.amazonaws.com/57580_Cybernovrlogo.png",
+  openGraph: {
+    title: "Cybernovr - Cybersecurity Solutions",
+    description: "Professional cybersecurity services and solutions for businesses of all sizes.",
+    url: "https://cybernovr.com",
+    siteName: "Cybernovr",
+    images: [
+      {
+        url: "https://anpimagehosting.s3.eu-west-1.amazonaws.com/80831_cyber-security.png",
+        width: 1200,
+        height: 630,
+        alt: "Cybernovr - Cybersecurity Solutions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  }
 }
 
 export default function RootLayout({
@@ -35,6 +54,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />
           <main>{children}</main>
+          <CookiesConsent />
           <Footer />
         </ThemeProvider>
       </body>

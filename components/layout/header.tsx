@@ -44,7 +44,7 @@ const mainNavItems = [
     ],
   },
   { title: "Company", href: "/about" },
-  { title: "Contact", href: "/contact" },
+  // { title: "Contact", href: "/contact" },
 ]
 
 export default function Header() {
@@ -126,9 +126,11 @@ export default function Header() {
           {/* Search and CTA */}
           <div className="hidden lg:flex items-center space-x-4">
             
+          <Link href="/contact" className="relative z-10">
             <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90">
               Contact Us
             </Button>
+          </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -196,9 +198,12 @@ export default function Header() {
               />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
             </div>
-            <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90 w-full">
-              Contact Us
-            </Button>
+
+            <Link href="/contact" className="relative z-10">
+              <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90 w-full">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

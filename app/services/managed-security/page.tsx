@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Zap, Clock, Shield, FileSearch, Server, RefreshCw } from "lucide-react"
+import Link from "next/link";
+
 
 export default function IncidentResponsePage() {
   return (
@@ -294,9 +296,11 @@ export default function IncidentResponsePage() {
             <p className="text-xl mb-8">
               Contact us today to learn how our incident response and forensic services can help your organization prepare for and respond to security incidents.
             </p>
-            <Button size="lg" className="bg-accent-cyan hover:bg-accent-cyan/90 text-white">
-              Get Started
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-accent-cyan hover:bg-accent-cyan/90 text-white">
+                Get Started
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

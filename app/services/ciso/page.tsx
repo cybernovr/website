@@ -240,7 +240,7 @@ export default function CISOPage() {
             <p className="text-xl mb-8">
               Contact us today to learn how our CISO and vCISO services can help your organization build a stronger security posture.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"

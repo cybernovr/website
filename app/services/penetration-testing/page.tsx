@@ -374,7 +374,7 @@ export default function PenetrationTestingPage() {
               Contact us today to learn how our penetration testing services can
               help identify and address vulnerabilities in your systems.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"

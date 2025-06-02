@@ -364,7 +364,7 @@ export default function DueDiligencePage() {
               Contact us today to learn how our due diligence services can help
               you make informed decisions and protect your investments.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"

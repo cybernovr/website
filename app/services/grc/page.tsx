@@ -331,7 +331,7 @@ export default function GRCPage() {
               Contact us today to learn how our GRC services can help your
               organization achieve its security and compliance goals.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"

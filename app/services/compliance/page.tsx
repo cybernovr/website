@@ -520,7 +520,7 @@ export default function CompliancePage() {
               your organization meet regulatory requirements and industry
               standards.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"

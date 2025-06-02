@@ -37,7 +37,7 @@ export default function ContactInfo() {
             <h3 className="text-lg font-bold">Phone</h3>
             <p className="text-charcoal/80">
               <a href="tel:+1234567890" className="hover:text-electric-blue transition-colors">
-                +14439853735, +234 806-120-0000, +234 814-378-8857
+                 +234 806-120-0000, +234 814-378-8857
               </a>
             </p>
           </div>

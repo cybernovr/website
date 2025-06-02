@@ -233,7 +233,7 @@ export default function DNSSecurityPage() {
             <p className="text-xl mb-8">
               Contact us today to learn how our DNS Security services can provide an essential layer of protection for your organization.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-red hover:bg-cybernovr-red/90 text-white"

@@ -13,7 +13,7 @@ const mainNavItems = [
     title: "Services",
     href: "",
     submenu: [
-      { title: "Cybersecurity Resilience Program", href: "/services/professional-services" },
+      { title: "Cybersecurity Resilience", href: "/services/professional-services" },
       { title: "Data Privacy Protection", href: "/services/data-privacy-protection" },
       { title: "Penetration Testing", href: "/services/penetration-testing" },
       { title: "Managed Security", href: "/services/incident-response" },
@@ -28,8 +28,8 @@ const mainNavItems = [
     title: "Solutions",
     href: "",
     submenu: [
-      { title: "NovrGRC", href: "/products/darktrace" },
-      { title: "NovrPRISM", href: "/products/proofpoint" },
+      { title: "NovrGRC", href: "/products/novrgrc" },
+      { title: "NovrPRISM", href: "/products/novrprism" },
   
     ],
   },

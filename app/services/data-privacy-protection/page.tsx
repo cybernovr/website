@@ -511,7 +511,7 @@ export default function DataPrivacyProtectionPage() {
             <p className="text-xl mb-8">
               Contact us today to learn how our data protection solutions can safeguard sensitive information and ensure compliance with privacy regulations.
             </p>
-            <Link href="/courses">
+            <Link href="/contact">
               <Button
                 size="lg"
                 className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"

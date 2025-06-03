@@ -20,7 +20,7 @@ export default function ContactInfo() {
             <p className="text-charcoal/80">
               454 Evanston Dr NW,
               
-              Calgary AB T3P 0H1, Alberta, Canada & 6A 
+              Calgary AB T3P 0H1, Alberta, Canada & 
             </p>
             <br />
             <p className="text-charcoal/80">

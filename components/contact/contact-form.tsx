@@ -1,9 +1,9 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import Swal from 'sweetalert2'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -15,30 +15,83 @@ export default function ContactForm() {
     message: "",
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Form submission logic would go here
-    console.log("Form submitted:", formData)
-    // Reset form or show success message
-    alert("Thank you for your message. We'll get back to you soon!")
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      service: "",
-      message: "",
-    })
+    setIsSubmitting(true)
+    
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/info@cybernovr.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          ...formData,
+          _subject: `New Contact Form Submission from ${formData.name}`,
+          _replyto: formData.email,
+          _autoresponse: `Hi ${formData.name},\n\nThank you for contacting us. We've received your message and will get back to you soon.\n\nBest regards,\nCybernovr Team`,
+          _template: "table",
+          _captcha: "false"
+        })
+      })
+
+      const data = await response.json()
+      
+      if (data.success === "true") {
+        setSubmitSuccess(true)
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          service: "",
+          message: "",
+        })
+      } else {
+        throw new Error('Form submission failed')
+      }
+    } catch (error) {
+      await Swal.fire({
+        title: 'Error!',
+        text: 'There was an error submitting the form. Please try again.',
+        icon: 'error',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#662f8e'
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100">
       <h2 className="text-2xl font-bold mb-6 text-deep-blue">Send Us a Message</h2>
+      
+      {submitSuccess ? (
+        <div className="text-center py-8 bg-primary/40 rounded-xl p-8 shadow-md border border-gray-100 mt-24">
+          <h3 className="text-xl font-bold text-black mb-2">Thank You!</h3>
+          <p className="text-black">Your message has been sent successfully.</p>
+          <p className="text-black"> We'll get back to you soon.</p>
+          <div className="mt-10">
+            <Button 
+              onClick={() => setSubmitSuccess(false)}
+              className="bg-cybernovr-purple/80 text-white hover:bg-cybernovr-purple/60"
+            >
+              Send another message
+            </Button>
+          </div>
+        </div>
+      ) : (
+          
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
@@ -146,12 +199,14 @@ export default function ContactForm() {
         </div>
 
         <Button 
-          type="submit" 
-          className="w-full border-black  hover:bg-deep-blue text-white py-3 font-bold transition-colors duration-200 visible"
-        >
-          Send Message
+            type="submit" 
+            className="w-full border-black hover:bg-deep-blue text-white py-3 font-bold transition-colors duration-200"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Send Message'}
         </Button>
-      </form>
-    </div>
+        </form>
+      )}
+  </div>
   )
 }

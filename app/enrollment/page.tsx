@@ -344,7 +344,7 @@ export default function EnrollmentPage() {
                       required
                     />
                     <Label htmlFor="parentConsent" className="text-sm">
-                      Consent of Parent: I consent to the student of my school to join the Cybersecurity Youth League of Cybernovr Limited in line with the terms and conditions
+                      Consent of Parent: I consent to my child/ward to join the Cybersecurity Youth League of Cybernovr Limited in line with the terms and conditions
                     </Label>
                   </div>
 

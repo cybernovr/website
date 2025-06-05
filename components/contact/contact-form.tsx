@@ -169,14 +169,15 @@ export default function ContactForm() {
             className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal appearance-none"
           >
             <option value="">Select a Service</option>
-            <option value="Professional Services">Professional Services</option>
+            <option value="Professional Services">Cybersecurity Resilience</option>
+            <option value="Data Privacy Protection">Data Privacy Protection</option>
             <option value="GRC">GRC</option>
             <option value="Risk Management">Risk Management</option>
-            <option value="Due Diligence">Due Diligence</option>
-            <option value="Compliance">Compliance</option>
-            <option value="Penetration Testing">Penetration Testing</option>
+            <option value="Due Diligence">Managed Security</option>
+            {/* <option value="Compliance">Compliance</option> */}
+            {/* <option value="Penetration Testing">Penetration Testing</option>
             <option value="Incident Response">Incident Response</option>
-            <option value="CISO/vCISO">CISO/vCISO</option>
+            <option value="CISO/vCISO">CISO/vCISO</option> */}
             <option value="DNS Security">DNS Security</option>
             <option value="Other">Other</option>
           </select>

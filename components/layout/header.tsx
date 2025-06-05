@@ -25,15 +25,6 @@ const mainNavItems = [
     ],
   },
   {
-    title: "Solutions",
-    href: "",
-    submenu: [
-      { title: "NovrGRC", href: "/products/novrgrc" },
-      { title: "NovrPRISM", href: "/products/novrprism" },
-  
-    ],
-  },
-  {
     title: "Initiatives",
     href: "/initiatives",
     submenu: [
@@ -43,7 +34,17 @@ const mainNavItems = [
       { title: "Education & Training", href: "/initiatives/education" },
     ],
   },
+  {
+    title: "Solutions",
+    href: "",
+    submenu: [
+      { title: "NovrGRC", href: "/products/novrgrc" },
+      { title: "NovrPRISM", href: "/products/novrprism" },
+  
+    ],
+  },
   { title: "Company", href: "/about" },
+  { title: "News", href: "/news"}
   // { title: "Contact", href: "/contact" },
 ]
 
@@ -199,7 +200,7 @@ export default function Header() {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
             </div>
 
-            <Link href="/contact" className="relative z-10">
+            <Link href="/contact" className="relative z-10" onClick={toggleMenu}>
               <Button className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90 w-full">
                 Contact Us
               </Button>

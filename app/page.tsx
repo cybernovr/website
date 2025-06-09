@@ -174,17 +174,17 @@ export default function Home() {
             <div className="space-y-6">
               <FadeIn direction="left">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">About Cybernovr</h2>
-                <div className="space-y-4">
-                  <p className="text-lg text-charcoal/80 truncate" id="about-text">
+                <div className="space-y-4 p-2">
+                  <p className="text-lg text-charcoal/80 truncate" id="about-text" >
                     At Cybernovr, we place a strong priority on customer service. We understand the 
                     critical importance of protecting your information assets today while securing 
-                    your business for tomorrow.
-                    <p className="text-lg text-charcoal/80">
+                    your business for tomorrow. 
+                  <p className="text-lg text-charcoal/80 mt-2">
                     We pride ourselves on providing unparalleled customer service that exceeds 
                     expectations. Our commitment is backed by strict adherence to our Service Level 
-                    Agreements, ensuring reliability you can count on.
+                    Agreements, ensuring reliability you can count on. 
                   </p>
-                  <p className="text-lg text-charcoal/80">
+                  <p className="text-lg text-charcoal/80 mt-2">
                     With over 50 years of combined experience in cybersecurity practice, we bring
                     extensive industry knowledge and expertise in Information Assurance and IT Security. 
                     This depth of experience, coupled with our strong foundation in academic and 

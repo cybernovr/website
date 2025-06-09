@@ -48,5 +48,5 @@ export async function verifyPaystackTransaction(reference: string) {
 export function generateReference() {
   const timestamp = new Date().getTime();
   const randomStr = Math.random().toString(36).substring(2, 15);
-  return `ziass_${timestamp}_${randomStr}`;
+  return `cybernovr_${timestamp}_${randomStr}`;
 } 

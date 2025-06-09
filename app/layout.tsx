@@ -21,10 +21,20 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Cybernovr- Cybersecurity Solutions",
-  description: "Professional cybersecurity services and solutions for businesses of all sizes.",
-  generator: 'v0.dev',
-  icons: "https://anpimagehosting.s3.eu-west-1.amazonaws.com/57580_Cybernovrlogo.png",
+  title: {
+    default: "Cybernovr - Cybersecurity Solutions",
+    template: "%s | Cybernovr" // This adds your brand name to all page titles
+  },
+  description: "Professional cybersecurity services and solutions for businesses of all sizes. Protect your data with our expert security assessments, penetration testing, and compliance solutions.",
+  keywords: ["cybersecurity", "data protection", "penetration testing", "security audit", "cybernovr", "network security"],
+  generator: 'Next.js',
+  applicationName: 'Cybernovr',
+  referrer: 'origin-when-cross-origin',
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon-16x16.png',
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: "Cybernovr - Cybersecurity Solutions",
     description: "Professional cybersecurity services and solutions for businesses of all sizes.",
@@ -40,7 +50,33 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  }
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Cybernovr - Cybersecurity Solutions",
+    description: "Professional cybersecurity services and solutions for businesses of all sizes.",
+    images: ['https://anpimagehosting.s3.eu-west-1.amazonaws.com/80831_cyber-security.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'l1TpIcIiAg0xy-VdDmHQAokjHug2EBvojBoFQ_w9k6I', // Add when you set up Google Search Console
+  },
+  alternates: {
+    canonical: 'https://cybernovr.com',
+  },
+  category: 'technology',
 }
 
 export default function RootLayout({

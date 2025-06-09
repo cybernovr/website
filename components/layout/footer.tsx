@@ -119,6 +119,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/news" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+                  News
+                </Link>
+              </li>
+              <li>
                 <Link href="/initiatives" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                   Events
                 </Link>

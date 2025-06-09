@@ -22,7 +22,7 @@ export default function NewsPage() {
       image: Thisdaylive,
       href: "https://www.thisdaylive.com/2025/06/05/ncc-moves-to-develop-cybersecurity-regulatory-framework-for-telecoms-sector/ ",
       category: "This Day Live",
-    }
+    },
   ]
 
   return (

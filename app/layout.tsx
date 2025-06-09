@@ -6,6 +6,7 @@ import Header from "@/components/layout/header"
 import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import CookiesConsent from "@/components/cookies/page"
+import { StructuredData } from "@/components/seo/structured-data"
 
 
 const montserrat = Montserrat({
@@ -23,18 +24,14 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: {
     default: "Cybernovr - Cybersecurity Solutions",
-    template: "%s | Cybernovr" // This adds your brand name to all page titles
+    template: "%s | Cybernovr"
   },
   description: "Professional cybersecurity services and solutions for businesses of all sizes. Protect your data with our expert security assessments, penetration testing, and compliance solutions.",
-  keywords: ["cybersecurity", "data protection", "penetration testing", "security audit", "cybernovr", "network security"],
+  keywords: ["cybersecurity", "cybersecurity course", "youth league", "kazeem durodoye", "kazeem kolawole durodoye", "cybernova", "cybernovr", "cybernover", "hacker", "hacked", "data protection", "penetration testing", "security audit", "cybernovr", "network security"],
   generator: 'Next.js',
   applicationName: 'Cybernovr',
   referrer: 'origin-when-cross-origin',
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
+  icons: "https://anpimagehosting.s3.eu-west-1.amazonaws.com/57580_Cybernovrlogo.png",
   openGraph: {
     title: "Cybernovr - Cybersecurity Solutions",
     description: "Professional cybersecurity services and solutions for businesses of all sizes.",
@@ -42,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Cybernovr",
     images: [
       {
-        url: "https://anpimagehosting.s3.eu-west-1.amazonaws.com/80831_cyber-security.png",
+        url: "https://anpimagehosting.s3.eu-west-1.amazonaws.com/57580_Cybernovrlogo.png",
         width: 1200,
         height: 630,
         alt: "Cybernovr - Cybersecurity Solutions",
@@ -55,7 +52,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Cybernovr - Cybersecurity Solutions",
     description: "Professional cybersecurity services and solutions for businesses of all sizes.",
-    images: ['https://anpimagehosting.s3.eu-west-1.amazonaws.com/80831_cyber-security.png'],
+    images: ['https://anpimagehosting.s3.eu-west-1.amazonaws.com/57580_Cybernovrlogo.png'],
   },
   robots: {
     index: true,
@@ -71,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'l1TpIcIiAg0xy-VdDmHQAokjHug2EBvojBoFQ_w9k6I', // Add when you set up Google Search Console
+    google: 'l1TpIcIiAg0xy-VdDmHQAokjHug2EBvojBoFQ_w9k6I',
   },
   alternates: {
     canonical: 'https://cybernovr.com',
@@ -86,6 +83,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <StructuredData />
+      </head>
       <body className={`${montserrat.variable} ${openSans.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <Header />

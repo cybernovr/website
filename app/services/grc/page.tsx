@@ -12,7 +12,7 @@ export default function GRCPage() {
         <div className="container-custom">
           <div className="max-w-3xl text-black mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Governance, Risk & Compliance
+              Governance, Risk & Compliance (GRC)
             </h1>
             <p className="text-xl mb-8">
               Comprehensive GRC solutions to help your organization meet

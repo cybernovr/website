@@ -53,7 +53,12 @@ export default function Footer() {
                   href="/services/professional-services"
                   className="text-charcoal/70 hover:text-cybernovr-purple transition-colors"
                 >
-                  Cybersecurity Resilience Strategy
+                  Cybersecurity Resilience
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/grc" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+                  Governance and Compliance (GRC)
                 </Link>
               </li>
               <li>
@@ -65,16 +70,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services/grc" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  GRC
-                </Link>
-              </li>
-              <li>
                 <Link
                   href="/services/penetration-testing"
                   className="text-charcoal/70 hover:text-cybernovr-purple transition-colors"
                 >
-                  Penetration Testing
+                  CBN Cybersecurity Framework
                 </Link>
               </li>
               <li>

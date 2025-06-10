@@ -171,7 +171,7 @@ export default function ContactForm() {
             <option value="">Select a Service</option>
             <option value="Professional Services">Cybersecurity Resilience</option>
             <option value="Data Privacy Protection">Data Privacy Protection</option>
-            <option value="GRC">GRC</option>
+            <option value="GRC">Governance and Compliance (GRC)</option>
             <option value="Risk Management">Risk Management</option>
             <option value="Due Diligence">Managed Security</option>
             {/* <option value="Compliance">Compliance</option> */}

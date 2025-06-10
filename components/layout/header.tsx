@@ -13,13 +13,13 @@ const mainNavItems = [
     title: "Services",
     href: "",
     submenu: [
+      { title: "CBN Cybersecurity Framework", href: "/services/penetration-testing" },
       { title: "Cybersecurity Resilience", href: "/services/professional-services" },
+      { title: "Governance & Compliance", href: "/services/grc" },
       { title: "Data Privacy Protection", href: "/services/data-privacy-protection" },
-      { title: "Penetration Testing", href: "/services/penetration-testing" },
       { title: "Managed Security", href: "/services/incident-response" },
       { title: "Risk Management", href: "/services/risk-management" },
       { title: "DNS Security", href: "/services/dns-security" },
-      { title: "GRC", href: "/services/grc" },
       // { title: "Due Diligence", href: "/services/due-diligence" },
       // { title: "CISO/vCISO", href: "/services/ciso" },
     ],
@@ -44,16 +44,16 @@ const mainNavItems = [
     ],
   },
   { title: "Company", href: "/about" },
-//  {
-  //   title: "Resources",
-  //   href: "",
-  //   submenu: [
-  //     { title: "Blogs", href: "/products/novrgrc" },
-  //     { title: "White papers", href: "/products/novrprism" },
+ {
+    title: "Resources",
+    href: "",
+    submenu: [
+      { title: "News", href: "/news"},
+      { title: "Blogs", href: "/news" },
+      { title: "White papers", href: "/news" },
   
-  //   ],
-  // },
-  { title: "News", href: "/news"}
+    ],
+  },
   // { title: "Contact", href: "/contact" },
 ]
 

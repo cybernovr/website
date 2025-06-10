@@ -7,6 +7,7 @@ import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import CookiesConsent from "@/components/cookies/page"
 import { StructuredData } from "@/components/seo/structured-data"
+import { Analytics } from "@vercel/analytics/next"
 
 
 const montserrat = Montserrat({
@@ -68,10 +69,14 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'l1TpIcIiAg0xy-VdDmHQAokjHug2EBvojBoFQ_w9k6I',
+    google: '2XU3pjEh6eUcedQjN1TWqK1_EqvcNMPAFLGqGPaBlfA',
   },
   alternates: {
     canonical: 'https://cybernovr.com',
+    languages: {
+      'en-US': 'https://cybernovr.com',
+      'en-NG': 'https://cybernovr.com.ng',
+    },
   },
   category: 'technology',
 }
@@ -91,6 +96,7 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <CookiesConsent />
+          <Analytics />
           <Footer />
         </ThemeProvider>
       </body>

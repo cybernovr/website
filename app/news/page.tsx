@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-// import ProductCard from "@/components/products/product-card"
 import NewsCard from "@/components/news/news-card"
 import Newsroom from "@/components/images/newsroom.jpg"
 import Thisdaylive from "@/components/images/thisdaylive.jpg"

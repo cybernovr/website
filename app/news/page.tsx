@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import NewsCard from "@/components/news/news-card"
 import Newsroom from "@/components/images/newsroom.jpg"
 import Thisdaylive from "@/components/images/thisdaylive.jpg"
+import Theeconomictimes from "@/components/images/Aminu-Maida-1140x570-1068x534.jpg"
 
 export default function NewsPage() {
   const news = [
@@ -22,6 +23,14 @@ export default function NewsPage() {
       image: Thisdaylive,
       href: "https://www.thisdaylive.com/2025/06/05/ncc-moves-to-develop-cybersecurity-regulatory-framework-for-telecoms-sector/ ",
       category: "This Day Live",
+    },
+    {
+      name: "NCC announced the development of a comprehensive cybersecurity framework",
+      description:
+        "Adding depth to the conversation, Dr. Kazeem Durodoye, CEO of Cybernovr, stressed the need for the framework to account for evolving mobile technologies such as Open RAN and...",
+      image: Theeconomictimes,
+      href: "https://theeconomictimes.com.ng/2025/06/05/ncc-unveils-comprehensive-cybersecurity-framework-to-safeguard-nigerias-telecom-sector/",
+      category: "The Economic Times",
     },
   ]
 

@@ -44,6 +44,15 @@ const mainNavItems = [
     ],
   },
   { title: "Company", href: "/about" },
+//  {
+  //   title: "Resources",
+  //   href: "",
+  //   submenu: [
+  //     { title: "Blogs", href: "/products/novrgrc" },
+  //     { title: "White papers", href: "/products/novrprism" },
+  
+  //   ],
+  // },
   { title: "News", href: "/news"}
   // { title: "Contact", href: "/contact" },
 ]

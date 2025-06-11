@@ -13,7 +13,7 @@ export default function ProfessionalServicesPage() {
         <div className="container-custom">
           <div className="max-w-3xl text-black mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Cybersecurity Strategy and Transformation
+              Cybersecurity and Digital Transformation
             </h1>
             <p className="text-xl mb-8">
               Proactively defend against evolving cyber threats while enabling secure digital growth.

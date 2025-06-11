@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Shield, Users, Award, Target } from "lucide-react";
+import { Shield, Users, Award, Target, Handshake } from "lucide-react";
 import TeamMember from "@/components/about/team-member";
 import FadeIn from "@/components/animations/fade-in";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -170,19 +170,13 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 gap-6 mt-6">
                   {[
                     {
-                      icon: <Target className="h-8 w-8 text-electric-blue" />, 
-                      title: "Creativity",
-                      description:
-                        "We create innovations through our resolute belief that \"Nothing's Impossible\" To achieve the impossible in solving our customer's cybersecurity challenges, we simply keep thinking and utilize the best industry standards and tools.",
-                    },
-                    {
                       icon: <Users className="h-8 w-8 text-electric-blue" />,
                       title: "Customer Delight",
                       description:
                         "We are committed to customer satisfaction and won’t stop until our clients are delighted. We take the time to understand their unique cybersecurity needs, deliver outstanding services, and prioritise the protection of their information infrastructure.",
                     },
                     {
-                      icon: <Users className="h-8 w-8 text-electric-blue" />,
+                      icon: <Handshake className="h-8 w-8 text-electric-blue" />,
                       title: "Integrity",
                       description:
                         "We are committed to unwavering honesty, transparency, and a strong moral compass to maintain trust both internally and with our clients. We acknowledge our mistakes, learn from them, and continuously strive to do what is right for our clients and society.",
@@ -216,6 +210,12 @@ export default function AboutPage() {
                       description:
                         "We are committed to achieving cybersecurity resilience on ourselves the same way we are to our clients. This commitment drives us to build robust, reliable, and adaptable systems and processes.",
                     },
+                    // {
+                    //   icon: <Target className="h-8 w-8 text-electric-blue" />, 
+                    //   title: "Creativity",
+                    //   description:
+                    //     "We create innovations through our resolute belief that \"Nothing's Impossible\" To achieve the impossible in solving our customer's cybersecurity challenges, we simply keep thinking and utilize the best industry standards and tools.",
+                    // },
                   ].map((value, index) => (
                     <div key={index} className="flex">
                       <div className="flex-shrink-0 mt-1">{value.icon}</div>

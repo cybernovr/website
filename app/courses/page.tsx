@@ -18,18 +18,18 @@ export default function CoursesPage() {
       title: "Cybersecurity Fundamentals",
       description:
         "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
-      price: 25950,
+      price: 10,
       duration: "4 weeks",
       level: "Beginner",
       icon: <Shield className="h-12 w-12 text-cybernovr-purple" />,
       image: course3,
-    },
+    }, // first here
     {
       id: "cs201",
       title: "Network Security Essentials",
       description:
         "Dive into network security principles, protocols, and best practices for protecting organizational infrastructure.",
-      price: 25950,
+      price: 15,
       duration: "6 weeks",
       level: "Intermediate",
       icon: <BookOpen className="h-12 w-12 text-cybernovr-purple" />,
@@ -40,7 +40,7 @@ export default function CoursesPage() {
       title: "Advanced Penetration Testing",
       description:
         "Master the techniques used by ethical hackers to identify and exploit vulnerabilities in systems and applications.",
-      price: 25950,
+      price: 20,
       duration: "8 weeks",
       level: "Advanced",
       icon: <Award className="h-12 w-12 text-cybernovr-purple" />,

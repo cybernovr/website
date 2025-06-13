@@ -26,7 +26,7 @@ const mainNavItems = [
   },
   {
     title: "Initiatives",
-    href: "/initiatives",
+    href: "",
     submenu: [
       { title: "Cybersecurity Youth League", href: "/initiatives/youth-league" },
       { title: "Awareness & Campaigns", href: "/initiatives/awareness" },
@@ -43,14 +43,23 @@ const mainNavItems = [
   
     ],
   },
-  { title: "Company", href: "/about" },
+  {
+    title: "Company",
+    href: "/about",
+    submenu: [
+      { title: "Our People", href: "/about#team" },
+      { title: "Career", href: "/career" },
+      { title: "Events", href: "/events"},
+      { title: "Our Journey", href: "/about#journey" },
+    ],
+  },
  {
     title: "Resources",
     href: "",
     submenu: [
       { title: "News", href: "/news"},
-      { title: "Blogs", href: "/news" },
-      { title: "White papers", href: "/news" },
+      { title: "Blogs", href: "/blogs" },
+      { title: "White papers", href: "/white-papers" },
   
     ],
   },

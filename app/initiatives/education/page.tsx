@@ -33,7 +33,7 @@ export default function EducationPage() {
                 <p className="text-lg text-charcoal/80 mb-6">
                   We use this platform for generating and developing a pipeline of trained and qualified cybersecurity 
                   professionals across Africa. Interested in partnering with us, contact Dr. Kazeem Durodoye at 
-                  <a href="mailto:kazeem@cybernovr.com" className="text-electric-blue hover:underline"> kazeem@cybernovr.com</a>
+                  <a href="mailto:kazeem@cybernovr.com" className="text-primary hover:underline"> kazeem@cybernovr.com</a>
                 </p>
               </div>
 

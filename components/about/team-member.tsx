@@ -33,19 +33,19 @@ export default function TeamMember({ name, title, bio, image, fullBio }: TeamMem
             <DialogTrigger asChild>
               <Button variant="outline" className="w-full mt-2">View Profile</Button>
             </DialogTrigger>
-            <DialogContent className="max-w-3xl">
+            <DialogContent className="max-w-3xl p-10">
               <DialogHeader>
-                <DialogTitle className="text-2xl">{name}</DialogTitle>
+                <DialogTitle className="text-2xl">Profile: {name}</DialogTitle>
               </DialogHeader>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
-                <div className="relative h-[250px] w-full rounded-lg overflow-hidden">
-                  <Image src={image} alt={name} fill className="object-cover" />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
+                <div className="relative md:mt-10 lg:mt-12 h-[150px]  w-[150px] rounded-lg overflow-hidden">
+                  <Image src={image} alt={name} fill className="" />
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-xl font-bold">{name}</h3>
-                  <p className="text-electric-blue font-medium mb-4">{title}</p>
+                  <p className="text-electric-blue font-medium mb-2">{title}</p>
                   <div className="prose max-w-none">
-                    <p className="whitespace-pre-line">{fullBio}</p>
+                    <p className="whitespace-pre-line leading-relaxed">{fullBio}</p>
                   </div>
                 </div>
               </div>

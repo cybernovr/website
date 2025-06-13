@@ -26,17 +26,27 @@ export default function AboutPage() {
       title: "CEO",
       bio: "Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. He holds a Ph.D in Information Systems and Business from the University of Ibadan.",
       image: Kazem,
-      fullBio:
-        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
+      fullBio: `
+            Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.
+    
+            Kazeem is presently the Chief Executive Officer of cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
+    
+            He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST).
+    
+            He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).
+            `
     },
     {
       name: "Dr. Tunde Ali",
       title: "Non-Executive Director",
       bio: "A first-class medical professional with over 17 years of medical practice across multiple countries.",
       image: Tunde,
-      fullBio:
-        "Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada. He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing.",
-    },
+      fullBio: `
+            Dr. Tunde Alli is a first-class medical professional with over 17 years of medical practice in Nigeria, South Africa, Australia, and Canada.
+    
+            He is Consultant Anesthesia, Consultant Family Practice. His specialties include pain management, family practice, medical IT services, and internet marketing.
+            `
+    }
     // {
     //   name: "Eng. Gbolahan Oshonubi",
     //   title: "Non-Executive Director",
@@ -57,33 +67,58 @@ export default function AboutPage() {
       title: "CEO",
       bio: "Leading cybernovr with over 30 years of ICT experience across various sectors.",
       image: Kazem,
-      fullBio:
-        "Kazeem Durodoye, has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently the Chief Executive Officer of cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited. He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST). He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).",
+      fullBio: `
+            Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.
+    
+            Kazeem is presently the Chief Executive Officer of Cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
+    
+            He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST).
+    
+            He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).
+            `
     },
     {
       name: "Mr. Ibrahim Oladeji",
-      title: "CFO",
+      title: "CIO",
       bio: "An accomplished technology leader with almost 2 decades of experience in digital transformation.",
       image: Ibrahim,
-      fullBio:
-        "Oladeji Oluwaseyi Ibrahim is an accomplished technology leader with almost 2 decades of experience architecting and implementing enterprise-level digital transformation, ERP systems, and operational efficiency frameworks across public and private sectors in Nigeria. He brings hands-on experience in mission-critical digital infrastructure projects with a proven record of delivering results in complex environments. Core Competencies: Strategic IT Planning & Execution, Business Process Automation, ERP Design & Implementation, Lean & Data-Driven Digital Transformation, Multi-Stakeholder Systems Integration, Dashboard & Analytics Development. Certifications & Qualifications: 2 Bachelor's Degrees in Computer Science & Psychology, MBA, Master's in Information Science, PMP, CISA, COBIT5. Expert in aligning IT with strategic business goals for tangible, measurable impact.",
+      fullBio: `
+            Oladeji Oluwaseyi Ibrahim is an accomplished technology leader with almost 2 decades of experience architecting and implementing enterprise-level digital transformation, ERP systems, and operational efficiency frameworks across public and private sectors in Nigeria.
+    
+            He brings hands-on experience in mission-critical digital infrastructure projects with a proven record of delivering results in complex environments.
+    
+            Core Competencies: Strategic IT Planning & Execution, Business Process Automation, ERP Design & Implementation, Lean & Data-Driven Digital Transformation, Multi-Stakeholder Systems Integration, Dashboard & Analytics Development.
+    
+            Certifications & Qualifications: 2 Bachelor's Degrees in Computer Science & Psychology, MBA, Master's in Information Science, PMP, CISA, COBIT5. Expert in aligning IT with strategic business goals for tangible, measurable impact.
+            `
     },
     {
       name: "Akinwale Mayomi Aisida",
       title: "Non-Executive Director",
-      bio: "Akinwale Mayomi Aisida,  is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity, ",
+      bio: "Akinwale Mayomi Aisida, is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity,",
       image: Akin,
-      fullBio:
-        "Akinwale Mayomi Aisida,  is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity, University of New Brunswick, Canada. He  specializes in developing intelligent and adaptive solutions to emerging threats in networked systems. With a strong academic and practical foundation in machine learning, artificial intelligence (AI), and deep learning, Akinwale brings extensive research and professional background to CYBERNOVR focusing on applying data-driven techniques to intrusion detection, zero-day attack identification, and threat intelligence modeling.As Head of Threat Intelligence team, he possess robust hands-on expertise in building and deploying models using frameworks such as PyTorch, Keras, and TensorFlow, alongside proficiency in Python, NumPy, Pandas, scikit-learn, and Matplotlib. He is highly skilled in high-performance modeling, feature engineering, and real-time anomaly detection using both traditional ML classifiers (e.g., Random Forest, SVM, XGBoost) and advanced deep learning architectures (e.g., CNNs, RNNs, LSTMs, Autoencoders).",
+      fullBio: `
+            Akinwale Mayomi Aisida is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity, University of New Brunswick, Canada. He specializes in developing intelligent and adaptive solutions to emerging threats in networked systems.
+            With a strong academic and practical foundation in machine learning, artificial intelligence (AI), and deep learning, Akinwale brings extensive research and professional background to CYBERNOVR focusing on applying data-driven techniques to intrusion detection, zero-day attack identification, and threat intelligence modeling.
+            As Head of Threat Intelligence team, he possess robust hands-on expertise in building and deploying models using frameworks such as PyTorch, Keras, and TensorFlow, alongside proficiency in Python, NumPy, Pandas, scikit-learn, and Matplotlib.
+            He is highly skilled in high-performance modeling, feature engineering, and real-time anomaly detection using both traditional ML classifiers (e.g., Random Forest, SVM, XGBoost) and advanced deep learning architectures (e.g., CNNs, RNNs, LSTMs, Autoencoders).
+            `
     },
     {
       name: "Olisa Okafor",
       title: "Cybersecurity Analyst",
       bio: "Specializing in threat detection and security analysis to protect client assets.",
       image: Olisa,
-      fullBio: 
-        "Olisa Okafor is a cybersecurity analyst with extensive experience in threat detection and security analysis. He has a strong background in network security, incident response, and threat intelligence. Olisa is skilled in security information and event management (SIEM) systems, network security monitoring, and threat hunting. He is also knowledgeable in security frameworks and regulations such as NIST, ISO 27001, and HIPAA. Olisa is a certified CompTIA Security+ professional and is currently pursuing a degree in Computer Science.",
-    },
+      fullBio: `
+            Olisa Okafor is a cybersecurity analyst with extensive experience in threat detection and security analysis.
+    
+            He has a strong background in network security, incident response, and threat intelligence. Olisa is skilled in security information and event management (SIEM) systems, network security monitoring, and threat hunting.
+    
+            He is also knowledgeable in security frameworks and regulations such as NIST, ISO 27001, and HIPAA.
+    
+            Olisa is a certified CompTIA Security+ professional and is currently pursuing a degree in Computer Science.
+            `
+    }
   ];
 
   return (
@@ -233,7 +268,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Team */}
-      <section className="py-20 bg-light-gray">
+      <section className="py-20 bg-light-gray" id="team">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Team</h2>
@@ -243,19 +278,19 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <Tabs defaultValue="board" className="w-full">
+          <Tabs defaultValue="management" className="w-full">
             <div className="flex justify-center mb-8">
               <TabsList className="bg-white/50 backdrop-blur-sm">
-                <TabsTrigger value="board" className="text-lg px-6 py-3">
+                {/* <TabsTrigger value="board" className="text-lg px-6 py-3">
                   Board
-                </TabsTrigger>
+                </TabsTrigger> */}
                 <TabsTrigger value="management" className="text-lg px-6 py-3">
                   Management
                 </TabsTrigger>
               </TabsList>
             </div>
 
-            <TabsContent value="board" className="mt-0">
+            {/* <TabsContent value="board" className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {boardMembers.map((member, index) => (
                   <FadeIn key={index} direction="up" delay={index * 0.1}>
@@ -269,7 +304,7 @@ export default function AboutPage() {
                   </FadeIn>
                 ))}
               </div>
-            </TabsContent>
+            </TabsContent> */}
 
             <TabsContent value="management" className="mt-0">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -289,7 +324,7 @@ export default function AboutPage() {
           </Tabs>
 
           {/* Featured Profile */}
-          <div className="mt-16 bg-white rounded-lg shadow-lg p-8 border border-gray-100">
+          {/* <div className="mt-16 bg-white rounded-lg shadow-lg p-8 border border-gray-100">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold">Leadership Profile</h3>
             </div>
@@ -337,12 +372,12 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Company History */}
-      <section className="py-20">
+      <section className="py-20" id="journey">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Journey</h2>

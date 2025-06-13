@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 import NewsCard from "@/components/news/news-card"
 import Newsroom from "@/components/images/newsroom.jpg"
 import Thisdaylive from "@/components/images/thisdaylive.jpg"
@@ -63,7 +64,26 @@ export default function NewsPage() {
             ))}
           </div>
         </div>
-      </section> 
+      </section>
+      
+      <section className="py-16 bg-deep-blue text-black">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Enjoying Our Resources?</h2>
+            <p className="text-xl mb-8">
+                Reach out to discover more cybersecurity insights, tools, and guides to help you stay protected.
+            </p>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
+              >
+                Contact Us
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   )
 }

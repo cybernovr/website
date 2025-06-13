@@ -77,7 +77,7 @@ export default function BlogOnePage({ post }: BlogPostProps) {
             </div>
         </section>
 
-        <section className="py-16">
+        <section className="py-14">
             <div className="container-custom">
                 <div className="text-lg md:text-xl lg:text-xl text-charcoal/90 leading-relaxed">
                     <p className="mb-4">

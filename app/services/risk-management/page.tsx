@@ -47,7 +47,7 @@ export default function RiskManagementPage() {
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">1</span>
                       </div>
                     </div>
@@ -78,7 +78,7 @@ export default function RiskManagementPage() {
 
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">2</span>
                       </div>
                     </div>
@@ -103,7 +103,7 @@ export default function RiskManagementPage() {
 
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">3</span>
                       </div>
                     </div>
@@ -132,7 +132,7 @@ export default function RiskManagementPage() {
 
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">4</span>
                       </div>
                     </div>
@@ -157,7 +157,7 @@ export default function RiskManagementPage() {
 
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">5</span>
                       </div>
                     </div>
@@ -204,7 +204,7 @@ export default function RiskManagementPage() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                   <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Shield className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">
@@ -212,13 +212,13 @@ export default function RiskManagementPage() {
                     </h4>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <CheckCircle className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Technical Measures</h4>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <RefreshCw className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Legal Measures</h4>
@@ -239,7 +239,7 @@ export default function RiskManagementPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -251,7 +251,7 @@ export default function RiskManagementPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -263,7 +263,7 @@ export default function RiskManagementPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -275,7 +275,7 @@ export default function RiskManagementPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -287,7 +287,7 @@ export default function RiskManagementPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

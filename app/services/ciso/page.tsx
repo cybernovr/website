@@ -58,7 +58,7 @@ export default function CISOPage() {
                   ].map((service, index) => (
                     <div key={index} className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -79,28 +79,28 @@ export default function CISOPage() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Shield className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Strategic Security Leadership</h4>
                     <p className="text-charcoal/80">Expert guidance to develop and implement effective security strategies aligned with business goals</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <FileCheck className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Regulatory Compliance</h4>
                     <p className="text-charcoal/80">Ensure your organization meets industry regulations and standards with expert guidance</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <AlertTriangle className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Risk Management</h4>
                     <p className="text-charcoal/80">Comprehensive risk assessment and management to identify and mitigate security threats</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Clock className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Cost-Effective Solution</h4>
@@ -118,7 +118,7 @@ export default function CISOPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -128,7 +128,7 @@ export default function CISOPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -138,7 +138,7 @@ export default function CISOPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -148,7 +148,7 @@ export default function CISOPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -158,7 +158,7 @@ export default function CISOPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

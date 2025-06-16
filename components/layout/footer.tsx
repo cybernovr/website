@@ -33,7 +33,7 @@ export default function Footer() {
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link target="_blank" href="https://linkedin.com" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
+              <Link target="_blank" href="https://www.linkedin.com/in/cybernovr-limited-21831a36b/" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>

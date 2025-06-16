@@ -40,7 +40,7 @@ export default function InitiativeCard({
           ].map((feature, index) => (
             <li key={index} className="flex items-start">
               <div className="flex-shrink-0 mt-1">
-                <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                   <span className="text-white text-xs">✓</span>
                 </div>
               </div>
@@ -50,7 +50,7 @@ export default function InitiativeCard({
         </ul>
         <div className="pt-4">
           <Link href={href}>
-            <Button className="bg-electric-blue hover:bg-deep-blue text-white">
+            <Button className="bg-accent hover:bg-deep-blue text-white">
               Learn More
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>

@@ -10,7 +10,8 @@ import Tunde from "@/components/images/tundeali.jpg"
 import Olisa from "@/components/images/olisaemeka.jpg"
 import Ibrahim from "@/components/images/ibrahimnew.jpg"
 import About1 from "@/components/images/abouttech1.jpeg";
-import Aboutimg from "@/components/images/FuturisticCode.jpeg";
+// import Aboutimg from "@/components/images/FuturisticCode.jpeg";
+import Aboutimg from "@/components/images/carouselworthy2.jpeg"
 import Akin from "@/components/images/drakin.jpg"
 
 export default function AboutPage() {
@@ -69,13 +70,12 @@ export default function AboutPage() {
       image: Kazem,
       fullBio: `
             Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.
-    
+            
             Kazeem is presently the Chief Executive Officer of Cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
-    
+            
             He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST).
-    
-            He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).
-            `
+            
+            He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).      `
     },
     {
       name: "Mr. Ibrahim Oladeji",
@@ -170,7 +170,7 @@ export default function AboutPage() {
             <div className="mt-10 bg-white rounded-lg shadow-lg p-8 border border-gray-100">
               <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
               <p className="text-lg text-charcoal/80">
-                To protect and achieve resilience for your critical information infrastructure.
+                To achieve resilience of your Critical Information Infrastructure.
               </p>
             </div>
             <div className="mt-10 bg-white rounded-lg shadow-lg p-8 border border-gray-100">

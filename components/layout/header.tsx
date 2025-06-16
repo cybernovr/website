@@ -47,10 +47,12 @@ const mainNavItems = [
     title: "Company",
     href: "/about",
     submenu: [
+      { title: "About Us", href: "/about" },
       { title: "Our People", href: "/about#team" },
+      { title: "Our Journey", href: "/about#journey" },
       { title: "Career", href: "/career" },
       { title: "Events", href: "/events"},
-      { title: "Our Journey", href: "/about#journey" },
+      
     ],
   },
  {

@@ -21,8 +21,8 @@ import StaggerChildren from "@/components/animations/stagger-children";
 import AnimatedText from "@/components/animations/animated-text";
 import AnimatedBackground from "@/components/animations/animated-background";
 import Aboutimg from "@/components/images/FuturisticCode.jpeg";
-import Initiative1 from "@/components/images/Focusedcourse.jpeg";
-import Initiative2 from "@/components/images/FocusedProgrammer.jpeg";
+import Initiative1 from "@/components/images/education.jpeg";
+import Initiative2 from "@/components/images/awareness.jpeg";
 import Initiative3 from "@/components/images/youth-league.jpeg";
 
 export default function Home() {
@@ -73,11 +73,14 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <FadeIn direction="up" duration={0.7}>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <AnimatedText
                     text="Secure Your Digital Future with Cybernovr"
                     type="words"
                   />
+                </h1> */}
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  Secure Your Digital Future with Cybernovr
                 </h1>
               </FadeIn>
               <FadeIn direction="up" delay={0.2} duration={0.7}>
@@ -296,7 +299,7 @@ export default function Home() {
             ].map((initiative, index) => (
               <FadeIn key={index} direction="up" delay={index * 0.2}>
                 <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow border border-cybernovr-blue/10 hover:-translate-y-1 duration-300">
-                  <div className="relative h-48">
+                  <div className="relative h-64">
                     <Image
                       src={initiative.image || "/placeholder.svg"}
                       alt={initiative.title}

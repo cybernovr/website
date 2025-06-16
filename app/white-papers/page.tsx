@@ -52,6 +52,10 @@ export default function WhitepaperPage() {
                     className="w-full h-[600px]"
                     frameBorder="0"
                     title="PDF Preview"
+                    allowFullScreen = {true}
+                    scrolling="true"
+                    
+                    // href=""
                     ></iframe>
                 </div>
                 

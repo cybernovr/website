@@ -58,7 +58,7 @@ export default function AwarenessPage() {
                   ].map((area, index) => (
                     <div key={index} className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

@@ -47,7 +47,7 @@ export default function IncidentResponsePage() {
                 <div className="space-y-6 mt-6">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">1</span>
                       </div>
                     </div>
@@ -60,7 +60,7 @@ export default function IncidentResponsePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">2</span>
                       </div>
                     </div>
@@ -73,7 +73,7 @@ export default function IncidentResponsePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">3</span>
                       </div>
                     </div>
@@ -86,7 +86,7 @@ export default function IncidentResponsePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">4</span>
                       </div>
                     </div>
@@ -99,7 +99,7 @@ export default function IncidentResponsePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">5</span>
                       </div>
                     </div>
@@ -112,7 +112,7 @@ export default function IncidentResponsePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">6</span>
                       </div>
                     </div>
@@ -135,28 +135,28 @@ export default function IncidentResponsePage() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <FileSearch className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Evidence Collection & Preservation</h4>
                     <p className="text-charcoal/80">Proper collection and preservation of digital evidence for investigation and potential legal proceedings</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Server className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">System & Network Analysis</h4>
                     <p className="text-charcoal/80">Detailed examination of systems and networks to identify compromise indicators</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Clock className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Timeline Reconstruction</h4>
                     <p className="text-charcoal/80">Reconstruction of incident timeline to understand the sequence of events</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <RefreshCw className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Root Cause Analysis</h4>
@@ -174,7 +174,7 @@ export default function IncidentResponsePage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -184,7 +184,7 @@ export default function IncidentResponsePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -194,7 +194,7 @@ export default function IncidentResponsePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -204,7 +204,7 @@ export default function IncidentResponsePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -214,7 +214,7 @@ export default function IncidentResponsePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

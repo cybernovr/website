@@ -153,7 +153,7 @@ export default function DarktracePage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -163,7 +163,7 @@ export default function DarktracePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -173,7 +173,7 @@ export default function DarktracePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -183,7 +183,7 @@ export default function DarktracePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -193,7 +193,7 @@ export default function DarktracePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

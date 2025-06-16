@@ -61,7 +61,7 @@ export default function GRCPage() {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -77,7 +77,7 @@ export default function GRCPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -93,7 +93,7 @@ export default function GRCPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -117,7 +117,7 @@ export default function GRCPage() {
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -133,7 +133,7 @@ export default function GRCPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export default function GRCPage() {
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -169,6 +169,122 @@ export default function GRCPage() {
             <div className="relative">
               <div className="sticky top-32">
                 <InitiateForm />
+
+                <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100 mb-10">
+                  <div className="mb-6">
+                    <FileCheck className="h-12 w-12 text-electric-blue" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">
+                    Standards & Regulations
+                  </h3>
+                  <p className="text-charcoal/80 mb-6">
+                    We provide compliance services for a wide range of standards
+                    and regulations, including:
+                  </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">SOC 2</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">ISO 27001</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">PCI DSS</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">HIPAA</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">CMMC</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">GDPR</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">NIST CSF</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">COBIT</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">ISO/IEC 31000</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                      </div>
+                      <div className="ml-3">
+                        <p className="font-medium">CIS Controls</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
                 <div className="bg-light-gray rounded-lg p-6 shadow-md">
                   <h3 className="text-xl font-bold mb-4">Our GRC Expertise</h3>
                   <p className="text-charcoal/80 mb-4">
@@ -178,7 +294,7 @@ export default function GRCPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -190,7 +306,7 @@ export default function GRCPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -202,7 +318,7 @@ export default function GRCPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -214,7 +330,7 @@ export default function GRCPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -228,6 +344,7 @@ export default function GRCPage() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>

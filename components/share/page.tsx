@@ -1,4 +1,5 @@
 'use client';
+import { CopyIcon, FacebookIcon, MessageCircleCode, TwitterIcon } from 'lucide-react';
 import { useState } from 'react';
 
 interface ShareProps {
@@ -40,30 +41,34 @@ interface ShareProps {
             href={shareLinks.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex"
           >
+            <TwitterIcon className="w-5 h-5" />
             Twitter
           </a>
           <a
             href={shareLinks.facebook}
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex "
           >
+            <FacebookIcon className="w-5 h-5" />
             Facebook
           </a>
           <a
             href={shareLinks.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex"
           >
+            <MessageCircleCode className="w-5 h-5" />
             WhatsApp
           </a>
           <button
             onClick={copyToClipboard}
-            className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 flex"
           >
+            <CopyIcon className="w-3 h-3 mt-1" />
             {copied ? 'Copied!' : 'Copy Link'}
           </button>
         </div>

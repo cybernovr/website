@@ -128,7 +128,7 @@ export default function CoursesPage() {
                   <FadeIn key={index} direction="left" delay={index * 0.1}>
                     <div className="flex">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-cybernovr-purple flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

@@ -72,28 +72,28 @@ export default function DNSSecurityPage() {
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Shield className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Proactive Threat Protection</h4>
                     <p className="text-charcoal/80">Block malicious domains and IP addresses before connections are established</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Server className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Real-time Threat Intelligence</h4>
                     <p className="text-charcoal/80">Continuously updated threat intelligence to protect against emerging threats</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Lock className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Enhanced Privacy</h4>
                     <p className="text-charcoal/80">Privacy-compliant DNS resolution that protects user data and browsing habits</p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Globe className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Easy Implementation</h4>
@@ -111,7 +111,7 @@ export default function DNSSecurityPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -121,7 +121,7 @@ export default function DNSSecurityPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -131,7 +131,7 @@ export default function DNSSecurityPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -141,7 +141,7 @@ export default function DNSSecurityPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -151,7 +151,7 @@ export default function DNSSecurityPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

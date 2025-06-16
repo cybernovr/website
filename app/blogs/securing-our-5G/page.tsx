@@ -98,13 +98,13 @@ export default function BlogOnePage({ post }: BlogPostProps) {
                         on 3.5G while the Fourth Generation (4G), released around 2008 delivered high-speed internet 
                         and high-capacity multimedia for images and video.
                     </p>
-                    <div className="flex justify-center my-8"> {/* Added my-8 for vertical spacing */}
+                    <div className="flex justify-center my-8">
                         <div className="relative rounded-lg overflow-hidden shadow-md max-w-2xl w-full bg-black">
                             <video 
                             autoPlay
-                            muted // Required for autoplay in most browsers
-                            controls // Shows play/pause/etc controls
-                            loop // Optional: makes video loop
+                            muted 
+                            controls 
+                            loop
                             className="w-full h-auto"
                             >
                             <source 

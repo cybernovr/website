@@ -92,7 +92,7 @@ export default function ApplyForm() {
         </div>
       ) : (
           
-        <form className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
             htmlFor="name"
@@ -187,9 +187,11 @@ export default function ApplyForm() {
         </div>
         <Button
           type="submit"
+          onClick={() => setSubmitSuccess(false)}
           className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
-        >
-          Send Message
+          disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Send Message'}
         </Button>
       </form>
       )}

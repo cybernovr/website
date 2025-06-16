@@ -62,7 +62,7 @@ export default function DueDiligencePage() {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">1</span>
                       </div>
                     </div>
@@ -78,7 +78,7 @@ export default function DueDiligencePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">2</span>
                       </div>
                     </div>
@@ -94,7 +94,7 @@ export default function DueDiligencePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">3</span>
                       </div>
                     </div>
@@ -110,7 +110,7 @@ export default function DueDiligencePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">4</span>
                       </div>
                     </div>
@@ -126,7 +126,7 @@ export default function DueDiligencePage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-6 w-6 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-6 w-6 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white font-bold">5</span>
                       </div>
                     </div>
@@ -149,7 +149,7 @@ export default function DueDiligencePage() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Search className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">
@@ -161,7 +161,7 @@ export default function DueDiligencePage() {
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Shield className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Vendor Assessment</h4>
@@ -171,7 +171,7 @@ export default function DueDiligencePage() {
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <CheckCircle className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">
@@ -183,7 +183,7 @@ export default function DueDiligencePage() {
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm">
-                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-electric-blue/10 mb-4">
+                    <div className="inline-flex items-center justify-center h-12 w-12 rounded-full bg-accent/10 mb-4">
                       <Database className="h-6 w-6 text-electric-blue" />
                     </div>
                     <h4 className="font-semibold mb-2">Investment Decisions</h4>
@@ -295,7 +295,7 @@ export default function DueDiligencePage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -308,7 +308,7 @@ export default function DueDiligencePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -321,7 +321,7 @@ export default function DueDiligencePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -334,7 +334,7 @@ export default function DueDiligencePage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

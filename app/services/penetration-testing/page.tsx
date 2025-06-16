@@ -140,7 +140,7 @@ export default function PenetrationTestingPage() {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -156,7 +156,7 @@ export default function PenetrationTestingPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -172,7 +172,7 @@ export default function PenetrationTestingPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -289,7 +289,7 @@ export default function PenetrationTestingPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">1</span>
                         </div>
                       </div>
@@ -304,7 +304,7 @@ export default function PenetrationTestingPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">2</span>
                         </div>
                       </div>
@@ -317,7 +317,7 @@ export default function PenetrationTestingPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">3</span>
                         </div>
                       </div>
@@ -330,7 +330,7 @@ export default function PenetrationTestingPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">4</span>
                         </div>
                       </div>
@@ -343,7 +343,7 @@ export default function PenetrationTestingPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">5</span>
                         </div>
                       </div>

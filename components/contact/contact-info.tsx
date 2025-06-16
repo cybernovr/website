@@ -12,7 +12,7 @@ export default function ContactInfo() {
 
       <div className="space-y-6">
         <div className="flex items-start">
-          <div className="flex-shrink-0 bg-electric-blue rounded-full p-3 mr-4">
+          <div className="flex-shrink-0 bg-accent rounded-full p-3 mr-4">
             <MapPin className="h-6 w-6 text-white" />
           </div>
           <div>
@@ -30,7 +30,7 @@ export default function ContactInfo() {
         </div>
 
         <div className="flex items-start">
-          <div className="flex-shrink-0 bg-electric-blue rounded-full p-3 mr-4">
+          <div className="flex-shrink-0 bg-accent rounded-full p-3 mr-4">
             <Phone className="h-6 w-6 text-white" />
           </div>
           <div>
@@ -44,7 +44,7 @@ export default function ContactInfo() {
         </div>
 
         <div className="flex items-start">
-          <div className="flex-shrink-0 bg-electric-blue rounded-full p-3 mr-4">
+          <div className="flex-shrink-0 bg-accent rounded-full p-3 mr-4">
             <Mail className="h-6 w-6 text-white" />
           </div>
           <div>
@@ -58,7 +58,7 @@ export default function ContactInfo() {
         </div>
 
         <div className="flex items-start">
-          <div className="flex-shrink-0 bg-electric-blue rounded-full p-3 mr-4">
+          <div className="flex-shrink-0 bg-accent rounded-full p-3 mr-4">
             <Clock className="h-6 w-6 text-white" />
           </div>
           <div>

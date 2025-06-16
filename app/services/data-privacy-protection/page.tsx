@@ -51,7 +51,7 @@ export default function DataPrivacyProtectionPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -61,7 +61,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -71,7 +71,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -81,7 +81,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -91,7 +91,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -101,7 +101,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -111,7 +111,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -121,7 +121,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -131,7 +131,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -141,7 +141,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -165,7 +165,7 @@ export default function DataPrivacyProtectionPage() {
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -177,7 +177,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -190,7 +190,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -202,7 +202,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -214,7 +214,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -226,7 +226,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -238,7 +238,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -250,7 +250,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -262,7 +262,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -274,7 +274,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -287,7 +287,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -299,7 +299,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -311,7 +311,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -323,7 +323,7 @@ export default function DataPrivacyProtectionPage() {
                   </div>
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mt-1">
-                      <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                      <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                         <span className="text-white text-xs">✓</span>
                       </div>
                     </div>
@@ -347,7 +347,7 @@ export default function DataPrivacyProtectionPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -359,7 +359,7 @@ export default function DataPrivacyProtectionPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -371,7 +371,7 @@ export default function DataPrivacyProtectionPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -383,7 +383,7 @@ export default function DataPrivacyProtectionPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>
@@ -395,7 +395,7 @@ export default function DataPrivacyProtectionPage() {
                     </li>
                     <li className="flex items-start">
                       <div className="flex-shrink-0 mt-1">
-                        <div className="h-5 w-5 rounded-full bg-electric-blue flex items-center justify-center">
+                        <div className="h-5 w-5 rounded-full bg-accent flex items-center justify-center">
                           <span className="text-white text-xs">✓</span>
                         </div>
                       </div>

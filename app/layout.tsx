@@ -25,7 +25,7 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: {
     default: "Cybernovr - Cybersecurity Solutions",
-    template: "%s | Cybernovr"
+    template: "%s | CYBERNOVR"
   },
   description: "Professional cybersecurity services and solutions for businesses of all sizes. Protect your data with our expert security assessments, penetration testing, and compliance solutions.",
   keywords: ["cybersecurity", "cybersecurity course", "youth league", "kazeem durodoye", "kazeem kolawole durodoye", "cybernova", "cybernovr", "cybernover", "hacker", "hacked", "data protection", "penetration testing", "security audit", "cybernovr", "network security"],
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     canonical: 'https://cybernovr.com',
     languages: {
       'en-US': 'https://cybernovr.com',
-      'en-NG': 'https://cybernovr.com.ng',
+      'en-NG': 'https://cybernovr.ng',
     },
   },
   category: 'technology',

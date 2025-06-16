@@ -25,7 +25,7 @@ export default function TeamMember({ name, title, bio, image, fullBio }: TeamMem
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold mb-1">{name}</h3>
-        <p className="text-electric-blue font-medium mb-3">{title}</p>
+        <p className="text-primary font-medium mb-3">{title}</p>
         <p className="text-charcoal/80 mb-4 line-clamp-3">{bio}</p>
         
         {fullBio && (
@@ -35,17 +35,17 @@ export default function TeamMember({ name, title, bio, image, fullBio }: TeamMem
             </DialogTrigger>
             <DialogContent className="max-w-3xl p-10">
               <DialogHeader>
-                <DialogTitle className="text-2xl">Profile: {name}</DialogTitle>
+                <DialogTitle className=""></DialogTitle>
               </DialogHeader>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-2">
-                <div className="relative md:mt-10 lg:mt-12 h-[150px]  w-[150px] rounded-lg overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="relative md:mt-10 lg:mt-12 h-[120px] w-[120px] rounded-lg overflow-hidden">
                   <Image src={image} alt={name} fill className="" />
                 </div>
                 <div className="md:col-span-2">
                   <h3 className="text-xl font-bold">{name}</h3>
-                  <p className="text-electric-blue font-medium mb-2">{title}</p>
+                  <p className="text-primary font-medium">{title}</p>
                   <div className="prose max-w-none">
-                    <p className="whitespace-pre-line leading-relaxed">{fullBio}</p>
+                    <p className="whitespace-pre-line text-xs md:text-sm leading-relaxed indent-8">{fullBio}</p>
                   </div>
                 </div>
               </div>

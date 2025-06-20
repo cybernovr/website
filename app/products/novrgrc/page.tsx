@@ -4,6 +4,8 @@ import Link from "next/link"
 import { ClipboardList, Shield, TestTube2, FileText } from "lucide-react"
 import darktrace from "@/components/images/darktracelogo.png"
 import prism from "@/components/images/prism.png"
+import RequestForm from "@/components/req-more-info/request-form"
+
 
 export default function NovrGRCPage() {
   return (
@@ -156,55 +158,8 @@ export default function NovrGRCPage() {
 
             <div className="relative">
               <div className="sticky top-32">
-                <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-100 mb-8">
-                  <h3 className="text-2xl font-bold mb-6 text-deep-blue">Request More Information</h3>
-                  <form className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1">Name *</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1">Email *</label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-charcoal mb-1">Company Name</label>
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                        placeholder="Your Company"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-charcoal mb-1">Message</label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows={4}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-electric-blue bg-white text-charcoal"
-                        placeholder="Tell us about your security needs"
-                      ></textarea>
-                    </div>
-                    <Button type="submit" className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">
-                      Send Request
-                    </Button>
-                  </form>
+                <div>
+                  <RequestForm />
                 </div>
                 <div className="bg-light-gray rounded-lg p-6 shadow-md">
                     <h3 className="text-xl font-bold mb-4">Why Choose NovrGRC?</h3>

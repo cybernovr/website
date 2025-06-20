@@ -165,7 +165,6 @@ export default function HeroCarousel() {
   const [direction, setDirection] = useState(1)
   const [isAnimating, setIsAnimating] = useState(false)
 
-  // Increased interval to 8 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       if (!isAnimating) {
@@ -173,7 +172,7 @@ export default function HeroCarousel() {
         setIsAnimating(true)
         setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))
       }
-    }, 8000)
+    }, 5000)
     return () => clearInterval(interval)
   }, [isAnimating])
 
@@ -186,7 +185,7 @@ export default function HeroCarousel() {
       x: 0,
       opacity: 1,
       transition: {
-        delay: 0.3, // Added delay before starting the animation
+        delay: 0.3,
       },
     },
     exit: (direction: number) => ({
@@ -196,7 +195,7 @@ export default function HeroCarousel() {
   }
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-lg">
+    <div className="relative w-full h-full overflow-hidden rounded-lg bg-[#f5f7fa]">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentSlide}
@@ -206,8 +205,8 @@ export default function HeroCarousel() {
           animate="center"
           exit="exit"
           transition={{
-            duration: 1.5, // Increased duration from 0.8 to 1.5 seconds
-            ease: [0.16, 1, 0.3, 1], // Custom easing for smoother motion
+            duration: 1, 
+            ease: [0.16, 1, 0.3, 1],
           }}
           className="absolute inset-0"
           onAnimationStart={() => setIsAnimating(true)}

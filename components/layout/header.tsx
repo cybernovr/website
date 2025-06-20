@@ -65,7 +65,7 @@ const mainNavItems = [
   
     ],
   },
-  // { title: "Contact", href: "/contact" },
+  // { title: "Assessment", href: "/cyber-assessment" },
 ]
 
 export default function Header() {

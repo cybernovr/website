@@ -9,7 +9,7 @@ export default function BlogsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="pt-32 bg-gradient-to-r from-deep-blue to-electric-blue text-black">
+      <section className="pt-32 text-black">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Blogs</h1>

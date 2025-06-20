@@ -178,10 +178,11 @@ export default function Home() {
               <FadeIn direction="left">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">About Cybernovr</h2>
                 <div className="space-y-4 p-2">
-                  <p className="text-lg text-charcoal/80 truncate" id="about-text" >
+                  <p className="text-lg text-charcoal/80 truncate" id="about-text">
                     At Cybernovr, we place a strong priority on customer service. We understand the 
                     critical importance of protecting your information assets today while securing 
                     your business for tomorrow. 
+                  </p>
                   <p className="text-lg text-charcoal/80 mt-2">
                     We pride ourselves on providing unparalleled customer service that exceeds 
                     expectations. Our commitment is backed by strict adherence to our Service Level 
@@ -193,8 +194,6 @@ export default function Home() {
                     This depth of experience, coupled with our strong foundation in academic and 
                     business research, gives us our unique edge in the market.
                   </p>
-
-                  </p>
                   <button className="text-cybernovr-blue hover:text-cybernovr-purple font-medium" onClick={() => {
                     const textElement = document.getElementById('about-text');
                     if (textElement) {
@@ -203,15 +202,6 @@ export default function Home() {
                   }}>
                     Read More
                   </button>
-                  
-                  <div className="pt-2">
-                    <p className="text-md font-medium text-cybernovr-blue">
-                      For direct assistance, contact our CEO:
-                    </p>
-                    <p className="text-md">
-                      Dr. Kazeem Durodoye | <span className="text-cybernovr-blue">+2348051200000</span> | <span className="text-cybernovr-blue">kazeem@cybernovr.com</span>
-                    </p>
-                  </div>
                 </div>
               </FadeIn>
               <StaggerChildren className="pt-4">

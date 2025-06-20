@@ -7,7 +7,7 @@ import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import CookiesConsent from "@/components/cookies/page"
 import { StructuredData } from "@/components/seo/structured-data"
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 
 const montserrat = Montserrat({

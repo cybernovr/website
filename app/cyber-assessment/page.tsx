@@ -1326,7 +1326,7 @@ export default function CyberAssessmentPage() {
                           Enter your email address below if you would like to also receive your results via mail.
                         </p>
                         <div>
-                          <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1">Email</label>
+                          <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1">Email </label>
                           <Input
                             type="email"
                             id="email"

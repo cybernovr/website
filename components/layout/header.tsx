@@ -65,7 +65,7 @@ const mainNavItems = [
   
     ],
   },
-  // { title: "Assessment", href: "/cyber-assessment" },
+  { title: "Assessment", href: "/cyber-assessment" },
 ]
 
 export default function Header() {

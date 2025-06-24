@@ -8,6 +8,7 @@ import securing5g from "@/components/images/securing5g.jpg"
 import Link from "next/link"
 // import { Share } from "lucide-react"
 import Share from '@/components/share/page';
+import FadeIn from "@/components/ui/fade-in"
 
 interface Post {
     slug: string;
@@ -98,53 +99,75 @@ export default function BlogOnePage({ post }: BlogPostProps) {
                         on 3.5G while the Fourth Generation (4G), released around 2008 delivered high-speed internet 
                         and high-capacity multimedia for images and video.
                     </p>
-                    <div className="flex justify-center my-8">
-                        <div className="relative rounded-lg overflow-hidden shadow-md max-w-2xl w-full bg-black">
-                            <video 
-                            autoPlay
-                            muted 
-                            controls 
-                            loop
-                            className="w-full h-auto"
-                            >
-                            <source 
-                                src="/videos/NTAinterview.mp4"
-                                type="video/mp4" 
-                            />
-                            Your browser does not support the video tag.
-                            </video>
-                        </div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20 mb-20">
+                      <div className="space-y-6">
+                        <FadeIn direction="left">
+                          <div className="">
+                              <div className="relative rounded-lg overflow-hidden shadow-md max-w-2xl w-full bg-black">
+                                  <video 
+                                  autoPlay
+                                  muted 
+                                  controls 
+                                  loop
+                                  className="w-full h-auto"
+                                  >
+                                  <source 
+                                      src="/videos/NTAinterview.mp4"
+                                      type="video/mp4" 
+                                  />
+                                  Your browser does not support the video tag.
+                                  </video>
+                            </div>
+                          </div>
+                        </FadeIn>
                     </div>
-                    <p className="mb-4">
-                        Beyond being a radio access technology, 5G is a new architecture and standard with far greater
-                        agility in all domains of human endeavor. Some of the benefits of 5G include improved capacity, 
-                        latency, agility, reliability, and speeds, making it relevant to communication and 
-                        infrastructure service providers and most industry verticals. 5G promises several critical use 
-                        cases, from medical applications to delivering education to students in remote areas. Equally, 
-                        industrial automation, public safety service, and support for public utilities or self-driving 
-                        cars are also important applications of 5G. 
-                    </p>
-                    <div className="flex justify-center">
-                        <div className="relative flex items-center rounded-lg overflow-hidden shadow-md max-w-2xl mx-auto"> 
-                            <Image
+                    <FadeIn direction="right">
+                          <div className="text-lg md:text-xl lg:text-xl text-charcoal/90 leading-relaxed">
+                            <p className="text-lg md:text-xl lg:text-xl text-charcoal/90 leading-relaxed">
+                              Beyond being a radio access technology, 5G is a new architecture and standard with far greater
+                              agility in all domains of human endeavor. Some of the benefits of 5G include improved capacity, 
+                              latency, agility, reliability, and speeds, making it relevant to communication and 
+                              infrastructure service providers and most industry verticals. 5G promises several critical use 
+                              cases, from medical applications to delivering education to students in remote areas. Equally, 
+                              industrial automation, public safety service, and support for public utilities or self-driving 
+                              cars are also important applications of 5G. 
+                            </p>
+                          </div>
+                        </FadeIn> 
+                    </div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                      <div className="space-y-6">
+                        <FadeIn direction="left">
+                          <div className=" mt-4">
+                            <p className="text-lg md:text-xl lg:text-xl text-charcoal/90 leading-relaxed">
+                              The criticality of these use cases has put responsibilities on telecommunications operators and
+                              the government to work together to safeguard the underlying technologies of 5G. This 
+                              responsibility will ensure that appropriate safeguards are in place to prevent these 
+                              infrastructures from malicious attacks from state and non-state actors. 
+                              <br /> <br /> Some 5G high-level 
+                              attack vectors include Denial of Service (DoS), exploiting backdoors, exploiting flaws in 
+                              operational procedures, and other forms of attacks. Furthermore, 5G has multiple logical networks 
+                              called network slices, and the increased number of devices connected invariably increases the 
+                              attack surface and attack frequency, respectively. This means the 5G networks may be exposed to 
+                              vulnerabilities with more serious consequences on the critical infrastructures it enables than the 
+                              previous generations of mobile telecommunications. 
+                            </p>
+                          </div>
+                        </FadeIn>
+                      </div>
+                      <FadeIn direction="right">
+                        <div className="relative h-[500px] rounded-lg overflow-hidden shadow-lg">
+                          <Image
                             src={securing5g}
-                            alt="people using vision pro for virtual reality"
-                            className="object-cover w-full h-auto"
-                            />
+                            alt="About Cybernovr"
+                            fill
+                            className="object-cover"
+                          />
                         </div>
+                      </FadeIn>
                     </div>
-                    <p className="mt-6">
-                        The criticality of these use cases has put responsibilities on telecommunications operators and
-                        the government to work together to safeguard the underlying technologies of 5G. This 
-                        responsibility will ensure that appropriate safeguards are in place to prevent these 
-                        infrastructures from malicious attacks from state and non-state actors. Some 5G high-level 
-                        attack vectors include Denial of Service (DoS), exploiting backdoors, exploiting flaws in 
-                        operational procedures, and other forms of attacks. Furthermore, 5G has multiple logical networks 
-                        called network slices, and the increased number of devices connected invariably increases the 
-                        attack surface and attack frequency, respectively. This means the 5G networks may be exposed to 
-                        vulnerabilities with more serious consequences on the critical infrastructures it enables than the 
-                        previous generations of mobile telecommunications. 
-                    </p> 
                 </div>
 
             </div>

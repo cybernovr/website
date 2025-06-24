@@ -8,7 +8,11 @@ import { Clock, MousePointerClick, User, ChevronLeft, ChevronRight, ArrowRight,
   Server,
   Globe,
   Users,
-  CheckCircle, } from "lucide-react"
+  CheckCircle,
+  RefreshCcw,
+  OctagonAlert,
+  AlertTriangle,
+  FileCheck, } from "lucide-react"
 import durodoye from "@/components/images/kazeem.png"
 import cyberhealth from "@/components/images/cyber-health.png"
 import { useState } from "react"
@@ -19,7 +23,41 @@ import ServiceCard from "@/components/home/service-card";
 
 
 export default function CyberAssessmentPage() {
-  const services = [
+  const BeginnerService = [
+    {
+      title: "Risk Management",
+      description:
+        "Comprehensive risk assessment and management services to identify, evaluate, and mitigate security risks.",
+      icon: <AlertTriangle className="h-12 w-12 text-electric-blue" />,
+      href: "/services/risk-management",
+    },
+    {
+      title: "Cybersecurity Resilience",
+      description:
+        "Our team of cybersecurity experts provides tailored consulting services to help you identify and address your security challenges.",
+      icon: <Shield className="h-12 w-12 text-electric-blue" />,
+      href: "/services/professional-services",
+    },
+  ];
+
+  const IntermediateService = [
+    {
+      title: "Risk Management",
+      description:
+        "Comprehensive risk assessment and management services to identify, evaluate, and mitigate security risks.",
+      icon: <AlertTriangle className="h-12 w-12 text-electric-blue" />,
+      href: "/services/risk-management",
+    },
+    {
+      title: "GRC",
+      description:
+        "Governance, Risk, and Compliance services to help you meet regulatory requirements and industry standards.",
+      icon: <FileCheck className="h-12 w-12 text-electric-blue" />,
+      href: "/services/grc",
+    },
+  ];
+
+  const AdvancedService = [
     {
       title: "NovrGRC",
       description:
@@ -44,11 +82,46 @@ export default function CyberAssessmentPage() {
   const [group2Completed, setGroup2Completed] = useState(false)
   const [group3Completed, setGroup3Completed] = useState(false)
   const [group4Completed, setGroup4Completed] = useState(false)
+  const [group5Completed, setGroup5Completed] = useState(false)
+  const [showValidationError, setShowValidationError] = useState(false);
+  const [email, setEmail] = useState("");
+  const [isSendingEmail, setIsSendingEmail] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
+  const [emailError, setEmailError] = useState("");
+
   const [score, setScore] = useState(0)
   const [showResults, setShowResults] = useState(false)
+
+  const resetAssessment = () => {
+    setAssessmentStarted(false);
+    setSectorSelected(false);
+    setSelectedSector("");
+    setCurrentGroup(1);
+    setGroup1Completed(false);
+    setGroup2Completed(false);
+    setGroup3Completed(false);
+    setGroup4Completed(false);
+    setGroup5Completed(false);
+    setScore(0);
+    setShowResults(false);
+    setFormData({
+      selectedSector: "",
+      hasPolicy: "",
+      securityMeasures: [],
+      hasImprove: "",
+      cybersecurityMeasures: [],
+      supplyChain: "",
+      assetMeasures: [],
+      riskMeasures: [],
+      incidentMeasures: [],
+      initiatives: "",
+      consent: false
+    });
+  };
   
   // Form state
   const [formData, setFormData] = useState({
+    selectedSector: "",
     hasPolicy: "",
     securityMeasures: [] as string[],
     hasImprove: "",
@@ -79,7 +152,6 @@ export default function CyberAssessmentPage() {
     setFormData(prev => {
       const currentValue = prev[name as keyof typeof formData];
       
-      // Ensure we're only working with array fields
       if (Array.isArray(currentValue)) {
         if (checked) {
           return {
@@ -93,7 +165,7 @@ export default function CyberAssessmentPage() {
           };
         }
       }
-      return prev; // Return unchanged if not an array field
+      return prev;
     });
   };
 
@@ -102,8 +174,14 @@ export default function CyberAssessmentPage() {
   }
 
   const calculateScore = () => {
-    let newScore = 10
+    let newScore = 0
   
+    if (selectedSector === "Others") {
+      newScore += 0;
+    } else if (selectedSector) {
+      newScore += 10;
+    }
+    
     // Question 1
     if (formData.hasPolicy === "yes") newScore += 5
   
@@ -151,7 +229,6 @@ export default function CyberAssessmentPage() {
     // Question 9
     if (formData.initiatives === "yes") newScore += 5
   
-    // Ensure score doesn't exceed 100%
     return Math.min(newScore, 100)
   }
 
@@ -176,11 +253,18 @@ export default function CyberAssessmentPage() {
   const checkGroup4Completion = () => {
     const isCompleted = Boolean(
       formData.riskMeasures.length > 0 && 
-      formData.incidentMeasures.length > 0 && 
+      formData.incidentMeasures.length > 0 
+    )
+    setGroup4Completed(isCompleted)
+    return isCompleted
+  }
+
+  const checkGroup5Completion = () => {
+    const isCompleted = Boolean(
       formData.initiatives &&
       formData.consent
     )
-    setGroup4Completed(isCompleted)
+    setGroup5Completed(isCompleted)
     return isCompleted
   }
 
@@ -206,15 +290,70 @@ export default function CyberAssessmentPage() {
         break
       case 4:
         if (checkGroup4Completion()) {
-          const calculatedScore = calculateScore()
-          setScore(calculatedScore)
           setCurrentGroup(5)
           return true
         }
         break
+        case 5:
+          if (checkGroup5Completion()) {
+            const calculatedScore = calculateScore()
+            setScore(calculatedScore)
+            setCurrentGroup(6)
+            return true
+          }
+          break
     }
     return false
   }
+
+  const sendEmailWithResults = async () => {
+    if (!email) {
+      setEmailError("Please enter your email address");
+      return;
+    }
+  
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setEmailError("Please enter a valid email address");
+      return;
+    }
+  
+    setIsSendingEmail(true);
+    setEmailError("");
+  
+    try {
+      console.log('Sending request to our API endpoint');
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          score,
+          selectedSector
+        })
+      });
+  
+      const data = await response.json();
+      console.log('API response:', data);
+  
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send email");
+      }
+  
+      setEmailSent(true);
+      setShowResults(true);
+    } catch (error) {
+      console.error("Full email sending error:", error);
+      setEmailError(
+        error instanceof Error 
+          ? error.message 
+          : "Failed to send email. Please try again later."
+      );
+    } finally {
+      setIsSendingEmail(false);
+    }
+  };
 
   return (
     <div className="bg-white">
@@ -247,9 +386,9 @@ export default function CyberAssessmentPage() {
                 </div>
               </div>
               <div className="lg:col-span-2 p-8">
-                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Discover your digital profile</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Your Cybersecurity Barometer</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  This self-check will help you understand how digitally ready you are in your sector and provide recommendations of digital solutions you should adopt for your business.
+                  This cybsersecurity self-check will help you assess your understanding of online threats and risks, effectiveness of your security measures, and your overall maturity in handling cybersecurity risks.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">
@@ -273,7 +412,7 @@ export default function CyberAssessmentPage() {
                       <MousePointerClick className="text-primary"/>
                     </div>
                     <p className="ml-3 text-gray-600">
-                      Actionable insights for improvement
+                      Actionable insights to improve your cybersecurity posture
                     </p>
                   </div>
                 </div>
@@ -335,6 +474,7 @@ export default function CyberAssessmentPage() {
                         Industrial and manufacturing
                       </option>
                       <option value="Mines and steel">Mines and steel</option>
+                      <option value="Others">Others</option>
                     </select>
                   </div>
                 </form>   
@@ -344,6 +484,12 @@ export default function CyberAssessmentPage() {
                 {/* Question Group 1 */}
                 {currentGroup === 1 && (
                   <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                    <div className="flex justify-between text-primary mb-5">
+                      <div>
+                        <span className="text-black">Sector:</span> {selectedSector}
+                      </div>
+                      <div className="">1/5</div>
+                    </div>
                     <form id="group1">
                       {/* Q1 */}
                       <div>
@@ -431,6 +577,13 @@ export default function CyberAssessmentPage() {
                         </div>
                       </div>
                       
+                      {showValidationError && (
+                        <div className="text-red-600 mb-4 text-sm md:text-lg mt-5 flex gap-3">
+                          <OctagonAlert className="mt-1"/>
+                          Please complete all required questions before proceeding!
+                        </div>
+                      )}
+                      
                       <div className="mt-10 flex gap-5">
                         <Button
                           type="button"
@@ -440,13 +593,20 @@ export default function CyberAssessmentPage() {
                           onClick={() => setSectorSelected(false)}
                         >
                           <ChevronLeft className="h-4 w-4" />
-                          Previous
+                          Edit Sector
                         </Button>
                         <Button
                           type="button"
                           size="lg"
                           className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white flex items-center gap-2"
-                          onClick={() => handleGroupSubmit(1)}
+                          onClick={() => {
+                            if (checkGroup1Completion()) {
+                              setShowValidationError(false);
+                              handleGroupSubmit(1);
+                            } else {
+                              setShowValidationError(true);
+                            }
+                          }}
                         >
                           Next
                           <ChevronRight className="h-4 w-4" />
@@ -458,12 +618,18 @@ export default function CyberAssessmentPage() {
 
                 {/* Question Group 2 */}
                 {currentGroup === 2 && (
-                  <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                    <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                      <div className="flex justify-between text-primary mb-5">
+                        <div>
+                          <span className="text-black">Sector:</span> {selectedSector}
+                        </div>
+                        <div className="">2/5</div>
+                      </div>
                     <form id="group2">
                       {/* Q3 */}
                       <div>
                         <Label htmlFor="hasImprove" className="block text-lg md:text-xl font-medium text-charcoal mb-3">
-                          3. Has there been continuous cybersecurity improvement? 
+                          3. Has there been continuous improvement as a result of implementation of your cybersecurity strategy? 
                         </Label>
                         <div className="flex gap-6 mt-4">
                           <div className="flex items-center space-x-2">
@@ -560,6 +726,13 @@ export default function CyberAssessmentPage() {
                         </div>
                       </div>
                       
+                      {showValidationError && (
+                        <div className="text-red-600 mb-4 text-sm md:text-lg mt-5 flex gap-3">
+                          <OctagonAlert className="mt-1"/>
+                          Please complete all required questions before proceeding!
+                        </div>
+                      )}
+                      
                       <div className="mt-10 flex gap-5">
                         <Button
                           type="button"
@@ -575,7 +748,14 @@ export default function CyberAssessmentPage() {
                           type="button"
                           size="lg"
                           className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white flex items-center gap-2"
-                          onClick={() => handleGroupSubmit(2)}
+                          onClick={() => {
+                            if (checkGroup2Completion()) {
+                              setShowValidationError(false);
+                              handleGroupSubmit(2);
+                            } else {
+                              setShowValidationError(true);
+                            }
+                          }}
                         > 
                           Next
                           <ChevronRight className="h-4 w-4"/>
@@ -588,6 +768,12 @@ export default function CyberAssessmentPage() {
                 {/* Question Group 3 */}
                 {currentGroup === 3 && (
                   <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                      <div className="flex justify-between text-primary mb-5">
+                        <div>
+                          <span className="text-black">Sector:</span> {selectedSector}
+                        </div>
+                        <div className="">3/5</div>
+                      </div>
                     <form id="group3">
                       {/* Q5 */}
                       <div>
@@ -702,6 +888,13 @@ export default function CyberAssessmentPage() {
                         </div>
                       </div>
                       
+                      {showValidationError && (
+                        <div className="text-red-600 mb-4 text-sm md:text-lg mt-5 flex gap-3">
+                          <OctagonAlert className="mt-1"/>
+                          Please complete all required questions before proceeding!
+                        </div>
+                      )} 
+                      
                       <div className="mt-10 flex gap-5">
                         <Button
                           type="button"
@@ -717,7 +910,14 @@ export default function CyberAssessmentPage() {
                           type="button"
                           size="lg"
                           className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white flex items-center gap-2"
-                          onClick={() => handleGroupSubmit(3)}
+                          onClick={() => {
+                            if (checkGroup3Completion()) {
+                              setShowValidationError(false);
+                              handleGroupSubmit(3);
+                            } else {
+                              setShowValidationError(true);
+                            }
+                          }}
                         > 
                           Next
                           <ChevronRight className="h-4 w-4"/>
@@ -729,7 +929,13 @@ export default function CyberAssessmentPage() {
 
                 {/* Question Group 4 */}
                 {currentGroup === 4 && (
-                  <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                    <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                      <div className="flex justify-between text-primary mb-5">
+                        <div>
+                          <span className="text-black">Sector:</span> {selectedSector}
+                        </div>
+                        <div className="">4/5</div>
+                      </div>
                     <form id="group4">
                       {/* Q7 */}
                       <div>
@@ -928,6 +1134,100 @@ export default function CyberAssessmentPage() {
                         </div>
                       </div>
                       
+                      {/* Q9
+                      <div className="mt-10">
+                        <Label htmlFor="initiatives" className="block text-lg md:text-xl font-medium text-charcoal mb-3">
+                          9. Does your organisation take part in initiatives on cybersecurity or collaboration at the national- or sectoral-level to implement/adopt cybersecurity standards and good practices?
+                        </Label>
+                        <div className="flex gap-6 mt-4">
+                          <div className="flex items-center space-x-2">
+                            <Input
+                              type="radio"
+                              id="initiativesYes"
+                              name="initiatives"
+                              value="yes"
+                              checked={formData.initiatives === "yes"}
+                              onChange={handleChange}
+                              className="h-5 w-5 text-primary focus:ring-primary"
+                              required
+                            />
+                            <Label htmlFor="initiativesYes" className="md:text-lg">Yes</Label>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <Input
+                              type="radio"
+                              id="initiativesNo"
+                              name="initiatives"
+                              value="no"
+                              checked={formData.initiatives === "no"}
+                              onChange={handleChange}
+                              className="h-5 w-5 text-primary focus:ring-primary"
+                            />
+                            <Label htmlFor="initiativesNo" className="md:text-lg">No</Label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div className="mt-10 flex items-center space-x-2">
+                        <Checkbox
+                          id="consent"
+                          checked={formData.consent}
+                          onCheckedChange={handleConsentChange}
+                        />
+                        <Label htmlFor="consent" className="text-sm">
+                          We consent to the collection, use, and disclosure by <strong>CYBERNOVR</strong> of all information provided in this Form or in support of this Form for the purposes of public policy analysis or formulation, public data analytics, assessing our suitability for any grant or assistance schemes, advising us on digitalisation, and/or where necessary in the public interest.
+                        </Label>
+                      </div>
+                      */}
+                      
+                      {showValidationError && (
+                        <div className="text-red-600 mb-4 text-sm md:text-lg mt-5 flex gap-3">
+                          <OctagonAlert className="mt-1"/>
+                          Please complete all required questions before proceeding!
+                        </div>
+                      )}
+                      
+                      <div className="mt-10 flex gap-5">
+                        <Button
+                          type="button"
+                          variant="outline"
+                          size="lg"
+                          className="flex items-center gap-2"
+                          onClick={() => setCurrentGroup(3)}
+                        >
+                          <ChevronLeft className="h-4 w-4" />
+                          Previous
+                        </Button>
+                        <Button
+                          type="button"
+                          size="lg"
+                          className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white flex items-center gap-2"
+                          onClick={() => {
+                            if (checkGroup4Completion()) {
+                              setShowValidationError(false);
+                              handleGroupSubmit(4);
+                            } else {
+                              setShowValidationError(true);
+                            }
+                          }}
+                        > 
+                          Next
+                          <ChevronRight className="h-4 w-4"/>
+                        </Button>
+                      </div> 
+                    </form>
+                  </div>
+                )}
+                
+                {currentGroup === 5 && (
+                  <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
+                      <div className="flex justify-between text-primary mb-5">
+                        <div>
+                          <span className="text-black">Sector:</span> {selectedSector}
+                        </div>
+                        <div className="">5/5</div>
+                      </div>
+                    <form id="group5">                   
                       {/* Q9 */}
                       <div className="mt-10">
                         <Label htmlFor="initiatives" className="block text-lg md:text-xl font-medium text-charcoal mb-3">
@@ -974,13 +1274,20 @@ export default function CyberAssessmentPage() {
                         </Label>
                       </div>
                       
+                      {showValidationError && (
+                        <div className="text-red-600 mb-4 text-sm md:text-lg mt-5 flex gap-3">
+                          <OctagonAlert className="mt-1"/>
+                          Please complete all required questions and consent before proceeding!
+                        </div>
+                      )}
+                      
                       <div className="mt-10 flex gap-5">
                         <Button
                           type="button"
                           variant="outline"
                           size="lg"
                           className="flex items-center gap-2"
-                          onClick={() => setCurrentGroup(3)}
+                          onClick={() => setCurrentGroup(4)}
                         >
                           <ChevronLeft className="h-4 w-4" />
                           Previous
@@ -989,7 +1296,14 @@ export default function CyberAssessmentPage() {
                           type="button"
                           size="lg"
                           className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
-                          onClick={() => handleGroupSubmit(4)}
+                          onClick={() => {
+                            if (checkGroup5Completion()) {
+                              setShowValidationError(false);
+                              handleGroupSubmit(5);
+                            } else {
+                              setShowValidationError(true);
+                            }
+                          }}
                         >
                           Finish
                         </Button>
@@ -999,22 +1313,74 @@ export default function CyberAssessmentPage() {
                 )}
 
                 {/* Results Section */}
-                {currentGroup === 5 && (
+                {currentGroup === 6 && (
                   <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Assessment completed!</h2>
                     <p className="text-lg text-gray-600 mb-6">
-                      You've completed all sections of the cyber health assessment, your vulnerabilities are identified. Let’s turn insights into action. 
-                      </p>
-                      
-
+                      You've completed all sections of the cyber health assessment, your vulnerabilities are identified. Let's turn insights into action. 
+                    </p>
                     
-                    <Button
-                      size="lg"
-                      className="mt-5 bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white md:float-right"
-                      onClick={() => setShowResults(true)}
-                    >
-                      View Assessment Score
-                    </Button>
+                    {!showResults && ( 
+                      <div>
+                        <p className="text-lg text-gray-600 mb-6">
+                          Enter your email address below if you would like to also receive your results via mail.
+                        </p>
+                        <div>
+                          <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1">Email</label>
+                          <Input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                            className="w-full md:w-[75%] lg:w-[50%] px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent bg-white text-charcoal appearance-none"
+                            placeholder="your@email.com"
+                          />
+                          {emailError && <p className="text-red-600 mt-2">{emailError}</p>}
+                        </div>
+                      </div>
+                    )}
+                    
+                    {!showResults && ( 
+                      <div className="gap-5 flex md:float-right mt-5">
+                        {/* <Button
+                          size="default"
+                          variant="outline"
+                          className=""
+                          onClick={sendEmailWithResults}
+                          disabled={isSendingEmail}
+                        >
+                          {isSendingEmail ? "Sending..." : "Receive mail"}
+                        </Button> */}
+                        
+                        <Button
+                          size="default"
+                          className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
+                          onClick={() => setShowResults(true)}
+                        >
+                          View score
+                        </Button>
+                      </div>
+                    )}
+                    
+                    {emailSent && (
+                      <div className="mb-4 p-4 bg-green-100 text-green-700 rounded-md">
+                        <CheckCircle className="inline mr-2" />
+                        Your results have been sent to your email!
+                      </div>
+                    )}
+                    
+                    {showResults && ( 
+                      <Button
+                        size="lg"
+                        className="mt-5 bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white md:float-right"
+                        onClick={resetAssessment}
+                      >
+                        <RefreshCcw className="mr-3"/>
+                        Retake test
+                      </Button>
+                    )}
                     
                     {showResults && (
                       <div className="mt-8 p-6 bg-gray-50 rounded-lg">
@@ -1022,7 +1388,7 @@ export default function CyberAssessmentPage() {
                         
                         <div className="w-full bg-gray-200 rounded-full h-4 mb-4">
                           <div 
-                            className="bg-cybernovr-purple h-4 rounded-full transition-all duration-500" 
+                            className="mt-10 bg-cybernovr-purple h-4 rounded-full transition-all duration-500" 
                             style={{ width: `${score}%` }}
                           ></div>
                         </div>
@@ -1034,7 +1400,7 @@ export default function CyberAssessmentPage() {
                           {score < 30 && (
                             <><h2 className="mt-5">Urgent attention needed!</h2><p className="mt-3 mb-3 text-red-600">
                               Your organization has significant cybersecurity gaps that need immediate attention.
-                              Consider going through what our product offers or reach out to us for a more comprehensive breakdown.
+                              Consider browsing what our product offers or reach out to us for a more comprehensive breakdown.
                             </p></>
                         )}
                         {score >= 30 && score < 60 && (
@@ -1069,9 +1435,9 @@ export default function CyberAssessmentPage() {
                         
                         <div className="mt-6">
                           <h4 className="font-medium mb-5">We recommend exploring our solutions:</h4>
-                          {score < 30 && (
+                          {score < 70 && (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                              {services.map((service, index) => (
+                              {BeginnerService.map((service, index) => (
                                 <ServiceCard
                                   key={index}
                                   title={service.title}
@@ -1082,9 +1448,9 @@ export default function CyberAssessmentPage() {
                               ))}
                             </div>
                           )}
-                          {score >= 30 && score < 60 && (
+                          {score >= 70 && score < 90 && (
                             <><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                                  {services.map((service, index) => (
+                                  {IntermediateService.map((service, index) => (
                                     <ServiceCard
                                       key={index}
                                       title={service.title}
@@ -1094,9 +1460,9 @@ export default function CyberAssessmentPage() {
                                   ))}
                                 </div></>
                           )}
-                          {score >= 60 && (
+                          {score >= 90 && (
                             <><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                                  {services.map((service, index) => (
+                                  {AdvancedService.map((service, index) => (
                                     <ServiceCard
                                       key={index}
                                       title={service.title}
@@ -1121,9 +1487,9 @@ export default function CyberAssessmentPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Is Your Organization Cyber-Healthy?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">How Resilient is Your Organization ?</h2>
             <p className="text-xl mb-8 text-gray-600">
-              Let us analyse your areas of weaknesses - before attackers do.
+              Analyse your areas of weaknesses - before attackers do.
             </p>
             <Link href="/contact">
               <Button

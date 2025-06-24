@@ -25,14 +25,14 @@ export default function AboutPage() {
     {
       name: "Dr. Kazeem Durodoye",
       title: "CEO",
-      bio: "Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. He holds a Ph.D in Information Systems and Business from the University of Ibadan.",
+      bio: "Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.",
       image: Kazem,
       fullBio: `
-            Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.
+            Dr. Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.
     
-            Kazeem is presently the Chief Executive Officer of cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
+            Kazeem is presently a World Bank Consultant on Cybersecurity for the Nigeria Communications Sector. He also doubles as the Chief Executive Officer of Cybernovr Nigeria Limited. From 2013 to date, Dr. Durodoye has participated and led many national cybersecurity projects including the National Cybersecurity Policy & Strategy for Nigeria, NCC-CSIRT, eNaira for the CBN etc.
     
-            He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST).
+            He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST) and Canadian IT Professionals.
     
             He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).
             `
@@ -69,13 +69,13 @@ export default function AboutPage() {
       bio: "Leading cybernovr with over 30 years of ICT experience across various sectors.",
       image: Kazem,
       fullBio: `
-            Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations.
+            Dr. Kazeem Durodoye has over 30 years of ICT experience in public, private, and development organizations. Kazeem is presently a World Bank Consultant on Cybersecurity for the Nigeria Communications Sector. He also doubles as the Chief Executive Officer of Cybernovr Nigeria Limited.
             
-            Kazeem is presently the Chief Executive Officer of Cybernovr Nigeria Limited. From 2013 to 2016, Dr. Durodoye was the Group Executive Director in charge of Technology and New Media at LEADERSHIP Newspapers Limited.
-            
-            He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST).
-            
-            He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).      `
+            From 2013 to date, Dr. Durodoye has participated and led many national cybersecurity projects including the National Cybersecurity Policy & Strategy for Nigeria, NCC-CSIRT, eNaira for the CBN etc.
+    
+            He holds a Ph.D in Information Systems and Business from the University of Ibadan. He is a fellow of the Nigeria Computing Society; Computer Professional Registration Council of Nigeria as well as the American Society of Information Science and Technology (ASIST) and Canadian IT Professionals.
+    
+            He holds the following professional certifications: Certified Information Systems Manager (CISM), Certified in the Governance of Enterprise IT (CGEIT), Microfinance Certified Professional (MCP), Project Management Professional (PMP).`
     },
     {
       name: "Mr. Ibrahim Oladeji",

@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Convert to kobo (Paystack uses the smallest currency unit)
+
     const amountInKobo = Math.floor(amount * 100);
 
     const reference = generateReference();
@@ -27,8 +27,8 @@ export async function POST(request: NextRequest) {
       headOfSchoolEmail,
       parentName,
       parentEmail,
-      classInSchool,       // Added
-      dateOfBirth,         // Added
+      classInSchool,       
+      dateOfBirth,         
       custom_fields: [
         {
           display_name: "Course ID",

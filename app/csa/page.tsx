@@ -549,18 +549,18 @@ export default function CsaPage() {
 
                       {showVotingResults && (
                         <div className="mt-3">
-                          <div className="flex items-center justify-between text-sm mb-1">
-                            <span className="text-gray-500">
+                          <div className="flex items-center text-sm mb-1">
+                            {/* <span className="text-gray-500">
                               {votingStats[currentQuestion][option.id]}% of staff chose this
-                            </span>
+                            </span> */}
                             {isCorrect && (
                               <span className="text-green-600 font-medium">Correct answer</span>
                             )}
                           </div>
-                          <Progress 
+                          {/* <Progress 
                             value={votingStats[currentQuestion][option.id]} 
                             className={`h-2 ${isCorrect ? 'bg-green-200' : 'bg-gray-200'}`}
-                          />
+                          /> */}
                         </div>
                       )}
                     </div>
@@ -580,7 +580,7 @@ export default function CsaPage() {
                   <Button
                     type="button"
                     variant="outline"
-                    size="lg"
+                    size="default"
                     className="flex items-center gap-2"
                     onClick={handlePreviousQuestion}
                   >
@@ -592,7 +592,7 @@ export default function CsaPage() {
                 {answers[currentQuestion] ? (
                   <Button
                     type="button"
-                    size="lg"
+                    size="default"
                     className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white flex items-center gap-2"
                     onClick={handleNextQuestion}
                   >
@@ -602,12 +602,12 @@ export default function CsaPage() {
                 ) : (
                   <Button
                     type="button"
-                    size="lg"
+                    size="default"
                     variant="outline"
                     disabled
                     className="flex items-center gap-2"
                   >
-                    Select an answer to continue
+                    Select an answer
                   </Button>
                 )}
               </div>

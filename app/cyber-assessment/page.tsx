@@ -1420,15 +1420,15 @@ export default function CyberAssessmentPage() {
                         
                         <div className="mt-6 space-y-4">
                           <div className="flex justify-between">
-                            <span>0% - 30%</span>
+                            <span>0% - 49%</span>
                             <span className="text-red-600">High Risk</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>31% - 60%</span>
+                            <span>50% - 75%</span>
                             <span className="text-yellow-500">Medium Risk</span>
                           </div>
                           <div className="flex justify-between">
-                            <span>61% - 100%</span>
+                            <span>76% - 100%</span>
                             <span className="text-green-600">Low Risk</span>
                           </div>
                         </div>

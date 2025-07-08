@@ -5,9 +5,26 @@ import NewsCard from "@/components/news/news-card"
 import Newsroom from "@/components/images/newsroom.jpg"
 import Thisdaylive from "@/components/images/thisdaylive.jpg"
 import Theeconomictimes from "@/components/images/Aminu-Maida-1140x570-1068x534.jpg"
+import nairametrics from "@/components/images/nairametrics.jpg"
 
 export default function NewsPage() {
   const news = [
+    {
+      name: "NCC announced the development of a comprehensive cybersecurity framework",
+      description:
+        "Adding depth to the conversation, Dr. Kazeem Durodoye, CEO of Cybernovr, stressed the need for the framework to account for evolving mobile technologies such as Open RAN and...",
+      image: Theeconomictimes,
+      href: "https://theeconomictimes.com.ng/2025/06/05/ncc-unveils-comprehensive-cybersecurity-framework-to-safeguard-nigerias-telecom-sector/",
+      category: "The Economic Times",
+    },
+    {
+      name: "NDPC fines Multichoice Nigeria N766.2 million for violating NDP Act",
+      description:
+        "According to the Commission, the investigation of Multichoice, which commenced in the second quarter of 2024, was triggered by suspected breach of privacy rights of Multichoice subscribers and illegal cross-border transfer of personal data of Nigerians.",
+      image: nairametrics,
+      href: "https://nairametrics.com/2025/07/06/ndpc-fines-multichoice-nigeria-n766-2-million-for-violating-ndp-act/",
+      category: "Nairametrics",
+    },
     {
       name: "NCC unveils Cybersecurity Framework to safeguard Telecom Industry Expansion",
       description:
@@ -24,14 +41,7 @@ export default function NewsPage() {
       href: "https://www.thisdaylive.com/2025/06/05/ncc-moves-to-develop-cybersecurity-regulatory-framework-for-telecoms-sector/ ",
       category: "This Day Live",
     },
-    {
-      name: "NCC announced the development of a comprehensive cybersecurity framework",
-      description:
-        "Adding depth to the conversation, Dr. Kazeem Durodoye, CEO of Cybernovr, stressed the need for the framework to account for evolving mobile technologies such as Open RAN and...",
-      image: Theeconomictimes,
-      href: "https://theeconomictimes.com.ng/2025/06/05/ncc-unveils-comprehensive-cybersecurity-framework-to-safeguard-nigerias-telecom-sector/",
-      category: "The Economic Times",
-    },
+
   ]
 
   return (

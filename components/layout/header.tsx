@@ -65,8 +65,14 @@ const mainNavItems = [
   
     ],
   },
-  { title: "Assessment", href: "/cyber-assessment" },
-  // { title: "Vote", href: "/csa" },
+  {
+    title: "Assessments",
+    href: "",
+    submenu: [
+      { title: "Personal Assessment", href: "/cyber-assessment"},
+      { title: "Staff Assessment", href: "/csa" },
+    ],
+  },
 
 ]
 

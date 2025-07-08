@@ -23,6 +23,9 @@ import {
 import staffAssess from "@/components/images/staff-assessment.png"
 import { useState } from "react"
 import { Progress } from "@/components/ui/progress"
+import QRCode from 'react-qr-code';
+import AnimatedBackground from "@/components/animations/animated-background"
+import FadeIn from "@/components/animations/fade-in"
 
 export default function CsaPage() {
   const questions = [
@@ -47,7 +50,7 @@ export default function CsaPage() {
         { id: "phishing", text: "Phishing", correct: true },
         { id: "sql", text: "SQL injection", correct: false }
       ],
-      explanation: "Phishing accounts for over 90% of cyberattacks, targeting human vulnerabilities rather than technical ones."
+      explanation: "Phishing accounts for over 90% of cyberattacks, targeting human vulnerabilities rather than technical vulnerabilities."
     },
 
     {
@@ -160,7 +163,7 @@ export default function CsaPage() {
 
     {
       id: 12,
-      question: "How does your organisation apply patching?",
+      question: "What is the best approach to apply patching??",
       options: [
         { id: "manual", text: "Manual Patching", correct: false },
         { id: "auto", text: "Automatic Patching", correct: false },
@@ -241,21 +244,21 @@ export default function CsaPage() {
       explanation: "The Network Layer (Layer 3) handles logical addressing and routing."
     },
 
-    {
-      id: 19,
-      question: "Which Cyber Security certification are you looking for?",
-      options: [
-        { id: "secplus", text: "CompTIA Security+", correct: false },
-        { id: "netplus", text: "CompTIA Network+", correct: false },
-        { id: "ceh", text: "CEH", correct: false },
-        { id: "cisa", text: "CISA", correct: true }
-      ],
-      explanation: "CISA (Certified Information Systems Auditor) is highly regarded for security professionals."
-    },
+    // {
+    //   id: 19,
+    //   question: "Which Cyber Security certification are you looking for?",
+    //   options: [
+    //     { id: "secplus", text: "CompTIA Security+", correct: false },
+    //     { id: "netplus", text: "CompTIA Network+", correct: false },
+    //     { id: "ceh", text: "CEH", correct: false },
+    //     { id: "cisa", text: "CISA", correct: true }
+    //   ],
+    //   explanation: "CISA (Certified Information Systems Auditor) is highly regarded for security professionals."
+    // },
 
     {
-      id: 20,
-      question: "Biggest concern after the mega-breach?",
+      id: 19,
+      question: "What is the biggest concern for an organisation after the mega-breach??",
       options: [
         { id: "email", text: "Business email compromise", correct: false },
         { id: "personal", text: "Personal account hacks", correct: false },
@@ -265,20 +268,20 @@ export default function CsaPage() {
       explanation: "Dark web exposure of sensitive data often has the longest-lasting consequences."
     },
 
-    {
-      id: 21,
-      question: "Where do you think AI will make the biggest impact in network security?",
-      options: [
-        { id: "detection", text: "Threat detection & response", correct: true },
-        { id: "analytics", text: "Predictive analytics", correct: false },
-        { id: "access", text: "Access control", correct: false },
-        { id: "remediation", text: "Automated remediation", correct: false }
-      ],
-      explanation: "AI excels at real-time threat detection and response through pattern recognition."
-    },
+    // {
+    //   id: 20,
+    //   question: "Where do you think AI will make the biggest impact in network security?",
+    //   options: [
+    //     { id: "detection", text: "Threat detection & response", correct: true },
+    //     { id: "analytics", text: "Predictive analytics", correct: false },
+    //     { id: "access", text: "Access control", correct: false },
+    //     { id: "remediation", text: "Automated remediation", correct: false }
+    //   ],
+    //   explanation: "AI excels at real-time threat detection and response through pattern recognition."
+    // },
 
     {
-      id: 22,
+      id: 20,
       question: "After reading about the 16B password leak, what's your next step?",
       options: [
         { id: "change", text: "Change all my passwords", correct: false },
@@ -297,34 +300,34 @@ export default function CsaPage() {
   const [showVotingResults, setShowVotingResults] = useState(false);
   const [votingStats, setVotingStats] = useState<Record<number, Record<string, number>>>({});
   
-  const mockVotingStats = {
-    0: { "http": 2, "ftp": 1, "https": 98, "telnet": 0 },
-    1: { "brute": 12, "mitm": 21, "phishing": 63, "sql": 4 },
-    2: { "faster": 5, "crashes": 86, "features": 3, "storage": 6 },
-    3: { "encrypted": 87, "cert": 7, "fallback": 2, "firewall": 3 },
-    4: { "ssl": 10, "tls": 20, "pgp": 65, "http": 5 },
-    5: { "encryption": 15, "impersonation": 25, "spoofing": 55, "harvesting": 5 },
-    6: { "data": 41, "ransom": 15, "records": 29, "reputation": 15 },
-    7: { "mailpass": 16, "mailview": 8, "sendinc": 48, "finder": 28 },
-    8: { "dsa": 7, "ecc": 3, "des": 58, "rsa": 33 },
-    9: { "aes128": 3, "rsa": 9, "aes256": 81, "tripledes": 7 },
-    10: { "db_nmap": 60, "search": 10, "db_autopwn": 0, "exploit": 30 },
-    11: { "manual": 17, "auto": 37, "mixed": 46, "other": 0 },
-    12: { "autopsy": 43, "ftk": 16, "redline": 13, "wireshark": 27 },
-    13: { "parity": 50, "dual": 27, "mirror": 15, "encrypt": 8 },
-    14: { "traffic": 23, "threat": 54, "policy": 12, "access": 12 },
-    15: { "mit": 45, "nyu": 4, "harvard": 13, "bell": 38 },
-    16: { "yes": 93, "no": 4, "maybe": 4 },
-    17: { "network": 65, "data": 15, "transport": 10, "app": 10 },
-    18: { "secplus": 30, "netplus": 20, "ceh": 25, "cisa": 25 },
-    19: { "email": 30, "personal": 20, "darkweb": 40, "phishing": 10 },
-    20: { "detection": 60, "analytics": 20, "access": 10, "remediation": 10 },
-    21: { "change": 31, "mfa": 50, "check": 18, "unsure": 2 }
-  };
+  // const mockVotingStats = {
+  //   0: { "http": 2, "ftp": 1, "https": 98, "telnet": 0 },
+  //   1: { "brute": 12, "mitm": 21, "phishing": 63, "sql": 4 },
+  //   2: { "faster": 5, "crashes": 86, "features": 3, "storage": 6 },
+  //   3: { "encrypted": 87, "cert": 7, "fallback": 2, "firewall": 3 },
+  //   4: { "ssl": 10, "tls": 20, "pgp": 65, "http": 5 },
+  //   5: { "encryption": 15, "impersonation": 25, "spoofing": 55, "harvesting": 5 },
+  //   6: { "data": 41, "ransom": 15, "records": 29, "reputation": 15 },
+  //   7: { "mailpass": 16, "mailview": 8, "sendinc": 48, "finder": 28 },
+  //   8: { "dsa": 7, "ecc": 3, "des": 58, "rsa": 33 },
+  //   9: { "aes128": 3, "rsa": 9, "aes256": 81, "tripledes": 7 },
+  //   10: { "db_nmap": 60, "search": 10, "db_autopwn": 0, "exploit": 30 },
+  //   11: { "manual": 17, "auto": 37, "mixed": 46, "other": 0 },
+  //   12: { "autopsy": 43, "ftk": 16, "redline": 13, "wireshark": 27 },
+  //   13: { "parity": 50, "dual": 27, "mirror": 15, "encrypt": 8 },
+  //   14: { "traffic": 23, "threat": 54, "policy": 12, "access": 12 },
+  //   15: { "mit": 45, "nyu": 4, "harvard": 13, "bell": 38 },
+  //   16: { "yes": 93, "no": 4, "maybe": 4 },
+  //   17: { "network": 65, "data": 15, "transport": 10, "app": 10 },
+  //   18: { "secplus": 30, "netplus": 20, "ceh": 25, "cisa": 25 },
+  //   19: { "email": 30, "personal": 20, "darkweb": 40, "phishing": 10 },
+  //   20: { "detection": 60, "analytics": 20, "access": 10, "remediation": 10 },
+  //   21: { "change": 31, "mfa": 50, "check": 18, "unsure": 2 }
+  // };
 
   const handleBeginAssessment = () => {
     setAssessmentStarted(true);
-    setVotingStats(mockVotingStats);
+    // setVotingStats(mockVotingStats);
   };
 
   const handleAnswerSelect = (questionId: number, optionId: string) => {
@@ -501,11 +504,11 @@ export default function CsaPage() {
             <div className="bg-white p-8 rounded-xl shadow-lg overflow-hidden border border-gray-100 mt-10">
               <div className="mb-8 md:flex md:justify-between ">
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">
+                  <h3 className="text-xl font-semibold mb-2 max-w-[600px]">
                     {questions[currentQuestion].question}
                   </h3>
                   <p className="text-sm text-gray-500">
-                    Select your answer and view how others responded as well
+                    Select your answer and view explanation of correct response.
                   </p>
                 </div>
                 <div className="mb-8 mt-2 ">
@@ -622,15 +625,15 @@ export default function CsaPage() {
               <div className="mt-8 p-6 bg-gray-50 rounded-lg">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
                   <div className="w-full md:w-1/2">
-                    <h3 className="text-xl font-semibold mb-4">Your Cybersecurity Knowledge Score</h3>
+                    <div className="flex gap-3">
+                      <h3 className="text-xl font-semibold mb-4">Your Cybersecurity Knowledge Score:</h3>
+                      <span className="text-primary font-bold mt-0.5">{score}%</span>
+                    </div>
                     <div className="relative h-6 bg-gray-200 rounded-full overflow-hidden">
                       <div 
                         className="absolute top-0 left-0 h-full bg-cybernovr-purple transition-all duration-1000 ease-out"
                         style={{ width: `${score}%` }}
                       ></div>
-                      <div className="absolute inset-0 flex items-center justify-center text-sm font-medium">
-                        {score}%
-                      </div>
                     </div>
                     <p className="mt-2 text-sm text-gray-600">
                       You answered {Object.values(answers).filter(a => a.isCorrect).length} out of {questions.length} correctly
@@ -679,8 +682,8 @@ export default function CsaPage() {
                     </div>
                   </div>
                   
-                  <h4 className="font-medium mb-4">Recommended Training Modules:</h4>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <h4 className="font-medium mb-4">Recommended Training Level:</h4>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                     {currentTraining.modules.map((module, index) => (
                       <div key={index} className="flex items-start gap-3 p-3 bg-white border rounded-lg">
                         <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
@@ -689,6 +692,19 @@ export default function CsaPage() {
                     ))}
                   </div>
                   
+                  <h4 className="font-medium mb-4">Visit our available courses:</h4>
+                  <div className="mt-4 p-4 bg-white border rounded-lg flex flex-col items-center">
+                    <p className="mb-4 text-center">Scan this QR code to view all available courses</p>
+                    <div className="p-2 bg-white rounded border">
+                      <QRCode 
+                        value={`${window.location.origin}/courses`}
+                        size={128}
+                        level="H"
+                      />
+                    </div>
+                    <p className="mt-2 text-sm text-gray-500">or visit: {window.location.origin}/courses</p>
+                  </div>
+
                   {score <= 70 && (
                     <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
                       <h4 className="font-medium text-yellow-800 mb-2">Important Note:</h4>
@@ -717,24 +733,31 @@ export default function CsaPage() {
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">Need Customized Training for Your Team?</h2>
-            <p className="text-xl mb-8 text-gray-600">
-              We offer tailored cybersecurity training programs based on your organization's specific needs.
-            </p>
-            <Link href="/contact">
-              <Button
-                size="lg"
-                className="bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
-              >
-                Request Training Consultation
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </Link>
-          </div>
+      <section className="py-16 bg-gradient-to-r from-cybernovr-purple to-cybernovr-purple/80 text-white relative overflow-hidden">
+        <AnimatedBackground className="opacity-20" />
+        <div className="container-custom relative z-10">
+          <FadeIn direction="up">
+            <div className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Advance Your Career?</h2>
+              <p className="text-xl mb-8">
+                Invest in your future with our industry-leading cybersecurity courses. Enroll today and take the first
+                step toward becoming a cybersecurity expert.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link href="/courses/enroll">
+                  <Button size="lg" className="bg-cybernovr-purple text-white hover:bg-cybernovr-purple/90">
+                    Enroll Now
+                  </Button>
+                </Link>
+                <Button
+                  size="lg"
+                  className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                >
+                  View Course Catalog
+                </Button>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
     </div>

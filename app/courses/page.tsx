@@ -18,7 +18,7 @@ export default function CoursesPage() {
       title: "Cybersecurity Fundamentals",
       description:
         "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
-      price: 10,
+      price: 25950,
       duration: "4 weeks",
       level: "Beginner",
       icon: <Shield className="h-12 w-12 text-cybernovr-purple" />,

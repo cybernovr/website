@@ -13,6 +13,11 @@ export default function EnrollmentSuccess() {
   const [paymentDetails, setPaymentDetails] = useState<any>(null)
   const [lmsStatus, setLmsStatus] = useState<'idle' | 'processing' | 'completed' | 'failed'>('idle')
   const reference = searchParams.get('reference')
+  const [registrationData, setRegistrationData] = useState<any>(null);
+
+  const encodeUserId = (userId: string) => {
+    return Buffer.from(userId).toString('base64');
+  };
 
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-NG', {
@@ -24,23 +29,25 @@ export default function EnrollmentSuccess() {
 
   const sendEmailNotification = async (type: 'failed' | 'completed', formDetails: any) => {
     try {
-      const subject = type === 'failed' 
-        ? `LMS Registration Failed for ${formDetails.name}` 
+      // console.log("yesssss", formDetails)
+      const subject = type === 'failed'
+        ? `LMS Registration Failed for ${formDetails.name}`
         : `New User Onboarded: ${formDetails.name}`;
   
       const response = await fetch("https://formsubmit.co/ajax/info@cybernovr.com", {
         method: "POST",
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
         body: JSON.stringify({
           ...formDetails,
           _subject: subject,
-          _replyto: formDetails.email || 'no-reply@cybernovr.com',
+          _replyto: formDetails.email || 'info@cybernovr.com',
           _template: "table",
           _captcha: "false",
-          status: type === 'failed' ? 'Registration Failed' : 'Registration Completed'
+          status: type === 'failed' ? 'Registration Failed' : 'Registration Completed',
+          reference: paymentDetails?.reference || 'N/A',
         })
       });
   
@@ -50,7 +57,7 @@ export default function EnrollmentSuccess() {
       console.error('Error sending email notification:', error);
       return false;
     }
-  };  
+  };
 
   const handleLmsRegistration = async (
     email: string, 
@@ -61,6 +68,8 @@ export default function EnrollmentSuccess() {
   ) => {
     setLmsStatus('processing');
     try {
+      // console.log('Starting LMS registration with:', { email, name, courseId });
+
       const formDetails = {
         courseId,
         name,
@@ -69,35 +78,33 @@ export default function EnrollmentSuccess() {
         headOfSchoolEmail: metadata?.headOfSchoolEmail || 'N/A',
         parentName: metadata?.parentName || 'N/A',
         parentEmail: metadata?.parentEmail || 'N/A',
-        classInSchool: metadata?.classInSchool || 'N/A',       
-        dateOfBirth: metadata?.dateOfBirth || 'N/A', 
+        classInSchool: metadata?.classInSchool || 'N/A',
+        dateOfBirth: metadata?.dateOfBirth || 'N/A',
         reference: paymentDetails?.reference || 'N/A',
         email
       };
       
-      console.log('Starting LMS registration with:', { email, name, courseId });
-  
       const userPayload = {
         firstname: name?.split(' ')[0] || 'Student',
         lastname: name?.split(' ').slice(1).join(' ') || 'User',
-        country: "Nigeria",
+        country: "",
         password: "",
         organizationId: "685ec1191008ea7cff78dbc8",
-        bio: "Student from Nigeria",
-        address: "123 Main Street",
-        city: "Lagos",
-        state: "Lagos",
-        zip: "100001",
+        bio: "",
+        address: "",
+        city: "",
+        state: "",
+        zip: "",
         phone: applicantContact,
         email: email,
         type: "STUDENT"    
       };
-  
+
       const authString = Buffer.from(
         `${process.env.LMS_API_EMAIL}:${process.env.LMS_API_PASSWORD}`
       ).toString('base64');
   
-      console.log('User payload:', userPayload);
+      // console.log('User payload:', userPayload);
   
       const userResponse = await fetch('/api/lms/create-user', {
         method: 'POST',
@@ -110,7 +117,7 @@ export default function EnrollmentSuccess() {
       });
   
       const userData = await userResponse.json();
-      console.log('LMS user creation response:', userData);
+      // console.log('LMS user creation response:', userData);
   
       if (!userResponse.ok) {
         throw new Error(userData.message || 'Failed to create LMS user');
@@ -126,13 +133,12 @@ export default function EnrollmentSuccess() {
         body: JSON.stringify({
           user: userData.id,
           id: courseId,
-          comment: "Registered via payment gateway",
-          activeStep: 0
         })
       });
   
       const registrationData = await registrationResponse.json();
-      console.log('Course registration response:', registrationData);
+      setRegistrationData(registrationData);
+      // console.log('Course registration response:', registrationData);
   
       if (registrationResponse.ok) {
         await sendEmailNotification('completed', formDetails);
@@ -150,8 +156,8 @@ export default function EnrollmentSuccess() {
         headOfSchoolEmail: metadata?.headOfSchoolEmail || 'N/A',
         parentName: metadata?.parentName || 'N/A',
         parentEmail: metadata?.parentEmail || 'N/A',
-        classInSchool: metadata?.classInSchool || 'N/A',       
-        dateOfBirth: metadata?.dateOfBirth || 'N/A', 
+        classInSchool: metadata?.classInSchool || 'N/A',
+        dateOfBirth: metadata?.dateOfBirth || 'N/A',
         reference: paymentDetails?.reference || 'N/A',
         email,
         error: error instanceof Error ? error.message : 'Unknown error'
@@ -187,7 +193,7 @@ export default function EnrollmentSuccess() {
       const courseId = data.data.metadata?.courseId;
       const applicantContact =data.data.metadata?.applicantContact
       
-      console.log('Extracted values:', { email, name, applicantContact, courseId });
+      // console.log('Extracted values:', { email, name, applicantContact, courseId });
 
       if (!email) {
         throw new Error('Customer email not found in payment details');
@@ -288,9 +294,12 @@ export default function EnrollmentSuccess() {
                     >
                       Return to Courses
                     </Button>
-                    {lmsStatus === 'completed' && (
+                    {lmsStatus === 'completed' && paymentDetails?.metadata?.courseId && registrationData?.userId && (
                       <Button
-                        onClick={() => window.open(`https://lms.horacelearning.com/courses/${paymentDetails.metadata?.courseId}`, '_blank')}
+                        onClick={() => window.open(
+                          `https://lms.horacelearning.com/course/${paymentDetails.metadata.courseId}/${encodeUserId(registrationData.userId)}`,
+                          '_blank'
+                        )}
                         variant="outline"
                         className="border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10"
                       >
@@ -298,6 +307,12 @@ export default function EnrollmentSuccess() {
                       </Button>
                     )}
                   </div>
+                </div>
+              )}
+
+              {lmsStatus === 'completed' && (
+                <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-lg">
+                  <p className="text-sm mt-1">Kindly take notice that you cannot revisit this page for your course information, please check you mailbox for nessessary steps to proceed from here.</p>
                 </div>
               )}
 

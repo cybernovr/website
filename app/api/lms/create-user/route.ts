@@ -4,9 +4,9 @@ export async function POST(request: Request) {
   try {
     const { email, applicantContact, name, courseId, ...userPayload } = await request.json();
 
-    const LMS_API_URL = process.env.LMS_API_URL || 'https://robiatschools.com/';
+    const LMS_API_URL = process.env.LMS_API_URL || 'https://robiatschools.com';
     const CREATE_USER_ENDPOINT = `${LMS_API_URL}/api/v1/user/add`;
-    console.log('Calling endpoint:', CREATE_USER_ENDPOINT);
+    // console.log('Calling endpoint:', CREATE_USER_ENDPOINT);
     
     const authString = Buffer.from(
       `${process.env.LMS_API_EMAIL}:${process.env.LMS_API_PASSWORD}`

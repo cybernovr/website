@@ -83,6 +83,15 @@ export default function EnrollPage() {
           amount: course.price,
           courseId,
           name: formData.name,
+          schoolName: formData.schoolName,
+          classInSchool: formData.classInSchool,
+          headOfSchoolName: formData.headOfSchoolName,
+          headOfSchoolEmail: formData.headOfSchoolEmail,
+          parentName: formData.parentName,
+          parentEmail: formData.parentEmail,
+          schoolConsent: formData.schoolConsent,
+          parentConsent: formData.parentConsent,
+          applicantContact: formData.applicantContact,
         }),
       });
 

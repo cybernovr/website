@@ -244,18 +244,6 @@ export default function CsaPage() {
       explanation: "The Network Layer (Layer 3) handles logical addressing and routing."
     },
 
-    // {
-    //   id: 19,
-    //   question: "Which Cyber Security certification are you looking for?",
-    //   options: [
-    //     { id: "secplus", text: "CompTIA Security+", correct: false },
-    //     { id: "netplus", text: "CompTIA Network+", correct: false },
-    //     { id: "ceh", text: "CEH", correct: false },
-    //     { id: "cisa", text: "CISA", correct: true }
-    //   ],
-    //   explanation: "CISA (Certified Information Systems Auditor) is highly regarded for security professionals."
-    // },
-
     {
       id: 19,
       question: "What is the biggest concern for an organisation after the mega-breach??",
@@ -267,18 +255,6 @@ export default function CsaPage() {
       ],
       explanation: "Dark web exposure of sensitive data often has the longest-lasting consequences."
     },
-
-    // {
-    //   id: 20,
-    //   question: "Where do you think AI will make the biggest impact in network security?",
-    //   options: [
-    //     { id: "detection", text: "Threat detection & response", correct: true },
-    //     { id: "analytics", text: "Predictive analytics", correct: false },
-    //     { id: "access", text: "Access control", correct: false },
-    //     { id: "remediation", text: "Automated remediation", correct: false }
-    //   ],
-    //   explanation: "AI excels at real-time threat detection and response through pattern recognition."
-    // },
 
     {
       id: 20,

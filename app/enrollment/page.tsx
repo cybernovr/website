@@ -13,7 +13,7 @@ import FadeIn from "@/components/animations/fade-in"
 import { ArrowLeft, CheckCircle } from "lucide-react"
 
 // Course price
-const COURSE_PRICE = 14999; // in Naira
+const COURSE_PRICE = 14999; 
 
 export default function EnrollmentPage() {
   const router = useRouter()

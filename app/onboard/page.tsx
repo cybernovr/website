@@ -40,7 +40,7 @@ const generateToken = async () => {
       throw new Error('Email is required');
     }
 
-    // console.log('Attempting to generate token for:', email);
+    // console.log('Attempting to generate token for:', email)
 
     const response = await fetch('/api/lms/generate-token', {
       method: 'POST',

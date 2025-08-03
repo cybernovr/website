@@ -14,7 +14,7 @@ import course4 from "@/components/images/cheerful2.jpeg"
 export default function CoursesPage() {
   const courses = [
     {
-      id: "686178635633410c68907cf5",
+      id: "68891facbc9839284aebb86d",
       title: "Cybersecurity Fundamentals",
       description:
         "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",

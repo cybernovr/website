@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { email, amount, courseId, name, applicantContact, schoolName, headOfSchoolEmail, parentName, parentEmail, classInSchool, dateOfBirth } = body;
 
-    if (!email || !amount || !courseId) {
+    if (!email || !applicantContact || !amount || !courseId) {
       return NextResponse.json(
         { error: 'Email, amount and courseId are required' },
         { status: 400 }
@@ -80,7 +80,8 @@ export async function POST(request: NextRequest) {
     };
 
     const response = await initializePaystackPayment({
-      email,
+      email: applicantContact,
+      applicantContact,
       amount: amountInKobo,
       callback_url: callbackUrl,
       reference,

@@ -1,4 +1,5 @@
 interface PaystackInitializePaymentProps {
+  applicantContact: string;
   email: string;
   amount: number; // in kobo (Naira * 100)
   metadata?: Record<string, any>;

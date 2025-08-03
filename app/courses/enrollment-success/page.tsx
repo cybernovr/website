@@ -81,7 +81,7 @@ export default function EnrollmentSuccess() {
         classInSchool: metadata?.classInSchool || 'N/A',
         dateOfBirth: metadata?.dateOfBirth || 'N/A',
         reference: paymentDetails?.reference || 'N/A',
-        email
+        email : metadata?.applicantContact
       };
       
       const userPayload = {
@@ -96,7 +96,7 @@ export default function EnrollmentSuccess() {
         state: "",
         zip: "",
         phone: applicantContact,
-        email: email,
+        email: applicantContact,
         type: "STUDENT"    
       };
 
@@ -159,7 +159,7 @@ export default function EnrollmentSuccess() {
         classInSchool: metadata?.classInSchool || 'N/A',
         dateOfBirth: metadata?.dateOfBirth || 'N/A',
         reference: paymentDetails?.reference || 'N/A',
-        email,
+        email : metadata?.applicantContact,
         error: error instanceof Error ? error.message : 'Unknown error'
       };
       
@@ -188,7 +188,7 @@ export default function EnrollmentSuccess() {
       setStatus('success');
       setPaymentDetails(data.data);
 
-      const email = data.data.customer?.email;
+      const email = data.data.metadata?.applicantContact;
       const name = data.data.metadata?.name || 'Student';
       const courseId = data.data.metadata?.courseId;
       const applicantContact =data.data.metadata?.applicantContact
@@ -215,6 +215,7 @@ export default function EnrollmentSuccess() {
     verifyPayment()
   }, [reference])
 
+  console.log('Payment Details:', paymentDetails)
   return (
     <div className="min-h-screen bg-light-gray pt-32 pb-20">
       <div className="container-custom">
@@ -274,6 +275,7 @@ export default function EnrollmentSuccess() {
                   {lmsStatus === 'completed' && (
                     <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-lg">
                       <p>Your course access has been successfully set up!</p>
+                      <p>Please set up your lms account to proceed!</p>
                     </div>
                   )}
 
@@ -284,7 +286,7 @@ export default function EnrollmentSuccess() {
                   )}
                   
                   <p className="text-gray-600 mb-6">
-                    Thank you for enrolling in our course. {lmsStatus === 'completed' && 'You can now access your course.'}
+                    Thank you for enrolling in our course. <br /> {lmsStatus === 'completed' && 'Please set up your LMS account to access your course materials.'}
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -295,23 +297,20 @@ export default function EnrollmentSuccess() {
                       Return to Courses
                     </Button>
                     {lmsStatus === 'completed' && paymentDetails?.metadata?.courseId && registrationData?.userId && (
-                      <Button
-                        onClick={() => window.open(
-                          `https://lms.horacelearning.com/course/${paymentDetails.metadata.courseId}/${encodeUserId(registrationData.userId)}`,
-                          '_blank'
-                        )}
+                      <><Button
+                        onClick={() => router.push(`/onboard?userId=${registrationData.userId}&email=${encodeURIComponent(paymentDetails.customer?.email)}&courseId=${paymentDetails.metadata.courseId}&name=${paymentDetails.metadata.name}`)}
                         variant="outline"
                         className="border-cybernovr-purple text-cybernovr-purple hover:bg-cybernovr-purple/10"
                       >
-                        Go to Course
-                      </Button>
+                          Set Up Your Account
+                        </Button></>
                     )}
                   </div>
                 </div>
               )}
 
               {lmsStatus === 'completed' && (
-                <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-lg">
+                <div className="mb-6 p-4 bg-blue-50 text-blue-700 rounded-lg">
                   <p className="text-sm mt-1">Kindly take notice that you cannot revisit this page for your course information, please check you mailbox for nessessary steps to proceed from here.</p>
                 </div>
               )}

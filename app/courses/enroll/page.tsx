@@ -79,7 +79,7 @@ export default function EnrollPage() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email: formData.parentEmail || formData.applicantContact,
+          email: formData.applicantContact,
           amount: course.price,
           courseId,
           name: formData.name,
@@ -178,6 +178,19 @@ export default function EnrollPage() {
                       onChange={handleChange}
                       required
                       className="mt-1"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+
+                  <div>
+                    <Label htmlFor="applicantContact">Email Address of Applicant/Guardian</Label>
+                    <Input
+                      id="applicantContact"
+                      name="applicantContact"
+                      value={formData.applicantContact}
+                      onChange={handleChange}
+                      required
+                      className="mt-1"
                     />
                   </div>
 
@@ -216,18 +229,6 @@ export default function EnrollPage() {
                       required
                       className="mt-1"
                       placeholder="e.g. JS1, SS3"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="applicantContact">Phone or Email Address of Applicant/Parent</Label>
-                    <Input
-                      id="applicantContact"
-                      name="applicantContact"
-                      value={formData.applicantContact}
-                      onChange={handleChange}
-                      required
-                      className="mt-1"
                     />
                   </div>
 

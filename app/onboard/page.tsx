@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+
 "use client"
 
 import { useState } from 'react'
@@ -11,6 +13,7 @@ import FadeIn from '@/components/animations/fade-in'
 import herobanner from "@/components/images/carouselworthy2.jpeg";
 
 export default function OnboardingPage() {
+  
   const searchParams = useSearchParams()
   const router = useRouter()
   const userId = searchParams.get('userId')
@@ -24,8 +27,12 @@ export default function OnboardingPage() {
   const [tokenSent, setTokenSent] = useState(false)
   const [token, setToken] = useState('')
 
-const encodeUserId = (userId: string) => {
-    return Buffer.from(userId).toString('base64');
+  // const encodeUserId = (userId: string) => {
+  //   return Buffer.from(userId).toString('base64');
+  // };
+
+  const encodeUserId = (userId: string) => {
+    return btoa(unescape(encodeURIComponent(userId)));
   };
 
   // console.log('User ID:', userId)
@@ -154,7 +161,11 @@ const resetPassword = async () => {
   } finally {
     setLoading(false);
   }
-};
+  };
+  
+  if (!userId || !email || !name) {
+    return <div>Missing required parameters. Please access this page through the proper invitation link.</div>;
+  }
 
   return (
     <div className="min-h-screen bg-light-gray pt-32 pb-20 flex">

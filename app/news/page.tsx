@@ -7,8 +7,18 @@ import Thisdaylive from "@/components/images/thisdaylive.jpg"
 import Theeconomictimes from "@/components/images/Aminu-Maida-1140x570-1068x534.jpg"
 import nairametrics from "@/components/images/nairametrics.jpg"
 
+
 export default function NewsPage() {
+  const nigeriacommunicationsweek = "https://www.nigeriacommunicationsweek.com.ng/wp-content/uploads/2025/08/NCC.jpg"
   const news = [
+    {
+      name: "TelecomNCC Unveils Cybersecurity Blueprint to Fortify Nigeria’s Telecom Backbone",
+      description:
+        "The presentation of the proposed framework by the Chief Executive Officer of CyberNovr, the consultants to the Commission on the project, Dr. Kazeem Durodoye, further provided details...",
+      image: nigeriacommunicationsweek,
+      href: "https://www.nigeriacommunicationsweek.com.ng/ncc-unveils-cybersecurity-blueprint-to-fortify-nigerias-telecom-backbone/",
+      category: "Nigeria Communications Week",
+    },
     {
       name: "NCC announced the development of a comprehensive cybersecurity framework",
       description:
@@ -41,7 +51,6 @@ export default function NewsPage() {
       href: "https://www.thisdaylive.com/2025/06/05/ncc-moves-to-develop-cybersecurity-regulatory-framework-for-telecoms-sector/ ",
       category: "This Day Live",
     },
-
   ]
 
   return (

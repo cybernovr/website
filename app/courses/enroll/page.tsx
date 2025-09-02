@@ -16,7 +16,7 @@ const courses = {
   cs101: {
     title: "Cybersecurity Fundamentals",
     price: 14999,
-  }, //second here
+  },
   cs201: {
     title: "Network Security Essentials",
     price: 14999,

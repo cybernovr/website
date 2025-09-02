@@ -63,7 +63,7 @@ export default function EnrollPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Store form data and move to payment step
+    // Store form data and move t payment step
     setStep(2)
     setIsSubmitting(false)
   }

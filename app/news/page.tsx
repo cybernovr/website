@@ -55,7 +55,7 @@ export default function NewsPage() {
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="pt-32 pb-16 bg-gradient-to-r from-deep-blue to-electric-blue text-black">
         <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center">

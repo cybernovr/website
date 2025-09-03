@@ -10,7 +10,16 @@ import nairametrics from "@/components/images/nairametrics.jpg"
 
 export default function NewsPage() {
   const nigeriacommunicationsweek = "https://www.nigeriacommunicationsweek.com.ng/wp-content/uploads/2025/08/NCC.jpg"
+  const bbcnews = "https://ichef.bbci.co.uk/news/1024/cpsprodpb/d270/live/49dd2890-8805-11f0-8c43-13009d7c5281.jpg.webp"
   const news = [
+    {
+      name: "Jaguar Land Rover production severely hit by cyber-attack",
+      description:
+        "A cyber-attack has severely disrupted Jaguar Land Rover (JLR) vehicle production, including at its two main UK plants. The company, which is owned by India's Tata Motors, said...",
+      image: bbcnews,
+      href: "https://www.bbc.com/news/articles/c9wywvllq7wo",
+      category: "BBC News",
+    },
     {
       name: "TelecomNCC Unveils Cybersecurity Blueprint to Fortify Nigeria’s Telecom Backbone",
       description:
@@ -51,6 +60,7 @@ export default function NewsPage() {
       href: "https://www.thisdaylive.com/2025/06/05/ncc-moves-to-develop-cybersecurity-regulatory-framework-for-telecoms-sector/ ",
       category: "This Day Live",
     },
+
   ]
 
   return (

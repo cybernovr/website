@@ -120,10 +120,16 @@ import img7 from "@/components/images/seven.png"
 import img8 from "@/components/images/eight.png"
 import img9 from "@/components/images/nine.png"
 
+const img0 = "https://www.nigeriacommunicationsweek.com.ng/wp-content/uploads/2025/08/NCC.jpg"
 
 const slides = [
+
   {
     image: img1,
+    alt: "Cybersecurity Protection",
+  },
+  {
+    image: img0,
     alt: "Cybersecurity Protection",
   },
   {
@@ -205,7 +211,7 @@ export default function HeroCarousel() {
           animate="center"
           exit="exit"
           transition={{
-            duration: 1, 
+            duration: 1,
             ease: [0.16, 1, 0.3, 1],
           }}
           className="absolute inset-0"

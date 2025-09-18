@@ -69,7 +69,7 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      {/* Courses Section */}
+      {/* Courses Secti */}
       <section className="py-20">
         <div className="container-custom">
           <FadeIn direction="up">

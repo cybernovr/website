@@ -15,7 +15,7 @@ import { ArrowLeft, CheckCircle } from "lucide-react"
 const courses = {
   cs101: {
     title: "Cybersecurity Fundamentals",
-    price: 100,
+    price: 10,
   },
   cs201: {
     title: "Network Security Essentials",

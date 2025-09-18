@@ -160,7 +160,7 @@ function OnboardingContent() {
     <div className="min-h-screen bg-light-gray pt-32 pb-20 flex">
       <div className='container-custom colspan-1 flex justify-center items-center mb-8 hidden lg:block'>
         <FadeIn direction="left" delay={0.3} duration={0.7}>
-          <div className=" rounded-lg shadow-xl">
+          <div className="rounded-lg shadow-xl hidden lg:flex lg:w-1/2 bg-gray-100 items-center justify-center p-8">
             <Image
               src={herobanner}
               alt="Onboarding Hero"

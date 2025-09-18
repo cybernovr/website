@@ -10,7 +10,6 @@ import course2 from "@/components/images/pentest.jpg"
 import course3 from "@/components/images/cyberfund.jpeg"
 import course4 from "@/components/images/cheerful2.jpeg"
 
-
 export default function CoursesPage() {
   const courses = [
     {
@@ -18,12 +17,13 @@ export default function CoursesPage() {
       title: "Cybersecurity Fundamentals",
       description:
         "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
-      price: 14999,
+      price: 100,
       duration: "4 weeks",
       level: "Beginner",
       icon: <Shield className="h-12 w-12 text-cybernovr-purple" />,
       image: course3,
-    }, // first here
+      available: true,
+    },
     {
       id: "cs201",
       title: "Network Security Essentials",
@@ -34,6 +34,7 @@ export default function CoursesPage() {
       level: "Intermediate",
       icon: <BookOpen className="h-12 w-12 text-cybernovr-purple" />,
       image: course1,
+      available: false,
     },
     {
       id: "cs301",
@@ -45,6 +46,7 @@ export default function CoursesPage() {
       level: "Advanced",
       icon: <Award className="h-12 w-12 text-cybernovr-purple" />,
       image: course2,
+      available: false,
     },
   ]
 
@@ -162,12 +164,14 @@ export default function CoursesPage() {
                     Enroll Now
                   </Button>
                 </Link>
-                <Button
-                  size="lg"
-                  className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
-                >
-                  View Course Catalog
-                </Button>
+                <Link href="/courses">
+                  <Button
+                    size="lg"
+                    className="bg-white/20 backdrop-blur-sm border-2 border-white text-white hover:bg-white/30 transition-all"
+                  >
+                    View Course Catalog
+                  </Button>
+                </Link>
               </div>
             </div>
           </FadeIn>

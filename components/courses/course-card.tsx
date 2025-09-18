@@ -18,11 +18,12 @@ interface CourseProps {
     level: string
     icon: React.ReactNode
     image: any
+    available: boolean
   }
 }
 
 export default function CourseCard({ course }: CourseProps) {
-  // Format price in Naira
+
   const formatPrice = (price: number) => {
     return new Intl.NumberFormat('en-NG', {
       style: 'currency',
@@ -33,18 +34,25 @@ export default function CourseCard({ course }: CourseProps) {
 
   return (
     <motion.div
-      whileHover={{ y: -5, boxShadow: "0 10px 30px rgba(102, 47, 142, 0.1)" }}
+      whileHover={course.available ? { y: -5, boxShadow: "0 10px 30px rgba(102, 47, 142, 0.1)" } : {}}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-100"
+      className={`bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 ${!course.available ? 'opacity-70 grayscale' : ''}`}
     >
       <div className="relative h-48">
         <Image src={course.image || "/placeholder.svg"} alt={course.title} fill className="object-cover" />
         <div className="absolute top-4 right-4 bg-cybernovr-purple text-white text-sm font-medium py-1 px-3 rounded-full">
           {formatPrice(course.price)}
         </div>
+        {!course.available && (
+          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <span className="bg-charcoal text-white px-4 py-2 rounded-md font-bold">
+              Coming Soon
+            </span>
+          </div>
+        )}
       </div>
       <div className="p-6">
         <div className="mb-4">{course.icon}</div>
@@ -62,9 +70,24 @@ export default function CourseCard({ course }: CourseProps) {
           </div>
         </div>
 
-        <Link href={`/courses/enroll?course=${course.id}`}>
-          <Button className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white">Enroll Now</Button>
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-2">
+          <Link href={`/course/details`} className="flex-1">
+            <Button 
+              variant="outline" 
+              className="w-full"
+            >
+              View Details
+            </Button>
+          </Link>
+          <Link href={`/courses/enroll?course=${course.id}`} className="flex-1">
+            <Button 
+              className="w-full bg-cybernovr-purple hover:bg-cybernovr-purple/90 text-white"
+              disabled={!course.available}
+            >
+              {course.available ? 'Enroll Now' : 'Unavailable'}
+            </Button>
+          </Link>
+        </div>
       </div>
     </motion.div>
   )

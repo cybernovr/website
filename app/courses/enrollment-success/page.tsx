@@ -275,7 +275,6 @@ export default function EnrollmentSuccess() {
                   {lmsStatus === 'completed' && (
                     <div className="mb-6 p-4 bg-green-50 text-green-700 rounded-lg">
                       <p>Your course access has been successfully set up!</p>
-                      <p>Please set up your lms account to proceed!</p>
                     </div>
                   )}
 
@@ -286,7 +285,7 @@ export default function EnrollmentSuccess() {
                   )}
                   
                   <p className="text-gray-600 mb-6">
-                    Thank you for enrolling in our course. <br /> {lmsStatus === 'completed' && 'Please set up your LMS account to access your course materials.'}
+                    {lmsStatus === 'completed' && 'Please set up your LMS account to access your course materials.'}
                   </p>
                   
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">

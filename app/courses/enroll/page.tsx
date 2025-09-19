@@ -15,15 +15,15 @@ import { ArrowLeft, CheckCircle } from "lucide-react"
 const courses = {
   cs101: {
     title: "Cybersecurity Fundamentals",
-    price: 10,
+    price: 80000,
   },
   cs201: {
     title: "Network Security Essentials",
-    price: 14999,
+    price: 80000,
   },
   cs301: {
     title: "Advanced Penetration Testing",
-    price: 14999,
+    price: 80000,
   },
 }
 

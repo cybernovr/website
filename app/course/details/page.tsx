@@ -13,7 +13,7 @@ export default function CourseDetailsPage() {
         title: "Cybersecurity Fundamentals",
         description: "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
         overview: "This comprehensive course provides a solid foundation in cybersecurity principles and practices. You'll learn how to protect yourself and organizations from cyber threats, understand security fundamentals, and develop the skills needed for a career in cybersecurity.",
-        price: 14999,
+        price: 80000,
         duration: "4 weeks",
         level: "Beginner",
         image: courseImage,

@@ -13,8 +13,8 @@ import course4 from "@/components/images/cheerful2.jpeg"
 export default function CoursesPage() {
   const courses = [
     {
-      id: "68891facbc9839284aebb86d",
-      title: "Cybersecurity Fundamentals",
+      id: "68ce2cd9a05a4b67aa4d8e2d",
+      title: "Cybersecurity Education and Awareness Program (CEAP)",
       description:
         "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
       price: 80000,

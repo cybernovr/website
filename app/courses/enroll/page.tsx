@@ -14,7 +14,7 @@ import { ArrowLeft, CheckCircle } from "lucide-react"
 
 const courses = {
   cs101: {
-    title: "Cybersecurity Fundamentals",
+    title: "Cybersecurity Education and Awareness Program (CEAP)",
     price: 80000,
   },
   cs201: {
@@ -140,9 +140,8 @@ export default function EnrollPage() {
               <div className="flex mb-8">
                 <div className="flex items-center">
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      step >= 1 ? "bg-cybernovr-purple text-white" : "bg-gray-200 text-gray-500"
-                    }`}
+                    className={`w-8 h-8 rounded-full flex items-center justify-center ${step >= 1 ? "bg-cybernovr-purple text-white" : "bg-gray-200 text-gray-500"
+                      }`}
                   >
                     1
                   </div>
@@ -151,9 +150,8 @@ export default function EnrollPage() {
                 <div className="mx-4 border-t border-gray-300 flex-1 self-center"></div>
                 <div className="flex items-center">
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                      step >= 2 ? "bg-cybernovr-purple text-white" : "bg-gray-200 text-gray-500"
-                    }`}
+                    className={`w-8 h-8 rounded-full flex items-center justify-center ${step >= 2 ? "bg-cybernovr-purple text-white" : "bg-gray-200 text-gray-500"
+                      }`}
                   >
                     2
                   </div>
@@ -233,7 +231,7 @@ export default function EnrollPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="headOfSchoolName">Name of Head of School</Label>
+                    <Label htmlFor="headOfSchoolName">Principal (Head of School) Name</Label>
                     <Input
                       id="headOfSchoolName"
                       name="headOfSchoolName"
@@ -245,7 +243,7 @@ export default function EnrollPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="headOfSchoolEmail">Email Address of Head of School</Label>
+                    <Label htmlFor="headOfSchoolEmail">Principal (Head of School) Email</Label>
                     <Input
                       id="headOfSchoolEmail"
                       name="headOfSchoolEmail"
@@ -283,10 +281,10 @@ export default function EnrollPage() {
                   </div>
 
                   <div className="flex items-center space-x-2 pt-2">
-                    <Checkbox 
-                      id="schoolConsent" 
+                    <Checkbox
+                      id="schoolConsent"
                       checked={formData.schoolConsent}
-                      onCheckedChange={(checked) => 
+                      onCheckedChange={(checked) =>
                         handleCheckboxChange('schoolConsent', checked as boolean)
                       }
                       required
@@ -297,10 +295,10 @@ export default function EnrollPage() {
                   </div>
 
                   <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      id="parentConsent" 
+                    <Checkbox
+                      id="parentConsent"
                       checked={formData.parentConsent}
-                      onCheckedChange={(checked) => 
+                      onCheckedChange={(checked) =>
                         handleCheckboxChange('parentConsent', checked as boolean)
                       }
                       required
@@ -332,10 +330,18 @@ export default function EnrollPage() {
                   <div className="border rounded-lg p-6 bg-light-gray">
                     <h3 className="text-lg font-bold mb-4">Order Summary</h3>
                     <div className="flex justify-between mb-2">
-                      <span>{course.title}</span>
-                      <span>{formatPrice(course.price)}</span>
+                      <div className="mt-2">{course.title}</div>
+                      <div className="">
+                        <div className="text-sm line-through text-charcoal/70">{formatPrice(100000)}</div>
+
+                        <div>{formatPrice(course.price)}</div>
+                      </div>
                     </div>
                     <div className="border-t border-gray-300 my-4"></div>
+                    <div className="flex justify-between mb-2 text-gray-600">
+                      <span>Discount</span>
+                      <span>20%</span>
+                    </div>
                     <div className="flex justify-between font-bold">
                       <span>Total</span>
                       <span>{formatPrice(course.price)}</span>

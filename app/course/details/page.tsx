@@ -9,8 +9,8 @@ import courseImage from "@/components/images/cyberfund.jpeg"
 export default function CourseDetailsPage() {
     // Hardcoded data for the Cybersecurity Fundamentals course
     const course = {
-        id: "68891facbc9839284aebb86d",
-        title: "Cybersecurity Fundamentals",
+        id: "68ce2cd9a05a4b67aa4d8e2d",
+        title: "Cybersecurity Education and Awareness Program (CEAP)",
         description: "Learn the basics of cybersecurity, including key concepts, common threats, and essential protection strategies.",
         overview: "This comprehensive course provides a solid foundation in cybersecurity principles and practices. You'll learn how to protect yourself and organizations from cyber threats, understand security fundamentals, and develop the skills needed for a career in cybersecurity.",
         price: 80000,
@@ -26,6 +26,18 @@ export default function CourseDetailsPage() {
                 id: "686178635633410c68907cf6",
                 title: "Introduction to Cybersecurity",
                 lessons: [
+                    {
+                        id: "686178635633410c68907cf5",
+                        title: "Meet Your instructor",
+                        type: "VIDEO",
+                        duration: "5 min"
+                    },
+                    {
+                        id: "686178635633410c68907cf6",
+                        title: "Course Overview",
+                        type: "VIDEO",
+                        duration: "5 min"
+                    },
                     {
                         id: "686178635633410c68907cf7",
                         title: "Introduction to Cybersecurity",
@@ -280,7 +292,7 @@ export default function CourseDetailsPage() {
                             </FadeIn>
 
                             <FadeIn direction="up" delay={0.2}>
-                                <h2 className="text-3xl font-bold mb-6">What You'll Learn</h2>
+                                <h2 className="text-3xl font-bold mb-6">What You'll Achieve</h2>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
                                     {course.features.map((feature, index) => (
                                         <div key={index} className="flex items-start">
@@ -336,7 +348,7 @@ export default function CourseDetailsPage() {
                                     <div className="p-6">
                                         <div className="flex justify-between items-center mb-4">
                                             <span className="text-3xl font-bold text-cybernovr-purple">{formatPrice(course.price)}</span>
-                                            <span className="text-sm line-through text-charcoal/70">{formatPrice(24999)}</span>
+                                            <span className="text-sm line-through text-charcoal/70">{formatPrice(100000)}</span>
                                         </div>
 
                                         <div className="space-y-4 mb-6">
@@ -450,7 +462,7 @@ export default function CourseDetailsPage() {
                         <div className="text-center max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Start Your Cybersecurity Journey Today</h2>
                             <p className="text-xl mb-8">
-                                Join thousands of students who have transformed their careers with our Cybersecurity Fundamentals course.
+                                Join thousands of students who have transformed their careers with our Cybersecurity Education and Awareness Program (CEAP) course.
                             </p>
                             <div className="flex flex-col sm:flex-row justify-center gap-4">
                                 <Button size="lg" className="bg-white text-cybernovr-purple hover:bg-gray-100">

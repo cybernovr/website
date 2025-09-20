@@ -18,7 +18,7 @@ export default function CourseDetailsPage({ params }: { params: { courseId: stri
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const response = await fetch(`https://robiatschools.com/api/v1/course/summary/68891facbc9839284aebb86d?userId=6878e210bc9839284aebb865`)
+        const response = await fetch(`https://robiatschools.com/api/v1/course/summary/68ce2cd9a05a4b67aa4d8e2d?userId=6878e210bc9839284aebb865`)
 
         if (!response.ok) {
           throw new Error('Failed to fetch course details')

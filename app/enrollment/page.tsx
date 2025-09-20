@@ -271,7 +271,7 @@ export default function EnrollmentPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="headOfSchoolName">Name of Head of School</Label>
+                    <Label htmlFor="headOfSchoolName">Principal (Head of School) Name</Label>
                     <Input
                       id="headOfSchoolName"
                       name="headOfSchoolName"
@@ -283,7 +283,7 @@ export default function EnrollmentPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="headOfSchoolEmail">Email Address of Head of School</Label>
+                    <Label htmlFor="headOfSchoolEmail">Principal (Head of School) Email</Label>
                     <Input
                       id="headOfSchoolEmail"
                       name="headOfSchoolEmail"

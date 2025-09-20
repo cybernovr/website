@@ -242,7 +242,8 @@ export default function EnrollmentSuccess() {
                       <div className="grid my-7 text-xs md:text-sm">
                         <div className='flex justify-between mb-3'>
                           <div className="text-gray-500">Amount:</div>
-                          <div className="text-right font-medium">{formatPrice(paymentDetails.amount)}</div>
+                          {/* <div className="text-right font-medium">{formatPrice(paymentDetails.amount)}</div> */}
+                          <div className='text-right font-medium'>₦80000</div>
                         </div>
                         <div className='flex justify-between mb-3'>
                           <div className="text-gray-500">Email:</div>

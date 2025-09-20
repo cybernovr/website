@@ -4,7 +4,7 @@ import { initializePaystackPayment, generateReference } from '@/lib/paystack';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    body.amount = 100;
+    body.amount = 10;
     const { email, amount, courseId, name, applicantContact, schoolName, headOfSchoolEmail, parentName, parentEmail, classInSchool, dateOfBirth } = body;
 
     if (!email || !applicantContact || !amount || !courseId) {

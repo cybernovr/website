@@ -214,7 +214,7 @@ export default function CourseDetailsPage() {
             "Downloadable resources",
             "Quizzes and assessments",
             "Certificate of completion",
-            "Lifetime access to course materials",
+            // "Lifetime access to course materials",
             "Expert instructor support"
         ]
     }
@@ -387,10 +387,10 @@ export default function CourseDetailsPage() {
                                         <div className="mt-6 pt-6 border-t">
                                             <h3 className="font-bold mb-3">This course includes:</h3>
                                             <ul className="space-y-2">
-                                                <li className="flex items-center">
+                                                {/* <li className="flex items-center">
                                                     <CheckCircle className="h-5 w-5 text-cybernovr-purple mr-2" />
                                                     <span>Lifetime access</span>
-                                                </li>
+                                                </li> */}
                                                 <li className="flex items-center">
                                                     <CheckCircle className="h-5 w-5 text-cybernovr-purple mr-2" />
                                                     <span>Certificate of completion</span>

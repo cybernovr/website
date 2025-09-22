@@ -6,12 +6,21 @@ import Newsroom from "@/components/images/newsroom.jpg"
 import Thisdaylive from "@/components/images/thisdaylive.jpg"
 import Theeconomictimes from "@/components/images/Aminu-Maida-1140x570-1068x534.jpg"
 import nairametrics from "@/components/images/nairametrics.jpg"
+import punch from "@/components/images/punch.jpg"
 
 
 export default function NewsPage() {
   const nigeriacommunicationsweek = "https://www.nigeriacommunicationsweek.com.ng/wp-content/uploads/2025/08/NCC.jpg"
   const bbcnews = "https://ichef.bbci.co.uk/news/1024/cpsprodpb/d270/live/49dd2890-8805-11f0-8c43-13009d7c5281.jpg.webp"
   const news = [
+    {
+      name: "Lagos students trained in cybersecurity skills",
+      description:
+        "The training organised by Cybernovr Limited in partnership with the Rotary Club of Lagos, will provide the students with 10 modules covering cybersecurity basics, identity management, cyber threat...",
+      image: punch,
+      href: "https://punchng.com/lagos-students-trained-in-cybersecurity-skills/#google_vignette",
+      category: "The Punch Nigeria",
+    },
     {
       name: "Jaguar Land Rover production severely hit by cyber-attack",
       description:

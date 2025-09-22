@@ -110,60 +110,27 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
-import img1 from "@/components/images/1.png"
-import img2 from "@/components/images/two.png"
-import img3 from "@/components/images/three.png"
-import img4 from "@/components/images/four.png"
-import img5 from "@/components/images/five.png"
-import img6 from "@/components/images/six.png"
-import img7 from "@/components/images/seven.png"
-import img8 from "@/components/images/eight.png"
-import img9 from "@/components/images/nine.png"
+import img1 from "@/components/images/cyber-event-rotary.jpg"
+import img2 from "@/components/images/cybersecurity-event-rotary.jpg"
+
 
 const img0 = "https://www.nigeriacommunicationsweek.com.ng/wp-content/uploads/2025/08/NCC.jpg"
 
 const slides = [
 
   {
-    image: img1,
-    alt: "Cybersecurity Protection",
-  },
-  {
     image: img0,
     alt: "Cybersecurity Protection",
   },
   {
-    image: img2,
+    image: img1,
     alt: "Network Security",
   },
   {
-    image: img3,
+    image: img2,
     alt: "Data Protection",
-  },
-  {
-    image: img4,
-    alt: "Data Protection",
-  },
-  {
-    image: img5,
-    alt: "Data Protection",
-  },
-  {
-    image: img6,
-    alt: "Data Protection",
-  },
-  {
-    image: img7,
-    alt: "Data Protection",
-  },
-  {
-    image: img8,
-    alt: "Data Protection",
-  },
-  {
-    image: img9,
-    alt: "Data Protection",
-  },
+  }
+
 ]
 
 export default function HeroCarousel() {

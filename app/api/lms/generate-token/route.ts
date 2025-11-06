@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 
 const LMS_API_URL = process.env.LMS_API_URL || 'https://robiatschools.com';
-const LMS_API_EMAIL = process.env.LMS_API_EMAIL;
-const LMS_API_PASSWORD = process.env.LMS_API_PASSWORD;
+const LMS_API_EMAIL = process.env.LMS_API_EMAIL || 'Info@cybernovr.com';
+const LMS_API_PASSWORD = process.env.LMS_API_PASSWORD || 'Novrcorp@123';
 
 export async function POST(request: Request) {
   try {

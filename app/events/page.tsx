@@ -22,7 +22,8 @@ export default function EventsPage() {
         // Log the fetch attempt
         console.log("Fetching events from SheetDB...")
         
-        const response = await fetch("https://sheetdb.io/api/v1/i8g6d25nbw306")
+        // const response = await fetch("https://sheetdb.io/api/v1/i8g6d25nbw306")
+        const response = await fetch("https://sheetdb.io/api/v1/9suxg67tq6053")
         if (!response.ok) {
           throw new Error(`Failed to fetch events: ${response.status} ${response.statusText}`)
         }

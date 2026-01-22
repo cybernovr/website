@@ -181,7 +181,7 @@ export default function AwarenessPage() {
                     <div className="bg-white p-4 rounded-md shadow-sm">
                       <div className="flex items-center mb-2">
                         <Calendar className="h-5 w-5 text-electric-blue mr-2" />
-                        <span className="text-sm text-charcoal/70">June 15, 2025</span>
+                        <span className="text-sm text-charcoal/70">June 15, 2026</span>
                       </div>
                       <h4 className="font-bold mb-1">Cybersecurity Awareness Workshop</h4>
                       <p className="text-sm text-charcoal/80">Virtual Event</p>
@@ -189,7 +189,7 @@ export default function AwarenessPage() {
                     <div className="bg-white p-4 rounded-md shadow-sm">
                       <div className="flex items-center mb-2">
                         <Calendar className="h-5 w-5 text-electric-blue mr-2" />
-                        <span className="text-sm text-charcoal/70">July 10-14, 2025</span>
+                        <span className="text-sm text-charcoal/70">July 10-14, 2026</span>
                       </div>
                       <h4 className="font-bold mb-1">GenerationCyber Summer Camp</h4>
                       <p className="text-sm text-charcoal/80">Cyber City Campus</p>
@@ -197,7 +197,7 @@ export default function AwarenessPage() {
                     <div className="bg-white p-4 rounded-md shadow-sm">
                       <div className="flex items-center mb-2">
                         <Calendar className="h-5 w-5 text-electric-blue mr-2" />
-                        <span className="text-sm text-charcoal/70">October 1-7, 2025</span>
+                        <span className="text-sm text-charcoal/70">October 1-7, 2026</span>
                       </div>
                       <h4 className="font-bold mb-1">Cybersecurity Awareness Week</h4>
                       <p className="text-sm text-charcoal/80">Multiple Locations</p>

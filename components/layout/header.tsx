@@ -13,7 +13,7 @@ const mainNavItems = [
     title: "Services",
     href: "",
     submenu: [
-      { title: "CBN Cybersecurity Framework", href: "/services/penetration-testing" },
+      // Removed "CBN Cybersecurity Framework"
       { title: "Cybersecurity Resilience", href: "/services/professional-services" },
       { title: "Governance & Compliance", href: "/services/grc" },
       { title: "Data Privacy Protection", href: "/services/data-privacy-protection" },
@@ -39,8 +39,8 @@ const mainNavItems = [
     href: "",
     submenu: [
       { title: "NovrGRC", href: "/products/novrgrc" },
-      { title: "NovrPRISM", href: "/products/novrprism" },
-  
+      { title: "SecuBreach", href: "/products/novrprism" }, // Renamed from NovrPRISM
+      { title: "NovrRADAR", href: "/products/novrradar" }, // Added new item
     ],
   },
   {

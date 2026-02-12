@@ -1,11 +1,10 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ClipboardList, Shield, TestTube2, FileText } from "lucide-react"
-import darktrace from "@/components/images/darktracelogo.png"
-import prism from "@/components/images/prism.png"
+import { ClipboardList, Shield, TestTube2 } from "lucide-react"
+// import darktrace from "@/components/images/darktracelogo.png" // Unused
+import prism from "@/components/images/prism.png" 
 import RequestForm from "@/components/req-more-info/request-form"
-
 
 export default function NovrGRCPage() {
   return (
@@ -18,15 +17,19 @@ export default function NovrGRCPage() {
             <p className="text-xl mb-8">
             GRC platform designed to simplify compliance, manage risks, and strengthen cybersecurity.
             </p>
-            {/* <div className="flex justify-center">
-              <Image 
-                src={prism} 
-                alt="Darktrace Logo" 
-                width={200} 
-                height={200} 
-                className="object-contain"
-              />
-            </div> */}
+            
+            {/* Image Added Here */}
+            <div className="flex justify-center mt-8">
+              <div className="relative w-full max-w-md h-64 md:h-80 bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg p-4">
+                 <Image 
+                   src={prism} 
+                   alt="NovrGRC Dashboard" 
+                   fill
+                   className="object-contain"
+                 />
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -90,70 +93,6 @@ export default function NovrGRCPage() {
                 </a>
             </div>
             
-            {/* <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
-                <div className="mb-6">
-                    <ClipboardList className="h-12 w-12 text-electric-blue" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Continuous Validation</h3>
-                <p className="text-charcoal/80 mb-6">
-                    A continuous validation program using Cybernovr Security Validation tools to regularly test and improve the effectiveness of your cybersecurity controls and policies.
-                </p>
-                <a href="/contact">
-                    <Button variant="outline" className="mt-2">
-                    Manage validation
-                    </Button>
-                </a>
-            </div> */}
-
-            {/* <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
-                <div className="mb-6">
-                    <FileText className="h-12 w-12 text-electric-blue" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Reporting and Remediation</h3>
-                <p className="text-charcoal/80 mb-6">
-                    NovrGRC is able to generate reports detailing the identified gaps and prioritize remediation efforts based on the potential impact of the vulnerabilities. Reports are tailored to industry/regulators.
-                </p>
-                <a href="/contact">
-                    <Button variant="outline" className="mt-2">
-                    Get compliance-ready insights
-                    </Button>
-                </a>
-            </div> */}
-
-              {/* <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
-                <div className="mb-6">
-                  <Shield className="h-12 w-12 text-electric-blue" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Deep Learning & Automated Threat Detection</h3>
-                <p className="text-charcoal/80 mb-6">
-                  Darktrace is a leader in automated threat detection using self-learning AI to understand every user and 
-                  digital asset within your enterprise. Darktrace DETECT works by analyzing thousands of metrics to reveal 
-                  subtle deviations that may signal an evolving threat.
-                </p>
-                <a href="/contact">
-                  <Button variant="outline" className="mt-2">
-                    Reach out to learn more
-                  </Button>
-                </a>
-              </div>
-
-              <div className="bg-white rounded-lg p-8 shadow-md border border-gray-100">
-                <div className="mb-6">
-                  <RefreshCw className="h-12 w-12 text-electric-blue" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Autonomous Response</h3>
-                <p className="text-charcoal/80 mb-6">
-                  Darktrace RESPOND provides autonomous, always-on action to contain and disarm attacks within your enterprise's 
-                  digital footprints. It can disarm attacks wherever they occur, be it cloud, email, apps, endpoint, network 
-                  platforms, etc.
-                </p>
-                <a href="/contact">
-                  <Button variant="outline" className="mt-2">
-                    Reach out to learn more
-                  </Button>
-                </a>
-              </div> */}
-
             </div>
 
             <div className="relative">
@@ -161,7 +100,7 @@ export default function NovrGRCPage() {
                 <div>
                   <RequestForm />
                 </div>
-                <div className="bg-light-gray rounded-lg p-6 shadow-md">
+                <div className="bg-light-gray rounded-lg p-6 shadow-md mt-8">
                     <h3 className="text-xl font-bold mb-4">Why Choose NovrGRC?</h3>
                     <ul className="space-y-3">
                         <li className="flex items-start">

@@ -94,7 +94,7 @@ export default function AboutPage() {
     },
     {
       name: "Akinwale Mayomi Aisida",
-      title: "Non-Executive Director",
+      title: "Senior Product Manager",
       bio: "Akinwale Mayomi Aisida, is a Cybersecurity Researcher at the Canadian Institute of Cybersecurity,",
       image: Akin,
       fullBio: `
@@ -104,21 +104,6 @@ export default function AboutPage() {
             He is highly skilled in high-performance modeling, feature engineering, and real-time anomaly detection using both traditional ML classifiers (e.g., Random Forest, SVM, XGBoost) and advanced deep learning architectures (e.g., CNNs, RNNs, LSTMs, Autoencoders).
             `
     },
-    {
-      name: "Olisa Okafor",
-      title: "Cybersecurity Analyst",
-      bio: "Specializing in threat detection and security analysis to protect client assets.",
-      image: Olisa,
-      fullBio: `
-            Olisa Okafor is a cybersecurity analyst with extensive experience in threat detection and security analysis.
-    
-            He has a strong background in network security, incident response, and threat intelligence. Olisa is skilled in security information and event management (SIEM) systems, network security monitoring, and threat hunting.
-    
-            He is also knowledgeable in security frameworks and regulations such as NIST, ISO 27001, and HIPAA.
-    
-            Olisa is a certified CompTIA Security+ professional and is currently pursuing a degree in Computer Science.
-            `
-    }
   ];
 
   return (

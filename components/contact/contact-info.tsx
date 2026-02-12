@@ -18,13 +18,13 @@ export default function ContactInfo() {
           <div>
             <h3 className="text-lg font-bold">Our Location</h3>
             <p className="text-charcoal/80">
-              454 Evanston Dr NW,
+              108 4625 Versity Drive NW,
               
-              Calgary AB T3P 0H1, Alberta, Canada & 
+              Calgary, AB T3A 0Z9
             </p>
             <br />
             <p className="text-charcoal/80">
-              7 Ayinde Sanni Street, Magodo GRA, Lagos. 
+              17 Sunday Adigun Street, AlaUSA Ikeja, Lagos. 
             </p>
           </div>
         </div>

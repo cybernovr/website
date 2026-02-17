@@ -39,7 +39,7 @@ const mainNavItems = [
     href: "",
     submenu: [
       { title: "NovrGRC", href: "/products/novrgrc" },
-      { title: "SecuBreach", href: "/products/novrprism" }, // Renamed from NovrPRISM
+      { title: "SecuBreach", href: "/products/secubreach" }, // Renamed from NovrPRISM
       { title: "NovrRADAR", href: "/products/novrradar" }, // Added new item
     ],
   },

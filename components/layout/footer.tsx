@@ -135,6 +135,7 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-cybernovr-purple mr-3 mt-1 flex-shrink-0" />
                 <span className="text-charcoal/70">108 4625 Varsity Drive NW, Calgary, AB T3A 0Z9 <br />& <br /> 17 Sunday Adigun Street, Alausa, Ikeja, Lagos.</span>
+              </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-cybernovr-purple mr-3 flex-shrink-0" />
                 <a href="tel:+234 814-378-8857" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">

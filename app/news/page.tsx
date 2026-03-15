@@ -69,6 +69,13 @@ export default function NewsPage() {
       href: "https://www.thisdaylive.com/2025/06/05/ncc-moves-to-develop-cybersecurity-regulatory-framework-for-telecoms-sector/ ",
       category: "This Day Live",
     },
+    {
+      name: "IYSDC Trains 50 Teenagers in Osun",
+      description: "No fewer than 50 selected youths across Osun State were involved in a 4-day residential and competitive camp, organised by Ife Youth Sport Development Initiative (IYSDC) in collaboration with Cybernovr...",
+      image: IysdcCamp,
+      href: "/news/iysdc-training", 
+      category: "Press Release",
+    },
 
   ]
 

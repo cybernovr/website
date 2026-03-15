@@ -136,11 +136,19 @@ export default function Footer() {
                 <MapPin className="h-5 w-5 text-cybernovr-purple mr-3 mt-1 flex-shrink-0" />
                 <span className="text-charcoal/70">108 4625 Varsity Drive NW, Calgary, AB T3A 0Z9 <br />& <br /> 17 Sunday Adigun Street, Alausa, Ikeja, Lagos.</span>
               </li>
-              <li className="flex items-center">
-                <Phone className="h-5 w-5 text-cybernovr-purple mr-3 flex-shrink-0" />
-                <a href="tel:+234 814-378-8857" className="text-charcoal/70 hover:text-cybernovr-purple transition-colors">
-                  +234 805-120-0000, +234 814-378-8857
-                </a>
+              <li className="flex items-start">
+                <Phone className="h-5 w-5 text-cybernovr-purple mr-3 mt-1 flex-shrink-0" />
+                <div className="flex flex-col text-charcoal/70 gap-1">
+                  <a href="tel:+2348098120000" className="hover:text-cybernovr-purple transition-colors">
+                    +234-809-812-0000
+                  </a>
+                  <a href="tel:+14439853735" className="hover:text-cybernovr-purple transition-colors">
+                    +1-443-985-3735
+                  </a>
+                  <a href="https://wa.me/2349016991201" target="_blank" rel="noopener noreferrer" className="hover:text-cybernovr-purple transition-colors">
+                    +234-901-699-1201 (WhatsApp)
+                  </a>
+                </div>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-cybernovr-purple mr-3 flex-shrink-0" />

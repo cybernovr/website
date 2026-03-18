@@ -7,7 +7,7 @@ import Thisdaylive from "@/components/images/thisdaylive.jpg"
 import Theeconomictimes from "@/components/images/Aminu-Maida-1140x570-1068x534.jpg"
 import nairametrics from "@/components/images/nairametrics.jpg"
 import punch from "@/components/images/punch.jpg"
-
+import iysdc from '@/components/images/iysdc-camp.jpg'
 
 export default function NewsPage() {
   const nigeriacommunicationsweek = "https://www.nigeriacommunicationsweek.com.ng/wp-content/uploads/2025/08/NCC.jpg"
@@ -72,8 +72,8 @@ export default function NewsPage() {
     {
       name: "IYSDC Trains 50 Teenagers in Osun",
       description: "No fewer than 50 selected youths across Osun State were involved in a 4-day residential and competitive camp, organised by Ife Youth Sport Development Initiative (IYSDC) in collaboration with Cybernovr...",
-      image: IysdcCamp,
-      href: "/news/iysdc-training", 
+      image: iysdc,
+      href: "/news/iysdc-camp", 
       category: "Press Release",
     },
 
